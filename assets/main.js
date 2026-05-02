@@ -141,4 +141,52 @@
     window.addEventListener('scroll', updateParallax, { passive: true });
     updateParallax();
   }
+  // Slide carousel (Canva-export presentation viewer)
+  document.querySelectorAll('.slide-carousel').forEach(function (carousel) {
+    const track = carousel.querySelector('.slide-track');
+    const slides = carousel.querySelectorAll('.slide');
+    const prevBtn = carousel.querySelector('.slide-prev');
+    const nextBtn = carousel.querySelector('.slide-next');
+    const dotsContainer = carousel.querySelector('.slide-dots');
+    if (!track || slides.length === 0) return;
+
+    let index = 0;
+    const total = slides.length;
+
+    function goTo(i) {
+      if (i < 0) i = 0;
+      if (i >= total) i = total - 1;
+      index = i;
+      track.style.transform = 'translateX(' + (-index * 100) + '%)';
+      if (dotsContainer) {
+        dotsContainer.querySelectorAll('.slide-dot').forEach(function (d, j) {
+          d.classList.toggle('active', j === index);
+        });
+      }
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(index - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(index + 1); });
+
+    // Swipe support
+    let startX = 0;
+    carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener('touchend', function (e) {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (diff > 40) goTo(index + 1);
+      else if (diff < -40) goTo(index - 1);
+    }, { passive: true });
+
+    // Auto-advance if data-autoplay is set (in ms)
+    const autoMs = parseInt(carousel.dataset.autoplay, 10);
+    if (autoMs > 0) {
+      let timer = setInterval(function () { goTo(index + 1 >= total ? 0 : index + 1); }, autoMs);
+      carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
+      carousel.addEventListener('mouseleave', function () {
+        clearInterval(timer);
+        timer = setInterval(function () { goTo(index + 1 >= total ? 0 : index + 1); }, autoMs);
+      });
+      carousel.addEventListener('touchstart', function () { clearInterval(timer); }, { passive: true });
+    }
+  });
 })();
