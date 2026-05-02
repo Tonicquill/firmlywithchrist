@@ -80,15 +80,22 @@
   }
 
   function showTooltip(ref) {
+    if (activeRef && activeRef !== ref) {
+      hideTooltip();
+    }
     tooltip.textContent = ref.dataset.full;
     tooltip.classList.add('visible');
     requestAnimationFrame(function () { positionTooltip(ref); });
     activeRef = ref;
+    ref.classList.add('active');
   }
 
   function hideTooltip() {
     tooltip.classList.remove('visible');
-    activeRef = null;
+    if (activeRef) {
+      activeRef.classList.remove('active');
+      activeRef = null;
+    }
   }
 
   document.querySelectorAll('.scripture-ref[data-full]').forEach(function (ref) {

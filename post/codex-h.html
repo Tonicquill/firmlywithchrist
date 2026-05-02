@@ -28,25 +28,32 @@
       <li><a href="../archive.html">Previously</a></li>
       <li><a href="../index.html#about">About</a></li>
     </ul>
+    <a href="../archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="hero-section">
     <div class="hero-bg" data-parallax="-0.3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Codex_Sangallensis_18_%28146%29.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in">May 1, 2026</p>
-      <h1 class="hero-title fade-in stagger-1">Lost for 500 years.</h1>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">Lost for 500 years.</h1>
       <p class="hero-dek fade-in stagger-2">Monks used 42 pages of a 6th-century Bible as scrap paper. Scientists just found them.</p>
       <div class="hero-meta fade-in stagger-3">
-        <span class="meta-tag">Providence</span>
+        <span class="meta-tag" data-pagefind-filter="tag">Providence</span>
         <span>Isaiah 40:8</span>
         <span>WCF 1.8</span>
       </div>
     </div>
   </section>
 
-  <article class="post-article">
+  <article class="post-article" data-pagefind-body>
     <p class="fade-in stagger-1">
       An international team led by <strong>Professor Garrick Allen</strong> at the <strong>University of Glasgow</strong> announced the recovery of <strong>Codex H</strong> — a 6th-century Greek manuscript of Paul's letters, dismantled in the 13th century at the Great Lavra Monastery on Mount Athos. Its pages were reused as binding material and flyleaves for other books. The ink was invisible to the naked eye. The parchment had been scraped, written over, folded, and forgotten.
     </p>
@@ -125,5 +132,6 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script src="../assets/trending.js"></script>
 </body>
 </html>

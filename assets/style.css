@@ -332,14 +332,24 @@ nav {
 /* Scripture inline refs */
 .scripture-ref {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--ochre);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.02em;
   white-space: nowrap;
   position: relative;
-  cursor: help;
-  border-bottom: 1px dotted oklch(68% 0.12 80 / 0.4);
+  cursor: pointer;
+  background: oklch(68% 0.12 80 / 0.07);
+  padding: 0.12em 0.35em;
+  border-radius: 3px;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scripture-ref:hover,
+.scripture-ref.active {
+  background: oklch(68% 0.12 80 / 0.20);
+  color: oklch(55% 0.14 80);
 }
 
 /* Verse tooltip */
@@ -448,8 +458,8 @@ nav {
   z-index: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.18;
-  filter: grayscale(30%) saturate(80%);
+  opacity: 0.35;
+  filter: grayscale(15%) saturate(90%);
   pointer-events: none;
 }
 
@@ -987,6 +997,153 @@ footer {
   text-wrap: pretty;
 }
 
+/* Trending strip */
+.trending-strip {
+  background: var(--stone);
+  border-bottom: 1px solid oklch(12% 0.03 260 / 0.06);
+  padding: var(--space-2) var(--space-4);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.trending-strip-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  white-space: nowrap;
+}
+
+.trending-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ochre);
+  flex-shrink: 0;
+}
+
+.trending-items {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.trending-item {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--midnight);
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+  position: relative;
+}
+
+.trending-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--ochre);
+  transition: width var(--transition-fast);
+}
+
+.trending-item:hover {
+  opacity: 1;
+  color: var(--midnight);
+}
+
+.trending-item:hover::after {
+  width: 100%;
+}
+
+/* Search trigger in nav */
+.nav-search-trigger {
+  background: none;
+  border: none;
+  color: var(--parchment);
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: var(--space-1);
+  margin-left: var(--space-2);
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.nav-search-trigger:hover {
+  opacity: 1;
+  color: var(--ochre);
+}
+
+/* Pagefind custom styling overrides */
+.pagefind-ui {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--ochre);
+  --pagefind-ui-text: var(--midnight);
+  --pagefind-ui-background: var(--parchment);
+  --pagefind-ui-border: oklch(12% 0.03 260 / 0.12);
+  --pagefind-ui-tag: var(--ochre);
+  --pagefind-ui-tag-active: var(--midnight);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 4px;
+}
+
+.pagefind-ui__search-input {
+  font-family: var(--font-body) !important;
+}
+
+.pagefind-ui__result-link {
+  font-family: var(--font-display) !important;
+}
+
+.pagefind-ui__result-excerpt {
+  font-family: var(--font-body) !important;
+}
+
+/* Archive filter bar */
+.archive-filter-bar {
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-6);
+  padding: 0 var(--space-4);
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.archive-filter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--midnight);
+  opacity: 0.5;
+}
+
+.archive-filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.35em 0.8em;
+  border: 1px solid oklch(12% 0.03 260 / 0.12);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--midnight);
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.archive-filter-btn:hover,
+.archive-filter-btn.active {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: var(--parchment);
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
@@ -1070,6 +1227,14 @@ footer {
 
   .archive-link {
     padding: var(--space-4) 0;
+  }
+
+  .trending-strip {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .trending-item {
+    font-size: 0.75rem;
   }
 }
 

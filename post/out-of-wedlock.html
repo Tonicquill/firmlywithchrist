@@ -28,25 +28,32 @@
       <li><a href="../archive.html">Previously</a></li>
       <li><a href="../index.html#about">About</a></li>
     </ul>
+    <a href="../archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="hero-section">
     <div class="hero-bg" data-parallax="-0.3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Lotto%2C_Lorenzo_-_Husband_and_Wife.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in">May 1, 2026</p>
-      <h1 class="hero-title fade-in stagger-1">40% of births are now outside marriage.</h1>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">40% of births are now outside marriage.</h1>
       <p class="hero-dek fade-in stagger-2">The Census Bureau reported the shift in January. The Reformed tradition has something better than shame to offer: the covenant.</p>
       <div class="hero-meta fade-in stagger-3">
-        <span class="meta-tag">Covenant</span>
+        <span class="meta-tag" data-pagefind-filter="tag">Covenant</span>
         <span>Malachi 2:14–15</span>
         <span>WCF 24</span>
       </div>
     </div>
   </section>
 
-  <article class="post-article">
+  <article class="post-article" data-pagefind-body>
     <p class="fade-in stagger-1">
       The <strong>U.S. Census Bureau</strong> reported it in January: <strong>40% of all US births in 2023 were to unmarried women</strong>. Among women over 30, the rate is climbing fastest. Cohabitation now accounts for more than a third of "unmarried" births. The old categories — married, single, divorced — no longer describe how people actually live.
     </p>
@@ -157,5 +164,6 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script src="../assets/trending.js"></script>
 </body>
 </html>

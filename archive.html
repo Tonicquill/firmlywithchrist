@@ -16,6 +16,8 @@
   <meta name="twitter:description" content="All posts from Firmly With Christ. Scripture-grounded. Confessionally rooted. Applied to now.">
 
   <link rel="stylesheet" href="assets/style.css">
+  <link href="./pagefind/pagefind-component-ui.css" rel="stylesheet">
+  <script src="./pagefind/pagefind-component-ui.js" type="module"></script>
 </head>
 <body>
 
@@ -29,8 +31,15 @@
       <li><a href="archive.html">Previously</a></li>
       <li><a href="index.html#about">About</a></li>
     </ul>
+    <a href="archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="archive-header">
     <div class="archive-header-inner fade-in">
@@ -40,11 +49,28 @@
     </div>
   </section>
 
+  <!-- Pagefind Search -->
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--space-4);">
+    <pagefind-search style="margin-bottom:var(--space-4);"></pagefind-search>
+  </div>
+
+  <div class="archive-filter-bar">
+    <span class="archive-filter-label">Filter by:</span>
+    <button class="archive-filter-btn" data-filter="all">All</button>
+    <button class="archive-filter-btn" data-filter="Justice">Justice</button>
+    <button class="archive-filter-btn" data-filter="Demographics">Demographics</button>
+    <button class="archive-filter-btn" data-filter="Vocation">Vocation</button>
+    <button class="archive-filter-btn" data-filter="Idolatry">Idolatry</button>
+    <button class="archive-filter-btn" data-filter="Covenant">Covenant</button>
+    <button class="archive-filter-btn" data-filter="Lament">Lament</button>
+    <button class="archive-filter-btn" data-filter="Providence">Providence</button>
+  </div>
+
   <section class="feed">
-    <div class="feed-grid">
+    <div class="feed-grid" id="archiveGrid">
 
       <!-- Card: Domestic Abuse -->
-      <a href="post/domestic-abuse.html" class="post-card fade-in">
+      <a href="post/domestic-abuse.html" class="post-card fade-in" data-tag="Justice">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Corot_-_Mother_Protecting_Her_Child%2C_1855-1858.jpg" alt="Mother Protecting Her Child by Corot, 1855–1858" loading="lazy">
         </div>
@@ -52,7 +78,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 2, 2026</span>
-            <span class="card-tag">Justice</span>
+            <span class="card-tag" data-pagefind-filter="tag">Justice</span>
           </div>
           <h3 class="card-title">1 in 3 women. The church told her to submit more.</h3>
           <p class="card-excerpt">The CDC published the numbers this year. The Reformers had a different answer.</p>
@@ -61,7 +87,7 @@
       </a>
 
       <!-- Card: Young Men Religion -->
-      <a href="post/young-men-religion.html" class="post-card fade-in">
+      <a href="post/young-men-religion.html" class="post-card fade-in" data-tag="Demographics">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Rembrandt_van_Rijn_-_Christ_Preaching_%28The_Hundred_Guilder_Print%29_-_Google_Art_Project.jpg" alt="Christ Preaching (The Hundred Guilder Print) by Rembrandt, c. 1649" loading="lazy">
         </div>
@@ -69,7 +95,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 2, 2026</span>
-            <span class="card-tag">Demographics</span>
+            <span class="card-tag" data-pagefind-filter="tag">Demographics</span>
           </div>
           <h3 class="card-title">For the first time, young men are more religious than young women.</h3>
           <p class="card-excerpt">Gallup recorded the reversal this week. Jonathan Edwards would ask: what kind of religion?</p>
@@ -78,7 +104,7 @@
       </a>
 
       <!-- Card: Labor Day -->
-      <a href="post/labor-day.html" class="post-card fade-in">
+      <a href="post/labor-day.html" class="post-card fade-in" data-tag="Vocation">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg" alt="Parable of the Laborers in the Vineyard by Rembrandt, 1637" loading="lazy">
         </div>
@@ -86,7 +112,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 1, 2026</span>
-            <span class="card-tag">Vocation</span>
+            <span class="card-tag" data-pagefind-filter="tag">Vocation</span>
           </div>
           <h3 class="card-title">Work is not a curse.</h3>
           <p class="card-excerpt">The curse is toil. The gift is vocation. And May Day is older than the revolutionaries.</p>
@@ -95,7 +121,7 @@
       </a>
 
       <!-- Card: Screen Addiction -->
-      <a href="post/screen-addiction.html" class="post-card fade-in">
+      <a href="post/screen-addiction.html" class="post-card fade-in" data-tag="Idolatry">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/De_dans_om_het_gouden_kalf_Rijksmuseum_SK-A-3841.jpeg" alt="The Worship of the Golden Calf by Lucas van Leyden, c. 1530" loading="lazy">
         </div>
@@ -103,7 +129,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 1, 2026</span>
-            <span class="card-tag">Idolatry</span>
+            <span class="card-tag" data-pagefind-filter="tag">Idolatry</span>
           </div>
           <h3 class="card-title">Your child spends 5 hours a day in worship.</h3>
           <p class="card-excerpt">Not at church. On a screen. And the algorithm is a better preacher than you.</p>
@@ -112,7 +138,7 @@
       </a>
 
       <!-- Card: Out of Wedlock -->
-      <a href="post/out-of-wedlock.html" class="post-card fade-in">
+      <a href="post/out-of-wedlock.html" class="post-card fade-in" data-tag="Covenant">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Lotto%2C_Lorenzo_-_Husband_and_Wife.jpg" alt="Husband and Wife by Lorenzo Lotto, 1523" loading="lazy">
         </div>
@@ -120,7 +146,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 1, 2026</span>
-            <span class="card-tag">Covenant</span>
+            <span class="card-tag" data-pagefind-filter="tag">Covenant</span>
           </div>
           <h3 class="card-title">40% of births are now outside marriage.</h3>
           <p class="card-excerpt">The Census Bureau reported the shift in January. The Reformed tradition has something better than shame to offer: the covenant.</p>
@@ -129,7 +155,7 @@
       </a>
 
       <!-- Card: Iran War -->
-      <a href="post/iran-war.html" class="post-card fade-in">
+      <a href="post/iran-war.html" class="post-card fade-in" data-tag="Lament">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Giotto_-_Scrovegni_-_-36-_-_Lamentation_%28The_Mourning_of_Christ%29_adj.jpg" alt="Lamentation (The Mourning of Christ) by Giotto di Bondone, c. 1305" loading="lazy">
         </div>
@@ -137,7 +163,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 1, 2026</span>
-            <span class="card-tag">Lament</span>
+            <span class="card-tag" data-pagefind-filter="tag">Lament</span>
           </div>
           <h3 class="card-title">2,362 dead. 217 of them children.</h3>
           <p class="card-excerpt">The UN reported the toll from Iran this week. The Bible's response to civilian death is not "God has a plan." It is "How long, O Lord?"</p>
@@ -146,7 +172,7 @@
       </a>
 
       <!-- Card: Codex H -->
-      <a href="post/codex-h.html" class="post-card fade-in">
+      <a href="post/codex-h.html" class="post-card fade-in" data-tag="Providence">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Codex_Sangallensis_18_%28146%29.jpg" alt="Codex Sangallensis 18, 9th-century palimpsest" loading="lazy">
         </div>
@@ -154,7 +180,7 @@
         <div class="card-content">
           <div class="card-meta">
             <span>May 1, 2026</span>
-            <span class="card-tag">Providence</span>
+            <span class="card-tag" data-pagefind-filter="tag">Providence</span>
           </div>
           <h3 class="card-title">Lost for 500 years.</h3>
           <p class="card-excerpt">Monks used 42 pages of a 6th-century Bible as scrap paper. Scientists just found them.</p>
@@ -179,5 +205,30 @@
   </footer>
 
   <script src="assets/main.js"></script>
+  <script src="assets/trending.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      const buttons = document.querySelectorAll('.archive-filter-btn[data-filter]');
+      const cards = document.querySelectorAll('.post-card[data-tag]');
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const filter = btn.dataset.filter;
+
+          buttons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          cards.forEach(function (card) {
+            if (filter === 'all' || card.dataset.tag === filter) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

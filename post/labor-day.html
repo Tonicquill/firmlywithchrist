@@ -28,25 +28,32 @@
       <li><a href="../archive.html">Previously</a></li>
       <li><a href="../index.html#about">About</a></li>
     </ul>
+    <a href="../archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="hero-section">
     <div class="hero-bg" data-parallax="-0.3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in">May 1, 2026</p>
-      <h1 class="hero-title fade-in stagger-1">Work is not a curse.</h1>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">Work is not a curse.</h1>
       <p class="hero-dek fade-in stagger-2">The curse is toil. The gift is vocation. And May Day is older than the revolutionaries.</p>
       <div class="hero-meta fade-in stagger-3">
-        <span class="meta-tag">Vocation</span>
+        <span class="meta-tag" data-pagefind-filter="tag">Vocation</span>
         <span>Genesis 2:15</span>
         <span>Ephesians 4:28</span>
       </div>
     </div>
   </section>
 
-  <article class="post-article">
+  <article class="post-article" data-pagefind-body>
     <p class="fade-in stagger-1">
       May 1 is <strong>Labor Day</strong> in most of the world. The marches and banners claim work for the revolutionaries — the communists in Havana, the trade unions in Berlin, the populists everywhere. But the Bible claimed it first. And claimed it differently.
     </p>
@@ -122,5 +129,6 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script src="../assets/trending.js"></script>
 </body>
 </html>

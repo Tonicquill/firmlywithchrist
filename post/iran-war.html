@@ -28,25 +28,32 @@
       <li><a href="../archive.html">Previously</a></li>
       <li><a href="../index.html#about">About</a></li>
     </ul>
+    <a href="../archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="hero-section">
     <div class="hero-bg" data-parallax="-0.3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Giotto_-_Scrovegni_-_-36-_-_Lamentation_%28The_Mourning_of_Christ%29_adj.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in">May 1, 2026</p>
-      <h1 class="hero-title fade-in stagger-1">2,362 dead. 217 of them children.</h1>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">2,362 dead. 217 of them children.</h1>
       <p class="hero-dek fade-in stagger-2">The UN reported the toll from Iran this week. The Bible's response to civilian death is not "God has a plan." It is "How long, O Lord?"</p>
       <div class="hero-meta fade-in stagger-3">
-        <span class="meta-tag">Lament</span>
+        <span class="meta-tag" data-pagefind-filter="tag">Lament</span>
         <span>Psalm 88</span>
         <span>Amos 3:6</span>
       </div>
     </div>
   </section>
 
-  <article class="post-article">
+  <article class="post-article" data-pagefind-body>
     <p class="fade-in stagger-1">
       The <strong>UN Office for the Coordination of Humanitarian Affairs</strong> reported the numbers on April 16: since Operation Epic Fury began on February 28, at least <strong>2,362 Iranian civilians have been killed</strong>. More than 32,000 injured. Among the dead: <strong>217 children</strong>. A missile strike on an elementary school killed nearly 170 people. The numbers are two weeks old. They are higher now.
     </p>
@@ -131,5 +138,6 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script src="../assets/trending.js"></script>
 </body>
 </html>

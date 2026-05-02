@@ -28,25 +28,32 @@
       <li><a href="../archive.html">Previously</a></li>
       <li><a href="../index.html#about">About</a></li>
     </ul>
+    <a href="../archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="hero-section">
     <div class="hero-bg" data-parallax="-0.3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Rembrandt_van_Rijn_-_Christ_Preaching_%28The_Hundred_Guilder_Print%29_-_Google_Art_Project.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in">May 2, 2026</p>
-      <h1 class="hero-title fade-in stagger-1">For the first time, young men are more religious than young women.</h1>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">For the first time, young men are more religious than young women.</h1>
       <p class="hero-dek fade-in stagger-2">Gallup recorded the reversal this week. Jonathan Edwards would ask: what kind of religion?</p>
       <div class="hero-meta fade-in stagger-3">
-        <span class="meta-tag">Demographics</span>
+        <span class="meta-tag" data-pagefind-filter="tag">Demographics</span>
         <span>2 Corinthians 13:5</span>
         <span>Edwards</span>
       </div>
     </div>
   </section>
 
-  <article class="post-article">
+  <article class="post-article" data-pagefind-body>
     <p class="fade-in stagger-1">
       <strong>Gallup</strong> published the numbers this week: for the first time in the polling firm's history, young American men are now more religious than young American women. In 2024–2025, <strong>42% of men ages 18–29</strong> said religion is "very important" to them. For women in the same bracket: roughly 30%. The gap has inverted. The pews are filling with young men.
     </p>
@@ -135,5 +142,6 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script src="../assets/trending.js"></script>
 </body>
 </html>

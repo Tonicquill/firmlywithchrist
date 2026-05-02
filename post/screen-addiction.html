@@ -28,25 +28,32 @@
       <li><a href="../archive.html">Previously</a></li>
       <li><a href="../index.html#about">About</a></li>
     </ul>
+    <a href="../archive.html" class="nav-search-trigger" aria-label="Search">&#128269;</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
   </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
 
   <section class="hero-section">
     <div class="hero-bg" data-parallax="-0.3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b6/De_dans_om_het_gouden_kalf_Rijksmuseum_SK-A-3841.jpeg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in">May 1, 2026</p>
-      <h1 class="hero-title fade-in stagger-1">Your child spends 5 hours a day in worship.</h1>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">Your child spends 5 hours a day in worship.</h1>
       <p class="hero-dek fade-in stagger-2">Not at church. On a screen. And the algorithm is a better preacher than you.</p>
       <div class="hero-meta fade-in stagger-3">
-        <span class="meta-tag">Idolatry</span>
+        <span class="meta-tag" data-pagefind-filter="tag">Idolatry</span>
         <span>Exodus 20:3–5</span>
         <span>Colossians 3:5</span>
       </div>
     </div>
   </section>
 
-  <article class="post-article">
+  <article class="post-article" data-pagefind-body>
     <p class="fade-in stagger-1">
       The <strong>World Happiness Report 2026</strong> just dropped a number that should stop every parent: the average US teen spends nearly <strong>5 hours per day</strong> on social media. One in four thirteen-year-olds spends 7 hours or more. That is not entertainment. That is a liturgy.
     </p>
@@ -131,5 +138,6 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script src="../assets/trending.js"></script>
 </body>
 </html>
