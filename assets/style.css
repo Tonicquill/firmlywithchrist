@@ -427,6 +427,38 @@ nav {
   color: var(--midnight);
   opacity: 0.5;
   letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Calming background inside scripture pull quotes */
+.scripture-pull-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.10;
+  filter: grayscale(30%) saturate(80%);
+  pointer-events: none;
+}
+
+.scripture-pull p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo in nav */
+.brand-mark img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  border-radius: 2px;
+}
+
+/* Parallax layer system */
+[data-parallax] {
+  will-change: transform;
 }
 
 /* Post share */

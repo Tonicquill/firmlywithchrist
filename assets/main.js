@@ -120,4 +120,18 @@
   window.addEventListener('scroll', function () {
     if (activeRef) positionTooltip(activeRef);
   }, { passive: true });
+
+  // Parallax scroll effect (3 layers: fast bg, normal content, slow foreground)
+  const parallaxElements = document.querySelectorAll('[data-parallax]');
+  if (parallaxElements.length) {
+    function updateParallax() {
+      const scrollY = window.scrollY || window.pageYOffset;
+      parallaxElements.forEach(function (el) {
+        const speed = parseFloat(el.dataset.parallax);
+        el.style.transform = 'translateY(' + (scrollY * speed).toFixed(2) + 'px)';
+      });
+    }
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    updateParallax();
+  }
 })();
