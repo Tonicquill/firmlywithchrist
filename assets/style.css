@@ -124,8 +124,11 @@ nav {
 }
 
 .brand-mark {
-  color: var(--ochre);
+  width: 36px;
+  height: 36px;
+  display: block;
   flex-shrink: 0;
+  border-radius: 2px;
 }
 
 .nav-links {
@@ -174,7 +177,10 @@ nav {
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: -20%;
   z-index: 0;
   background-color: var(--midnight);
   background-size: cover;
@@ -389,6 +395,7 @@ nav {
   text-align: center;
   position: relative;
   background: var(--stone);
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -434,11 +441,14 @@ nav {
 /* Calming background inside scripture pull quotes */
 .scripture-pull-bg {
   position: absolute;
-  inset: 0;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: -20%;
   z-index: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.10;
+  opacity: 0.18;
   filter: grayscale(30%) saturate(80%);
   pointer-events: none;
 }
@@ -448,13 +458,6 @@ nav {
   z-index: 1;
 }
 
-/* Logo in nav */
-.brand-mark img {
-  width: 28px;
-  height: 28px;
-  display: block;
-  border-radius: 2px;
-}
 
 /* Parallax layer system */
 [data-parallax] {
