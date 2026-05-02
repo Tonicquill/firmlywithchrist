@@ -463,6 +463,48 @@ nav {
   pointer-events: none;
 }
 
+/* Key statements — article mic-drop moments, distinct from scripture */
+.key-statement {
+  margin: var(--space-6) 0;
+  padding: var(--space-5) var(--space-4);
+  text-align: center;
+  position: relative;
+  background: var(--ivory);
+  border-top: 2px solid var(--ochre);
+  border-bottom: 2px solid var(--ochre);
+}
+
+.key-statement p {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--midnight);
+  max-width: 800px;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+.key-statement cite {
+  display: block;
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-style: normal;
+  color: var(--midnight);
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+}
+
+/* Inline highlight for key phrases within paragraphs */
+.pop {
+  background: oklch(68% 0.12 80 / 0.15);
+  padding: 0.05em 0.25em;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
 
 /* Parallax layer system */
 [data-parallax] {
