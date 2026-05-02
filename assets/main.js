@@ -175,8 +175,6 @@
       });
     }
 
-    // Swipe support
-    let startX = 0;
     // Keyboard navigation
     carousel.setAttribute('tabindex', '0');
     carousel.addEventListener('keydown', function (e) {
