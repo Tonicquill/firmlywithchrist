@@ -168,6 +168,22 @@
     if (prevBtn) prevBtn.addEventListener('click', function () { goTo(index - 1); });
     if (nextBtn) nextBtn.addEventListener('click', function () { goTo(index + 1); });
 
+    // Dot navigation
+    if (dotsContainer) {
+      dotsContainer.querySelectorAll('.slide-dot').forEach(function (dot, j) {
+        dot.addEventListener('click', function () { goTo(j); });
+      });
+    }
+
+    // Swipe support
+    let startX = 0;
+    // Keyboard navigation
+    carousel.setAttribute('tabindex', '0');
+    carousel.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(index - 1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); goTo(index + 1); }
+    });
+
     // Swipe support
     let startX = 0;
     carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
