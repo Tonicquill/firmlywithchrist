@@ -435,17 +435,21 @@ nav {
   max-width: 900px;
   margin: 0 auto var(--space-3);
   text-wrap: balance;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 16px oklch(12% 0.03 260 / 0.6), 0 1px 4px oklch(12% 0.03 260 / 0.4);
 }
 
 .scripture-pull cite {
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-style: normal;
-  color: var(--midnight);
-  opacity: 0.5;
+  color: var(--parchment);
+  opacity: 0.7;
   letter-spacing: 0.05em;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  text-shadow: 0 1px 6px oklch(12% 0.03 260 / 0.5);
 }
 
 /* Calming background inside scripture pull quotes */
@@ -458,8 +462,18 @@ nav {
   z-index: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.35;
-  filter: grayscale(15%) saturate(90%);
+  opacity: 0.22;
+  filter: grayscale(20%) saturate(85%);
+  pointer-events: none;
+}
+
+/* Darkening overlay between bg image and text */
+.scripture-pull::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: oklch(12% 0.03 260 / 0.35);
+  z-index: 1;
   pointer-events: none;
 }
 

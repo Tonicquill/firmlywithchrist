@@ -12,8 +12,15 @@
   const basePath = isPostDir ? '../' : './';
 
   fetch(basePath + 'assets/posts.json')
-    .then(function (res) { return res.json(); })
+    .then(function (res) {
+      if (!res.ok) throw new Error('posts.json fetch failed: ' + res.status);
+      return res.json();
+    })
     .then(function (posts) {
+      if (!Array.isArray(posts) || posts.length === 0) {
+        container.style.display = 'none';
+        return;
+      }
       // Sort by date descending, take top 5
       posts.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
       const recent = posts.slice(0, 5);
@@ -33,8 +40,9 @@
 
       container.querySelector('.trending-strip-inner').appendChild(itemsWrap);
     })
-    .catch(function () {
-      // Silently fail — trending strip is enhancement, not critical
-      container.style.display = 'none';
+    .catch(function (err) {
+      console.warn('Trending strip failed to load:', err);
+      // Keep container visible with label even if fetch fails
+      // container.style.display = 'none';
     });
 })();
