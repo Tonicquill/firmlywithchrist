@@ -141,6 +141,21 @@
     window.addEventListener('scroll', updateParallax, { passive: true });
     updateParallax();
   }
+
+  // Reading time estimation
+  const articleBody = document.querySelector('[data-pagefind-body]');
+  const heroMeta = document.querySelector('.hero-meta');
+  if (articleBody && heroMeta && !heroMeta.querySelector('.reading-time')) {
+    const text = articleBody.innerText || articleBody.textContent || '';
+    const wordCount = text.trim().split(/\s+/).filter(function (w) { return w.length > 0; }).length;
+    const minutes = Math.max(1, Math.ceil(wordCount / 220));
+    const rt = document.createElement('span');
+    rt.className = 'reading-time';
+    rt.textContent = minutes + ' min read';
+    heroMeta.appendChild(document.createTextNode(' · '));
+    heroMeta.appendChild(rt);
+  }
+
   // Slide carousel (Canva-export presentation viewer)
   document.querySelectorAll('.slide-carousel').forEach(function (carousel) {
     const track = carousel.querySelector('.slide-track');
