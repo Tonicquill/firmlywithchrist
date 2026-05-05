@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direction Evolution — Editorial Warmth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* WARM MINIMALISM — the anti-cold palette */
+    --bg: #FAF7F2;
+    --surface: #F5F0E8;
+    --ink: #2A2A2A;
+    --ink-light: #5A5248;
+    --muted: #8C8379;
+    --border: #E8E0D4;
+    --accent: #A0522D;
+    --accent-light: #C07A5B;
+
+    /* TYPOGRAPHY — serif display + clean body */
+    --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+    --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    /* SPACING */
+    --space-xs: 8px;
+    --space-s: 16px;
+    --space-m: 32px;
+    --space-l: 64px;
+    --space-xl: 96px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ─── GRID ─── */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 var(--space-s);
+  }
+  .container-wide {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 var(--space-s);
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    padding: var(--space-s) 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  .nav-brand:hover { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: var(--space-s);
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+
+  /* ─── ARTICLE HEADER — personal letter feel ─── */
+  .article-header {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-l);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-l);
+  }
+  .article-meta-bar {
+    display: flex;
+    gap: var(--space-s);
+    align-items: center;
+    margin-bottom: var(--space-m);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+  .article-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .article-tag:hover {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+  .reading-time::before {
+    content: "·";
+    margin-right: var(--space-s);
+    color: var(--border);
+  }
+
+  /* ─── HEADLINE — massive serif ─── */
+  .headline {
+    font-family: var(--font-display);
+    font-size: clamp(42px, 6vw, 68px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-m);
+    color: var(--ink);
+  }
+  .headline em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--ink-light);
+  }
+
+  /* ─── DEK ─── */
+  .dek {
+    font-family: var(--font-body);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.45;
+    color: var(--ink-light);
+    max-width: 600px;
+  }
+
+  /* ─── ARTICLE BODY ─── */
+  article {
+    padding-bottom: var(--space-xl);
+  }
+  article p {
+    margin-bottom: var(--space-m);
+    max-width: 680px;
+  }
+  article p strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  article p em {
+    font-style: italic;
+    color: var(--ink-light);
+  }
+
+  /* ─── POP — inline highlight ─── */
+  .pop {
+    display: inline;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 2px 7px;
+    font-weight: 600;
+    font-size: 0.95em;
+    border-radius: 2px;
+  }
+
+  /* ─── SCRIPTURE REF ─── */
+  .scripture-ref {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.92em;
+    cursor: help;
+    border-bottom: 1px dotted var(--accent-light);
+    transition: border-bottom-style 0.2s;
+    text-decoration: none;
+  }
+  .scripture-ref:hover {
+    border-bottom-style: solid;
+  }
+
+  /* ─── SCRIPTURE PULL — screenshot-worthy ─── */
+  .scripture-pull {
+    background: var(--surface);
+    border-left: 4px solid var(--accent);
+    padding: var(--space-l) var(--space-l) var(--space-l) var(--space-l);
+    margin: var(--space-l) 0 var(--space-l) calc(var(--space-s) * -1);
+    max-width: 760px;
+    border-radius: 0 6px 6px 0;
+  }
+  .scripture-pull p {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3.5vw, 32px);
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-s);
+    color: var(--ink);
+  }
+  .scripture-pull cite {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-style: normal;
+  }
+
+  /* ─── KEY STATEMENT — massive, shareable ─── */
+  .key-statement {
+    background: var(--surface);
+    padding: var(--space-l) var(--space-l);
+    margin: var(--space-l) 0 var(--space-l) calc(var(--space-s) * -1);
+    max-width: 760px;
+    border-top: 3px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
+    border-radius: 0;
+  }
+  .key-statement p {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4.5vw, 44px);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  /* ─── RELATED ─── */
+  .related {
+    margin: var(--space-l) 0;
+    font-size: 16px;
+    color: var(--muted);
+  }
+  .related a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.2s;
+  }
+  .related a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  /* ─── SOURCES ─── */
+  .post-sources {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--border);
+  }
+  .sources-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: var(--space-m);
+  }
+  .post-sources ul {
+    list-style: none;
+    margin-bottom: var(--space-m);
+  }
+  .post-sources li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-light);
+    margin-bottom: var(--space-s);
+    padding-left: 20px;
+    position: relative;
+  }
+  .post-sources li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--border);
+  }
+  .post-sources a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.2s;
+  }
+  .post-sources a:hover {
+    border-bottom-color: var(--accent);
+  }
+  .image-credit {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: var(--space-m);
+  }
+
+  /* ─── SHARE ─── */
+  .post-share {
+    margin-top: var(--space-l);
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--border);
+  }
+  .share-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: var(--space-m);
+  }
+  .share-buttons {
+    display: flex;
+    gap: var(--space-s);
+    flex-wrap: wrap;
+  }
+  .share-buttons button {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+  }
+  .share-buttons button:hover {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--surface);
+    padding: var(--space-xl) 0;
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-xl);
+  }
+  footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-l);
+    align-items: start;
+  }
+  footer .disclaimer {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-light);
+  }
+  footer .disclaimer strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  footer .footer-links {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+  }
+  footer .footer-links li { margin-bottom: var(--space-xs); }
+  footer .footer-links a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  footer .footer-links a:hover { color: var(--ink); }
+
+  /* ─── ARCHIVE LIST VIEW — The Browser style ─── */
+  .archive-list {
+    padding-top: var(--space-l);
+  }
+  .archive-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-s);
+    align-items: baseline;
+    padding: var(--space-m) 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s;
+    margin: 0 calc(var(--space-s) * -1);
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+    border-radius: 4px;
+  }
+  .archive-list-item:hover {
+    background: var(--surface);
+  }
+  .archive-list-item:hover .archive-title-text {
+    color: var(--accent);
+  }
+  .archive-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+    width: 100px;
+    flex-shrink: 0;
+  }
+  .archive-title-text {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 4px;
+    transition: color 0.2s;
+  }
+  .archive-excerpt {
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.5;
+    max-width: 560px;
+  }
+  .archive-meta {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .archive-meta span {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 640px) {
+    .headline { font-size: 36px; }
+    .dek { font-size: 19px; }
+    .scripture-pull { margin-left: 0; padding: var(--space-m); }
+    .key-statement { margin-left: 0; padding: var(--space-m); }
+    .key-statement p { font-size: 24px; }
+    footer .container { grid-template-columns: 1fr; }
+    footer .footer-links { text-align: left; }
+    .archive-list-item { grid-template-columns: 1fr; }
+    .archive-date { width: auto; margin-bottom: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="container">
+    <a class="nav-brand" href="#">Firmly With Christ</a>
+    <ul class="nav-links">
+      <li><a href="#article">Today</a></li>
+      <li><a href="#archive">Read more</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══ ARTICLE ═══ -->
+<article id="article">
+  <header class="article-header container">
+    <div class="article-meta-bar">
+      <a class="article-tag" href="#">Persecution</a>
+      <span>May 4, 2026</span>
+      <span class="reading-time">6 min read</span>
+    </div>
+    <h1 class="headline"><em>"In the name of Jesus,</em> get in the car."</h1>
+    <p class="dek">A UK pastor was arrested for street preaching. An officer mocked him with those words. Scripture says something else about who is really in authority.</p>
+  </header>
+
+  <div class="container">
+    <p><strong>Steve Maile</strong> is 66 years old. He is a grandfather. He pastors Oasis City Church in Watford, England. On April 18, while preaching the gospel in the town centre, he was handcuffed so tightly he needed medical splints afterward, bundled into a police car while his family watched, and mocked by an officer who told him, <em>"In the name of Jesus, get in the car."</em></p>
+
+    <p>The charge was a Section 5 public order offence. The real offence was saying that Jesus is Lord in a public square that belongs to Him.</p>
+
+    <p>This is not a human rights story. It is a sovereignty story.</p>
+
+    <p>The state operates as if authority rises from the ballot box or the police station. The Bible says something older and more terrifying.</p>
+
+    <blockquote class="scripture-pull">
+      <p>For the LORD is our Judge, the LORD is our Lawgiver, the LORD is our King; He will save us.</p>
+      <cite>Isaiah 33:22</cite>
+    </blockquote>
+
+    <p>God does not share His throne. Human governments are His ministers, not His rivals. They possess delegated authority, strictly limited by His decree. When a magistrate forbids what God commands, the magistrate has not issued a law. He has issued a blasphemy.</p>
+
+    <p>Peter and the apostles faced the same thing. The Sanhedrin ordered them to stop preaching. Their response was not a petition for religious liberty. It was a declaration of war on the wrong side.</p>
+
+    <blockquote class="scripture-pull">
+      <p>We ought to obey God rather than men.</p>
+      <cite>Acts 5:29</cite>
+    </blockquote>
+
+    <p>To stop preaching because a human official says so is nothing short of mutiny against Christ's headship.</p>
+
+    <p>But here is where Reformed theology refuses the easy narrative. We do not say that God was surprised by this arrest. We say what the early church prayed after Herod and Pontius Pilate conspired to murder Jesus:</p>
+
+    <blockquote class="scripture-pull">
+      <p>For truly against Your holy Servant Jesus, whom You anointed, both Herod and Pontius Pilate, with the Gentiles and the people of Israel, were gathered together to do whatever Your hand and Your purpose determined before to be done.</p>
+      <cite>Acts 4:27-28</cite>
+    </blockquote>
+
+    <p>The same hand that holds the galaxies holds the Hertfordshire police badge. This is not fatalism. It is providence.</p>
+
+    <p>So we do not panic. <span class="scripture-ref" data-full="For which I suffer trouble as an evildoer, even to the point of chains; but the word of God is not chained.">2 Timothy 2:9</span> says the word of God is not chained.</p>
+
+    <p><strong>John Huss</strong> taught that <em>"to resist him is not a sin, it is a mandate."</em> <strong>Martin Luther</strong> said: <em>"Here I stand."</em> <strong>John Calvin</strong> wrote that Christ alone is the Head over all things to the church.</p>
+
+    <p>They were not fighting for religious freedom. They were fighting for the freedom of God to be God.</p>
+
+    <p>The officer who mocked Steve Maile treated the name of the risen King like a parking ticket.</p>
+
+    <p>He will learn better. Every knee will bow. The question is not whether Jesus is King. The question is whether the Hertfordshire Police will recognize it now, or on the day when recognition comes too late.</p>
+
+    <div class="key-statement">
+      <p>The state may have the keys to a cell. Christ has the keys to death and Hades. Preach anyway.</p>
+    </div>
+
+    <p class="related">Related: <a href="#">100,000 subscribers. 5 years in prison.</a></p>
+
+    <div class="post-sources">
+      <p class="sources-label">Sources</p>
+      <ul>
+        <li>CBN News. (2026, May 1). <em>UK Pastor Exposes Shocking Details About His Dramatic Arrest</em>. <a href="#">cbn.com</a></li>
+        <li>Christian Concern. (2026, April 24). <em>Pastor Steve Maile: Watford arrest</em>. <a href="#">christianconcern.com</a></li>
+        <li>International Christian Concern. (2026, April 27). <em>British Police Arrest Preacher</em>. <a href="#">persecution.org</a></li>
+        <li>Bible verses cited: <a href="#">ESV (BibleGateway)</a></li>
+      </ul>
+      <p class="image-credit">Image: The Apostle Paul in Prison by Rembrandt van Rijn, 1627. Public domain via Wikimedia Commons.</p>
+    </div>
+
+    <div class="post-share">
+      <p class="share-label">Share this</p>
+      <div class="share-buttons">
+        <button type="button">Copy link</button>
+        <button type="button">Discuss on X</button>
+        <button type="button">Copy quote for X</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ═══ ARCHIVE LIST VIEW ═══ -->
+<section id="archive" class="archive-list container">
+  <header style="margin-bottom: var(--space-l); padding-bottom: var(--space-m); border-bottom: 2px solid var(--ink);">
+    <h2 style="font-family: var(--font-display); font-size: 32px; font-weight: 600;">All posts</h2>
+  </header>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 5</span>
+    <div>
+      <div class="archive-title-text">100,000 subscribers. 5 years in prison.</div>
+      <div class="archive-excerpt">Egypt sentenced a Coptic scholar for teaching Christianity online.</div>
+      <div class="archive-meta"><span>Persecution</span> · Acts 4:19-20</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 5</span>
+    <div>
+      <div class="archive-title-text">The video was perfect. It was also a lie.</div>
+      <div class="archive-excerpt">Sora 2 and Google Veo 3 can now make fake speeches indistinguishable from reality.</div>
+      <div class="archive-meta"><span>Truth</span> · John 14:6</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 4</span>
+    <div>
+      <div class="archive-title-text"><em>"In the name of Jesus, get in the car."</em></div>
+      <div class="archive-excerpt">A UK pastor was arrested for street preaching. Scripture says something else about authority.</div>
+      <div class="archive-meta"><span>Persecution</span> · Acts 5:29</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 4</span>
+    <div>
+      <div class="archive-title-text">Rawness is proof. So is the soul.</div>
+      <div class="archive-excerpt">Instagram is pivoting to 'real' content because AI slop is everywhere.</div>
+      <div class="archive-meta"><span>Creation</span> · Genesis 1:27</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 3</span>
+    <div>
+      <div class="archive-title-text">38% of AI spiritual advice is sycophancy. The Bible saw this coming.</div>
+      <div class="archive-excerpt">Anthropic studied 1 million Claude conversations.</div>
+      <div class="archive-meta"><span>Sufficiency of Scripture</span> · 2 Timothy 3:16</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 3</span>
+    <div>
+      <div class="archive-title-text">70 people showed up. It took 25 years.</div>
+      <div class="archive-excerpt">Church attendance rose for the first time in decades.</div>
+      <div class="archive-meta"><span>Ecclesiology</span> · Hebrews 10:24</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 2</span>
+    <div>
+      <div class="archive-title-text">1 in 3 women. The church told her to submit more.</div>
+      <div class="archive-excerpt">The CDC published the numbers this year. The Reformers had a different answer.</div>
+      <div class="archive-meta"><span>Justice</span> · Exodus 22:22</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 1</span>
+    <div>
+      <div class="archive-title-text">Work is not a curse.</div>
+      <div class="archive-excerpt">The curse is toil. The gift is vocation.</div>
+      <div class="archive-meta"><span>Vocation</span> · Genesis 2:15</div>
+    </div>
+  </a>
+
+  <a class="archive-list-item" href="#">
+    <span class="archive-date">May 1</span>
+    <div>
+      <div class="archive-title-text">Your child spends 5 hours a day in worship.</div>
+      <div class="archive-excerpt">Not at church. On a screen.</div>
+      <div class="archive-meta"><span>Idolatry</span> · Exodus 20:3</div>
+    </div>
+  </a>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="container" style="padding: var(--space-xl) 0; border-top: 1px solid var(--border); margin-top: var(--space-xl);">
+  <p style="font-family: var(--font-display); font-size: 28px; font-weight: 600; line-height: 1.3; margin-bottom: var(--space-m); max-width: 640px;">Reformed theology for a shaken world.</p>
+  <p style="font-size: 18px; color: var(--ink-light); max-width: 600px;">Each piece cites biblical text, confessional documents, and historical precedent. Not devotional content. Not a church bulletin. Doctrine applied to life.</p>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <p class="disclaimer"><strong>This is explicitly and unapologetically Reformed theology.</strong> We stand on the confessions, not the consensus. If the content here offends or wounds you, we are sorry for the hurt, but never for the truth. Truth matters. You are free to leave. You are also free to stay and disagree. But the baseline here is Sola Scriptura, confessional alignment, and historical Reformed practice. No performance. No virtue signaling. No influencer tropes. Just doctrine applied to life.</p>
+    <ul class="footer-links">
+      <li><a href="#">Latest</a></li>
+      <li><a href="#archive">Read more</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

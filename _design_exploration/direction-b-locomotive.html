@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direction B — Locomotive / Cinematic Scroll</title>
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --ink: #F5F5F5;
+    --muted: #888888;
+    --dim: #2A2A2A;
+    --accent: #E8E0D4;
+    --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* CINEMATIC HERO — 100vh */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 6vw 8vh;
+    position: relative;
+    background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.6) 60%, var(--bg) 100%),
+                url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Rembrandt_St._Paul_in_Prison.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10,10,10,0.55);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+  }
+  .hero-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 7vw, 84px);
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    text-shadow: 0 2px 40px rgba(0,0,0,0.6);
+  }
+  .hero-dek {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--muted);
+    max-width: 560px;
+    margin-bottom: 24px;
+  }
+  .hero-meta {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+  .hero-meta span {
+    color: var(--accent);
+  }
+
+  /* SCROLL INDICATOR */
+  .scroll-hint {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    animation: breathe 2.5s ease-in-out infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* CONTENT SECTIONS — generous spacing */
+  .section {
+    padding: 15vh 6vw;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .section p {
+    margin-bottom: 32px;
+    font-size: 19px;
+    line-height: 1.75;
+  }
+  .section p strong {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .section .pop {
+    display: inline;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 3px 8px;
+    font-weight: 600;
+    font-size: 0.95em;
+  }
+
+  /* FULL-BLEED BLOCKQUOTE — scene break */
+  .scene {
+    padding: 18vh 6vw;
+    background: linear-gradient(180deg, var(--bg) 0%, #111111 50%, var(--bg) 100%);
+    text-align: center;
+  }
+  .scene-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .scene p {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+    color: var(--ink);
+  }
+  .scene cite {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-style: normal;
+  }
+  .scene-rule {
+    width: 48px;
+    height: 2px;
+    background: var(--dim);
+    margin: 0 auto 40px;
+    border: none;
+  }
+
+  /* SCRIPTURE REF */
+  .scripture-ref {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 0.9em;
+    cursor: help;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  .scripture-ref:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  /* KEY STATEMENT — massive closing scene */
+  .closing-scene {
+    padding: 20vh 6vw;
+    text-align: center;
+    background: #0d0d0d;
+  }
+  .closing-scene p {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* SOURCES — dim section */
+  .sources-section {
+    padding: 10vh 6vw;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .sources-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  .sources-section ul {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+  .sources-section li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 16px;
+    padding-left: 20px;
+    position: relative;
+  }
+  .sources-section li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--dim);
+  }
+  .sources-section a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--dim);
+    transition: border-color 0.3s;
+  }
+  .sources-section a:hover {
+    border-bottom-color: var(--accent);
+  }
+  .image-credit {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 32px;
+  }
+
+  /* SHARE */
+  .share-section {
+    padding: 6vh 6vw 10vh;
+    max-width: 720px;
+    margin: 0 auto;
+    border-top: 1px solid var(--dim);
+  }
+  .share-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .share-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .share-buttons button {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 22px;
+    border: 1px solid var(--dim);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .share-buttons button:hover {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--dim);
+    padding: 48px 6vw 80px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* NAV — minimal fixed */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(10,10,10,0.8) 0%, transparent 100%);
+    pointer-events: none;
+  }
+  nav a, nav span {
+    pointer-events: auto;
+  }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .nav-meta {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#">Firmly With Christ</a>
+  <span class="nav-meta">Persecution · May 4</span>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-label">Read this</div>
+    <h1 class="hero-title">"In the name of Jesus,<br>get in the car."</h1>
+    <p class="hero-dek">A UK pastor was arrested for street preaching. An officer mocked him with those words. Scripture says something else about who is really in authority.</p>
+    <p class="hero-meta"><span>Acts 5:29</span> · <span>Isaiah 33:22</span></p>
+  </div>
+  <div class="scroll-hint">Scroll &darr;</div>
+</section>
+
+<section class="section">
+  <p><strong>Steve Maile</strong> is 66 years old. He is a grandfather. He pastors Oasis City Church in Watford, England. On April 18, while preaching the gospel in the town centre, he was handcuffed so tightly he needed medical splints afterward, bundled into a police car while his family watched, and mocked by an officer who told him, <em>"In the name of Jesus, get in the car."</em></p>
+
+  <p>The charge was a Section 5 public order offence. The real offence was saying that Jesus is Lord in a public square that belongs to Him.</p>
+
+  <p>This is not a human rights story. It is a sovereignty story.</p>
+
+  <p>The state operates as if authority rises from the ballot box or the police station. The Bible says something older and more terrifying.</p>
+</section>
+
+<section class="scene">
+  <div class="scene-inner">
+    <hr class="scene-rule">
+    <p>For the LORD is our Judge, the LORD is our Lawgiver, the LORD is our King; He will save us.</p>
+    <cite>Isaiah 33:22</cite>
+    <hr class="scene-rule" style="margin-top:40px;">
+  </div>
+</section>
+
+<section class="section">
+  <p>God does not share His throne. Human governments are His ministers, not His rivals. They possess delegated authority, strictly limited by His decree. When a magistrate forbids what God commands, the magistrate has not issued a law. He has issued a blasphemy.</p>
+
+  <p>Peter and the apostles faced the same thing. The Sanhedrin ordered them to stop preaching. Their response was not a petition for religious liberty. It was a declaration of war on the wrong side.</p>
+</section>
+
+<section class="scene">
+  <div class="scene-inner">
+    <hr class="scene-rule">
+    <p>We ought to obey God rather than men.</p>
+    <cite>Acts 5:29</cite>
+    <hr class="scene-rule" style="margin-top:40px;">
+  </div>
+</section>
+
+<section class="section">
+  <p>To stop preaching because a human official says so is nothing short of mutiny against Christ's headship.</p>
+
+  <p>But here is where Reformed theology refuses the easy narrative. We do not say that God was surprised by this arrest. We say what the early church prayed after Herod and Pontius Pilate conspired to murder Jesus:</p>
+</section>
+
+<section class="scene">
+  <div class="scene-inner">
+    <hr class="scene-rule">
+    <p>For truly against Your holy Servant Jesus, whom You anointed, both Herod and Pontius Pilate, with the Gentiles and the people of Israel, were gathered together to do whatever Your hand and Your purpose determined before to be done.</p>
+    <cite>Acts 4:27-28</cite>
+    <hr class="scene-rule" style="margin-top:40px;">
+  </div>
+</section>
+
+<section class="section">
+  <p>The same hand that holds the galaxies holds the Hertfordshire police badge. This is not fatalism. It is providence.</p>
+
+  <p>So we do not panic. <span class="scripture-ref" data-full="For which I suffer trouble as an evildoer, even to the point of chains; but the word of God is not chained.">2 Timothy 2:9</span> says the word of God is not chained.</p>
+
+  <p><strong>John Huss</strong> taught that <em>"to resist him is not a sin, it is a mandate."</em> <strong>Martin Luther</strong> said: <em>"Here I stand."</em> <strong>John Calvin</strong> wrote that Christ alone is the Head over all things to the church.</p>
+
+  <p>They were not fighting for religious freedom. They were fighting for the freedom of God to be God.</p>
+
+  <p>The officer who mocked Steve Maile treated the name of the risen King like a parking ticket.</p>
+
+  <p>He will learn better. Every knee will bow. The question is not whether Jesus is King. The question is whether the Hertfordshire Police will recognize it now, or on the day when recognition comes too late.</p>
+</section>
+
+<section class="closing-scene">
+  <p>The state may have the keys to a cell. Christ has the keys to death and Hades. Preach anyway.</p>
+</section>
+
+<section class="sources-section">
+  <p class="sources-label">Sources</p>
+  <ul>
+    <li>CBN News. (2026, May 1). <em>UK Pastor Exposes Shocking Details About His Dramatic Arrest</em>. <a href="https://www.cbn.com" target="_blank" rel="noopener">cbn.com</a></li>
+    <li>Christian Concern. (2026, April 24). <em>Pastor Steve Maile: Watford arrest</em>. <a href="https://christianconcern.com" target="_blank" rel="noopener">christianconcern.com</a></li>
+    <li>International Christian Concern. (2026, April 27). <em>British Police Arrest Preacher</em>. <a href="https://persecution.org" target="_blank" rel="noopener">persecution.org</a></li>
+    <li>Bible verses cited: <a href="https://www.biblegateway.com/passage/?search=Isaiah%2033%3A22%2CActs%205%3A29%2CActs%204%3A27-28%2C2%20Timothy%202%3A9&version=ESV" target="_blank" rel="noopener">ESV (BibleGateway)</a></li>
+  </ul>
+  <p class="image-credit">Image: The Apostle Paul in Prison by Rembrandt van Rijn, 1627. Public domain via Wikimedia Commons.</p>
+</section>
+
+<section class="share-section">
+  <p class="share-label">Share this</p>
+  <div class="share-buttons">
+    <button type="button">Copy link</button>
+    <button type="button">Discuss on X</button>
+    <button type="button">Copy quote for X</button>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Firmly With Christ</strong> — Reformed theology for a shaken world.</p>
+</footer>
+
+</body>
+</html>
