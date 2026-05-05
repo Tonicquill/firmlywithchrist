@@ -3,7 +3,7 @@
    Skill: claude-taste-skill + huashu-design
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Space+Grotesk:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ============================================
    PARAMETERS
@@ -34,6 +34,7 @@
 
   /* Typography */
   --font-display: 'Space Grotesk', sans-serif;
+  --font-hero: 'Cormorant Garamond', 'Source Serif 4', Georgia, serif;
   --font-body: 'Source Serif 4', Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
 
@@ -228,24 +229,35 @@ nav {
 }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  font-weight: 600;
+  font-family: var(--font-hero);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: var(--parchment);
   max-width: 900px;
   text-wrap: balance;
   margin-bottom: var(--space-4);
 }
 
+/* Bold sans counterpunch inside the serif hero title */
+.hero-title strong,
+.hero-title b {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
 .hero-dek {
   font-family: var(--font-body);
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
   color: var(--parchment);
-  opacity: 0.75;
-  max-width: 640px;
+  opacity: 0.7;
+  max-width: 560px;
   text-wrap: pretty;
   margin-bottom: var(--space-5);
 }
@@ -254,21 +266,31 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
-  align-items: baseline;
+  align-items: center;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   letter-spacing: 0.02em;
   color: var(--parchment);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .hero-meta .meta-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3em 0.9em;
+  border: 1px solid var(--ochre);
   color: var(--ochre);
-  opacity: 1;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
   font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.7rem;
+  background: transparent;
+  opacity: 1;
+}
+
+.hero-meta .reading-time {
+  opacity: 1;
 }
 
 .hero-cta {
@@ -1363,7 +1385,7 @@ footer {
   }
 
   .hero-title {
-    font-size: clamp(2.2rem, 8vw, 2.8rem);
+    font-size: clamp(2.2rem, 8vw, 3.4rem);
   }
 
   .post-article {

@@ -142,9 +142,32 @@
     updateParallax();
   }
 
-  // Reading time estimation
+  // Hero meta restructuring: move date label into meta row, add reading time
   const articleBody = document.querySelector('[data-pagefind-body]');
   const heroMeta = document.querySelector('.hero-meta');
+  const heroLabel = document.querySelector('.hero-label');
+
+  if (heroMeta && heroLabel) {
+    const dateText = heroLabel.textContent.trim();
+    if (dateText && !heroMeta.querySelector('.hero-date')) {
+      const dateSpan = document.createElement('span');
+      dateSpan.className = 'hero-date';
+      dateSpan.textContent = dateText;
+      // Insert after meta-tag if present, otherwise at start
+      const metaTag = heroMeta.querySelector('.meta-tag');
+      if (metaTag && metaTag.nextSibling) {
+        heroMeta.insertBefore(document.createTextNode(' · '), metaTag.nextSibling);
+        heroMeta.insertBefore(dateSpan, metaTag.nextSibling);
+      } else if (metaTag) {
+        heroMeta.appendChild(document.createTextNode(' · '));
+        heroMeta.appendChild(dateSpan);
+      } else {
+        heroMeta.insertBefore(dateSpan, heroMeta.firstChild);
+      }
+    }
+    heroLabel.style.display = 'none';
+  }
+
   if (articleBody && heroMeta && !heroMeta.querySelector('.reading-time')) {
     const text = articleBody.innerText || articleBody.textContent || '';
     const wordCount = text.trim().split(/\s+/).filter(function (w) { return w.length > 0; }).length;
