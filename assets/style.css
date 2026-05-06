@@ -802,6 +802,13 @@ nav {
   letter-spacing: 0.02em;
 }
 
+.hero-label a,
+.meta-tag a,
+.card-tag a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* ============================================
    ABOUT SECTION
    ============================================ */

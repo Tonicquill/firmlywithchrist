@@ -4,6 +4,7 @@
     "url": "post/record-highs-empty-wallets.html",
     "date": "2026-05-06",
     "tag": "Providence",
+    "secular_tag": "Finance",
     "excerpt": "S&P 500 hits record high while most Americans feel poorer than ever. Cotton Mather saw this gap coming.",
     "scripture": "Ecclesiastes 4:8 · 1 Timothy 6:17 · Proverbs 27:24 · Mark 8:36"
   },
@@ -12,6 +13,7 @@
     "url": "post/economic-precarity-2026.html",
     "date": "2026-05-06",
     "tag": "Providence",
+    "secular_tag": "Finance",
     "excerpt": "Economic anxiety 2026: Fed says resilient, but inflation and energy prices leave Americans feeling precarious. The Puritans had a word for this.",
     "scripture": "Genesis 47:15 · Psalm 102:4 · James 5:4 · Job 42:5-6"
   },
@@ -20,6 +22,7 @@
     "url": "post/egypt-youtuber.html",
     "date": "2026-05-05",
     "tag": "Persecution",
+    "secular_tag": "Persecution",
     "excerpt": "Christian persecution Egypt 2026: Coptic scholar Augustinos Samaan sentenced to 5 years for teaching Christianity online. The Bible's verdict is different.",
     "scripture": "2 Timothy 3:12 · Matthew 5:10-12"
   },
@@ -28,6 +31,7 @@
     "url": "post/deepfake-truth.html",
     "date": "2026-05-05",
     "tag": "Truth",
+    "secular_tag": "AI",
     "excerpt": "Sora 2 and Google Veo 3 can now make fake speeches indistinguishable from reality. When the image is a lie, where does truth come from?",
     "scripture": "John 14:6 · John 8:44"
   },
@@ -36,6 +40,7 @@
     "url": "post/pastor-arrest.html",
     "date": "2026-05-04",
     "tag": "Persecution",
+    "secular_tag": "Persecution",
     "excerpt": "A UK pastor was arrested for street preaching. An officer mocked him with those words. Scripture says something else about who is really in authority.",
     "scripture": "Acts 5:29 · Isaiah 33:22"
   },
@@ -44,6 +49,7 @@
     "url": "post/rawness-proof.html",
     "date": "2026-05-04",
     "tag": "Creation",
+    "secular_tag": "AI",
     "excerpt": "Instagram is pivoting to 'real' content because AI slop is everywhere. The Bible already explained why a machine can never bear the image of God.",
     "scripture": "Genesis 1:27 · Romans 1:25"
   },
@@ -52,6 +58,7 @@
     "url": "post/ai-sycophancy.html",
     "date": "2026-05-03",
     "tag": "Sufficiency of Scripture",
+    "secular_tag": "AI",
     "excerpt": "Anthropic studied 1 million Claude conversations. Nearly 4 in 10 spiritual conversations produced sycophancy — the machine telling the user what they wanted to hear.",
     "scripture": "Psalm 119:105 · 2 Timothy 3:16–17"
   },
@@ -60,6 +67,7 @@
     "url": "post/church-attendance.html",
     "date": "2026-05-03",
     "tag": "Ecclesiology",
+    "secular_tag": "Culture",
     "excerpt": "The Hartford Institute found median church attendance rose for the first time in decades. The Bible's question is different: why do they gather?",
     "scripture": "Hebrews 10:24-25 · Acts 2:42"
   },
@@ -68,6 +76,7 @@
     "url": "post/domestic-abuse.html",
     "date": "2026-05-02",
     "tag": "Justice",
+    "secular_tag": "Justice",
     "excerpt": "The CDC published the numbers this year. The Reformers had a different answer.",
     "scripture": "Exodus 22:22–24 · Malachi 2:16 · Ephesians 5:25 · Colossians 3:19"
   },
@@ -76,6 +85,7 @@
     "url": "post/young-men-religion.html",
     "date": "2026-05-02",
     "tag": "Demographics",
+    "secular_tag": "Culture",
     "excerpt": "Gallup recorded the reversal this week. Jonathan Edwards would ask: what kind of religion?",
     "scripture": "2 Corinthians 13:5 · Edwards"
   },
@@ -84,6 +94,7 @@
     "url": "post/labor-day.html",
     "date": "2026-05-01",
     "tag": "Vocation",
+    "secular_tag": "Work",
     "excerpt": "The curse is toil. The gift is vocation. And May Day is older than the revolutionaries.",
     "scripture": "Genesis 2:15 · Ephesians 4:28"
   },
@@ -92,6 +103,7 @@
     "url": "post/screen-addiction.html",
     "date": "2026-05-01",
     "tag": "Idolatry",
+    "secular_tag": "Technology",
     "excerpt": "Not at church. On a screen. And the algorithm is a better preacher than you.",
     "scripture": "Exodus 20:3–5 · Deuteronomy 6:4–6"
   },
@@ -100,6 +112,7 @@
     "url": "post/out-of-wedlock.html",
     "date": "2026-05-01",
     "tag": "Covenant",
+    "secular_tag": "Family",
     "excerpt": "The Census Bureau reported the shift in January. The Reformed tradition has something better than shame to offer: the covenant.",
     "scripture": "Malachi 2:14–15 · WCF 24"
   },
@@ -108,6 +121,7 @@
     "url": "post/iran-war.html",
     "date": "2026-05-01",
     "tag": "Lament",
+    "secular_tag": "War",
     "excerpt": "The UN reported the toll from Iran this week. The Bible's response to civilian death is not 'God has a plan.' It is 'How long, O Lord?'",
     "scripture": "Psalm 44 · Psalm 88"
   },
@@ -116,6 +130,7 @@
     "url": "post/codex-h.html",
     "date": "2026-05-01",
     "tag": "Providence",
+    "secular_tag": "History",
     "excerpt": "Monks used 42 pages of a 6th-century Bible as scrap paper. Scientists just found them.",
     "scripture": "Isaiah 40:8 · WCF 1.8"
   }

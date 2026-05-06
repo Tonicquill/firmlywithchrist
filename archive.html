@@ -56,26 +56,41 @@
 
   <div class="archive-filter-bar">
     <span class="archive-filter-label">Filter by:</span>
-    <button class="archive-filter-btn" data-filter="all">All</button>
-    <button class="archive-filter-btn" data-filter="Persecution">Persecution</button>
-    <button class="archive-filter-btn" data-filter="Creation">Creation</button>
-    <button class="archive-filter-btn" data-filter="Justice">Justice</button>
-    <button class="archive-filter-btn" data-filter="Demographics">Demographics</button>
-    <button class="archive-filter-btn" data-filter="Vocation">Vocation</button>
-    <button class="archive-filter-btn" data-filter="Idolatry">Idolatry</button>
-    <button class="archive-filter-btn" data-filter="Covenant">Covenant</button>
-    <button class="archive-filter-btn" data-filter="Lament">Lament</button>
-    <button class="archive-filter-btn" data-filter="Providence">Providence</button>
-    <button class="archive-filter-btn" data-filter="Ecclesiology">Ecclesiology</button>
-    <button class="archive-filter-btn" data-filter="Sufficiency of Scripture">Sufficiency of Scripture</button>
-    <button class="archive-filter-btn" data-filter="Truth">Truth</button>
+    <button class="archive-filter-btn" data-filter-tag="all">All</button>
+    <button class="archive-filter-btn" data-filter-tag="Persecution">Persecution</button>
+    <button class="archive-filter-btn" data-filter-tag="Creation">Creation</button>
+    <button class="archive-filter-btn" data-filter-tag="Justice">Justice</button>
+    <button class="archive-filter-btn" data-filter-tag="Demographics">Demographics</button>
+    <button class="archive-filter-btn" data-filter-tag="Vocation">Vocation</button>
+    <button class="archive-filter-btn" data-filter-tag="Idolatry">Idolatry</button>
+    <button class="archive-filter-btn" data-filter-tag="Covenant">Covenant</button>
+    <button class="archive-filter-btn" data-filter-tag="Lament">Lament</button>
+    <button class="archive-filter-btn" data-filter-tag="Providence">Providence</button>
+    <button class="archive-filter-btn" data-filter-tag="Ecclesiology">Ecclesiology</button>
+    <button class="archive-filter-btn" data-filter-tag="Sufficiency of Scripture">Sufficiency of Scripture</button>
+    <button class="archive-filter-btn" data-filter-tag="Truth">Truth</button>
+  </div>
+
+  <div class="archive-filter-bar">
+    <span class="archive-filter-label">World:</span>
+    <button class="archive-filter-btn" data-filter-secular="all">All</button>
+    <button class="archive-filter-btn" data-filter-secular="Finance">Finance</button>
+    <button class="archive-filter-btn" data-filter-secular="Persecution">Persecution</button>
+    <button class="archive-filter-btn" data-filter-secular="AI">AI</button>
+    <button class="archive-filter-btn" data-filter-secular="Culture">Culture</button>
+    <button class="archive-filter-btn" data-filter-secular="Justice">Justice</button>
+    <button class="archive-filter-btn" data-filter-secular="Work">Work</button>
+    <button class="archive-filter-btn" data-filter-secular="Technology">Technology</button>
+    <button class="archive-filter-btn" data-filter-secular="Family">Family</button>
+    <button class="archive-filter-btn" data-filter-secular="War">War</button>
+    <button class="archive-filter-btn" data-filter-secular="History">History</button>
   </div>
 
   <section class="feed">
     <div class="feed-grid" id="archiveGrid">
 
       <!-- Card: Record Highs -->
-      <a href="post/record-highs-empty-wallets.html" class="post-card fade-in" data-tag="Providence">
+      <a href="post/record-highs-empty-wallets.html" class="post-card fade-in" data-tag="Providence" data-secular="Finance" data-date="2026-05-06" data-scripture="Ecclesiastes 4:8 · 1 Timothy 6:17 · Proverbs 27:24 · Mark 8:36">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flagler_College_Ponce_de_Leon_Hotel_interior_02.jpg/1920px-Flagler_College_Ponce_de_Leon_Hotel_interior_02.jpg" alt="Ponce de Leon Hotel interior, St. Augustine, Florida" loading="lazy">
         </div>
@@ -92,7 +107,7 @@
       </a>
 
       <!-- Card: Economic Precarity -->
-      <a href="post/economic-precarity-2026.html" class="post-card fade-in" data-tag="Providence">
+      <a href="post/economic-precarity-2026.html" class="post-card fade-in" data-tag="Providence" data-secular="Finance" data-date="2026-05-06" data-scripture="Genesis 47:15 · Psalm 102:4 · James 5:4 · Job 42:5-6">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/COSTCO_gas_station.jpg" alt="COSTCO gas station, Eau Claire, Wisconsin, 2024" loading="lazy">
         </div>
@@ -109,7 +124,7 @@
       </a>
 
       <!-- Card: Egypt YouTuber -->
-      <a href="post/egypt-youtuber.html" class="post-card fade-in" data-tag="Persecution">
+      <a href="post/egypt-youtuber.html" class="post-card fade-in" data-tag="Persecution" data-secular="Persecution" data-date="2026-05-05" data-scripture="2 Timothy 3:12 · Matthew 5:10-12">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Joseph_Accused_by_Potiphar%27s_Wife.jpg/1920px-Joseph_Accused_by_Potiphar%27s_Wife.jpg" alt="Joseph Accused by Potiphar's Wife by Rembrandt van Rijn, 1655" loading="lazy">
         </div>
@@ -126,7 +141,7 @@
       </a>
 
       <!-- Card: Deepfake Truth -->
-      <a href="post/deepfake-truth.html" class="post-card fade-in" data-tag="Truth">
+      <a href="post/deepfake-truth.html" class="post-card fade-in" data-tag="Truth" data-secular="AI" data-date="2026-05-05" data-scripture="John 14:6 · John 8:44">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Jacopo_tintoretto%2C_cristo_davanti_a_pilato%2C_1564-66%2C_01.jpg/1920px-Jacopo_tintoretto%2C_cristo_davanti_a_pilato%2C_1564-66%2C_01.jpg" alt="Christ Before Pilate by Tintoretto, c. 1566-1567" loading="lazy">
         </div>
@@ -143,7 +158,7 @@
       </a>
 
       <!-- Card: Pastor Arrest -->
-      <a href="post/pastor-arrest.html" class="post-card fade-in" data-tag="Persecution">
+      <a href="post/pastor-arrest.html" class="post-card fade-in" data-tag="Persecution" data-secular="Persecution" data-date="2026-05-04" data-scripture="Acts 5:29 · Isaiah 33:22">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Rembrandt_St._Paul_in_Prison.jpg" alt="The Apostle Paul in Prison by Rembrandt van Rijn, 1627" loading="lazy">
         </div>
@@ -160,7 +175,7 @@
       </a>
 
       <!-- Card: Rawness Proof -->
-      <a href="post/rawness-proof.html" class="post-card fade-in" data-tag="Creation">
+      <a href="post/rawness-proof.html" class="post-card fade-in" data-tag="Creation" data-secular="AI" data-date="2026-05-04" data-scripture="Genesis 1:27 · Romans 1:25">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bruegel%2C_Tower_of_Babel_%28Kunsthistorisches_Museum%2C_Vienna%29.jpg/1280px-Bruegel%2C_Tower_of_Babel_%28Kunsthistorisches_Museum%2C_Vienna%29.jpg" alt="The Tower of Babel by Pieter Bruegel the Elder, c. 1563" loading="lazy">
         </div>
@@ -177,7 +192,7 @@
       </a>
 
       <!-- Card: AI Sycophancy -->
-      <a href="post/ai-sycophancy.html" class="post-card fade-in" data-tag="Sufficiency of Scripture">
+      <a href="post/ai-sycophancy.html" class="post-card fade-in" data-tag="Sufficiency of Scripture" data-secular="AI" data-date="2026-05-03" data-scripture="Psalm 119:105 · 2 Timothy 3:16–17">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Hunt-light-of-the-world.jpeg" alt="The Light of the World by William Holman Hunt, c. 1851–1856" loading="lazy">
         </div>
@@ -194,7 +209,7 @@
       </a>
 
       <!-- Card: Church Attendance -->
-      <a href="post/church-attendance.html" class="post-card fade-in" data-tag="Ecclesiology">
+      <a href="post/church-attendance.html" class="post-card fade-in" data-tag="Ecclesiology" data-secular="Culture" data-date="2026-05-03" data-scripture="Hebrews 10:24-25 · Acts 2:42">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Pieter_Saenredam_-_The_Interior_of_the_Church_of_St_Catherine%2C_Utrecht_NTII_UPH_446733.jpg" alt="The Interior of the Church of St Catherine, Utrecht by Pieter Saenredam, 1636" loading="lazy">
         </div>
@@ -211,7 +226,7 @@
       </a>
 
       <!-- Card: Domestic Abuse -->
-      <a href="post/domestic-abuse.html" class="post-card fade-in" data-tag="Justice">
+      <a href="post/domestic-abuse.html" class="post-card fade-in" data-tag="Justice" data-secular="Justice" data-date="2026-05-02" data-scripture="Exodus 22:22–24 · Malachi 2:16 · Ephesians 5:25 · Colossians 3:19">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Corot_-_Mother_Protecting_Her_Child%2C_1855-1858.jpg" alt="Mother Protecting Her Child by Corot, 1855–1858" loading="lazy">
         </div>
@@ -228,7 +243,7 @@
       </a>
 
       <!-- Card: Young Men Religion -->
-      <a href="post/young-men-religion.html" class="post-card fade-in" data-tag="Demographics">
+      <a href="post/young-men-religion.html" class="post-card fade-in" data-tag="Demographics" data-secular="Culture" data-date="2026-05-02" data-scripture="2 Corinthians 13:5 · Edwards">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Rembrandt_van_Rijn_-_Christ_Preaching_%28The_Hundred_Guilder_Print%29_-_Google_Art_Project.jpg" alt="Christ Preaching (The Hundred Guilder Print) by Rembrandt, c. 1649" loading="lazy">
         </div>
@@ -245,7 +260,7 @@
       </a>
 
       <!-- Card: Labor Day -->
-      <a href="post/labor-day.html" class="post-card fade-in" data-tag="Vocation">
+      <a href="post/labor-day.html" class="post-card fade-in" data-tag="Vocation" data-secular="Work" data-date="2026-05-01" data-scripture="Genesis 2:15 · Ephesians 4:28">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg" alt="Parable of the Laborers in the Vineyard by Rembrandt, 1637" loading="lazy">
         </div>
@@ -262,7 +277,7 @@
       </a>
 
       <!-- Card: Screen Addiction -->
-      <a href="post/screen-addiction.html" class="post-card fade-in" data-tag="Idolatry">
+      <a href="post/screen-addiction.html" class="post-card fade-in" data-tag="Idolatry" data-secular="Technology" data-date="2026-05-01" data-scripture="Exodus 20:3–5 · Deuteronomy 6:4–6">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/De_dans_om_het_gouden_kalf_Rijksmuseum_SK-A-3841.jpeg" alt="The Worship of the Golden Calf by Lucas van Leyden, c. 1530" loading="lazy">
         </div>
@@ -279,7 +294,7 @@
       </a>
 
       <!-- Card: Out of Wedlock -->
-      <a href="post/out-of-wedlock.html" class="post-card fade-in" data-tag="Covenant">
+      <a href="post/out-of-wedlock.html" class="post-card fade-in" data-tag="Covenant" data-secular="Family" data-date="2026-05-01" data-scripture="Malachi 2:14–15 · WCF 24">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Lotto%2C_Lorenzo_-_Husband_and_Wife.jpg" alt="Husband and Wife by Lorenzo Lotto, 1523" loading="lazy">
         </div>
@@ -296,7 +311,7 @@
       </a>
 
       <!-- Card: Iran War -->
-      <a href="post/iran-war.html" class="post-card fade-in" data-tag="Lament">
+      <a href="post/iran-war.html" class="post-card fade-in" data-tag="Lament" data-secular="War" data-date="2026-05-01" data-scripture="Psalm 44 · Psalm 88">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Giotto_-_Scrovegni_-_-36-_-_Lamentation_%28The_Mourning_of_Christ%29_adj.jpg" alt="Lamentation (The Mourning of Christ) by Giotto di Bondone, c. 1305" loading="lazy">
         </div>
@@ -313,7 +328,7 @@
       </a>
 
       <!-- Card: Codex H -->
-      <a href="post/codex-h.html" class="post-card fade-in" data-tag="Providence">
+      <a href="post/codex-h.html" class="post-card fade-in" data-tag="Providence" data-secular="History" data-date="2026-05-01" data-scripture="Isaiah 40:8 · WCF 1.8">
         <div class="card-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Codex_Sangallensis_18_%28146%29.jpg" alt="Codex Sangallensis 18, 9th-century palimpsest" loading="lazy">
         </div>
@@ -340,6 +355,7 @@
       <ul class="footer-links">
         <li><a href="index.html#today">Latest</a></li>
         <li><a href="archive.html">Archive</a></li>
+        <li><a href="verses.html">Scripture Index</a></li>
         <li><a href="index.html#about">About</a></li>
       </ul>
     </div>
@@ -350,23 +366,100 @@
   <script>
     (function () {
       'use strict';
-      const buttons = document.querySelectorAll('.archive-filter-btn[data-filter]');
+      const tagButtons = document.querySelectorAll('.archive-filter-btn[data-filter-tag]');
+      const secularButtons = document.querySelectorAll('.archive-filter-btn[data-filter-secular]');
       const cards = document.querySelectorAll('.post-card[data-tag]');
 
-      buttons.forEach(function (btn) {
+      let activeTag = 'all';
+      let activeSecular = 'all';
+      let activeDate = null;
+      let activeScripture = null;
+
+      function applyFilters() {
+        cards.forEach(function (card) {
+          const tagMatch = activeTag === 'all' || card.dataset.tag === activeTag;
+          const secularMatch = activeSecular === 'all' || card.dataset.secular === activeSecular;
+          const dateMatch = !activeDate || card.dataset.date === activeDate;
+          const scriptureMatch = !activeScripture || (card.dataset.scripture && card.dataset.scripture.indexOf(activeScripture) !== -1);
+          if (tagMatch && secularMatch && dateMatch && scriptureMatch) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      function updateButtons(buttons, activeValue, attr) {
+        buttons.forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute(attr) === activeValue);
+        });
+      }
+
+      tagButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
-          const filter = btn.dataset.filter;
+          activeTag = btn.dataset.filterTag;
+          updateButtons(tagButtons, activeTag, 'data-filter-tag');
+          applyFilters();
+        });
+      });
 
-          buttons.forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
+      secularButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          activeSecular = btn.dataset.filterSecular;
+          updateButtons(secularButtons, activeSecular, 'data-filter-secular');
+          applyFilters();
+        });
+      });
 
-          cards.forEach(function (card) {
-            if (filter === 'all' || card.dataset.tag === filter) {
-              card.style.display = '';
-            } else {
-              card.style.display = 'none';
-            }
-          });
+      // Parse URL params on load
+      const params = new URLSearchParams(window.location.search);
+      const urlTag = params.get('tag');
+      const urlSecular = params.get('secular');
+      const urlDate = params.get('date');
+      const urlScripture = params.get('scripture');
+
+      if (urlTag) {
+        activeTag = urlTag;
+        updateButtons(tagButtons, activeTag, 'data-filter-tag');
+      }
+      if (urlSecular) {
+        activeSecular = urlSecular;
+        updateButtons(secularButtons, activeSecular, 'data-filter-secular');
+      }
+      if (urlDate) {
+        activeDate = urlDate;
+      }
+      if (urlScripture) {
+        activeScripture = urlScripture;
+      }
+
+      applyFilters();
+
+      // Make card dates clickable
+      document.querySelectorAll('.card-meta span:first-child').forEach(function (span) {
+        span.style.cursor = 'pointer';
+        span.style.textDecoration = 'underline';
+        span.style.textDecorationColor = 'var(--ochre)';
+        span.style.textUnderlineOffset = '2px';
+        span.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          const date = span.closest('.post-card').dataset.date;
+          if (date) window.location.href = 'archive.html?date=' + encodeURIComponent(date);
+        });
+      });
+
+      // Make card tags clickable
+      document.querySelectorAll('.card-tag').forEach(function (span) {
+        span.style.cursor = 'pointer';
+        span.style.textDecoration = 'underline';
+        span.style.textDecorationColor = 'var(--ochre)';
+        span.style.textUnderlineOffset = '2px';
+        span.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          const tag = span.closest('.post-card').dataset.tag;
+          if (tag) window.location.href = 'archive.html?tag=' + encodeURIComponent(tag);
         });
       });
     })();
