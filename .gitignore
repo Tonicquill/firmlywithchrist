@@ -1,2 +1,8 @@
 # Local Netlify folder
 .netlify
+
+# Migration backups
+*_backup.html
+post_backup/
+_templates_hide
+__design_exploration_hide

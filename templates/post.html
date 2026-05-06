@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{excerpt}}">
+
+  <meta property="og:title" content="{{pageTitle}}">
+  <meta property="og:description" content="{{excerpt}}">
+  <meta property="og:type" content="{{ogType}}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{pageTitle}}">
+  <meta name="twitter:description" content="{{excerpt}}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{title}}",
+    "description": "{{excerpt}}",
+    "datePublished": "{{date}}",
+    "author": {
+      "@type": "Organization",
+      "name": "Firmly With Christ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Firmly With Christ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tonicquill.github.io/firmlywithchrist/assets/logo.png"
+      }
+    },
+    "keywords": ["Reformed theology", "{{tag}}", "{{secular_tag}}"]
+  }
+  </script>
+
+  <link rel="stylesheet" href="{{basePath}}assets/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="{{basePath}}index.html" class="nav-brand"><img src="{{basePath}}assets/logo.png" class="brand-mark" alt="">
+      Firmly With Christ
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="{{basePath}}index.html">Today</a></li>
+      <li><a href="{{basePath}}archive.html">Read more</a></li>
+      <li><a href="{{basePath}}index.html#about">About</a></li>
+    </ul>
+    <a href="{{basePath}}archive.html" class="nav-search-trigger" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  </nav>
+
+  <div class="trending-strip" id="trendingStrip">
+    <div class="trending-strip-inner">
+      <span class="trending-label">Latest</span>
+    </div>
+  </div>
+
+  <section class="hero-section">
+    <div class="hero-bg" data-parallax="-0.3" style="background-image: url('{{hero_image}}');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label fade-in"><a href="{{basePath}}archive.html?date={{date}}">{{date_display}}</a></p>
+      <h1 class="hero-title fade-in stagger-1" data-pagefind-meta="title">{{title}}</h1>
+      <p class="hero-dek fade-in stagger-2">{{excerpt}}</p>
+      <div class="hero-meta fade-in stagger-3">
+        <span class="meta-tag" data-pagefind-filter="tag"><a href="{{basePath}}archive.html?tag={{tag}}">{{tag}}</a></span>
+        {{scripture_spans}}
+      </div>
+    </div>
+  </section>
+
+  <article class="post-article" data-pagefind-body>
+    {{content}}
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="disclaimer">
+        <strong>Firmly With Christ</strong> is a confessionally Reformed publication. We work from Scripture as final authority, informed by the Westminster Confession of Faith, the Three Forms of Unity, and the Reformed tradition. Every piece is theologically verified before publication. <a href="{{basePath}}about-editorial-standards.html">Read our editorial standards</a>.
+      </p>
+      <ul class="footer-links">
+        <li><a href="{{basePath}}index.html">Latest</a></li>
+        <li><a href="{{basePath}}archive.html">Archive</a></li>
+        <li><a href="{{basePath}}verses.html">Scripture Index</a></li>
+        <li><a href="{{basePath}}index.html#about">About</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="{{basePath}}assets/main.js?v=4"></script>
+  <script src="{{basePath}}assets/trending.js"></script>
+</body>
+</html>
