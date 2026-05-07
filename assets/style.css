@@ -287,6 +287,21 @@ nav {
   opacity: 1;
 }
 
+.hero-meta .meta-geo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3em 0.9em;
+  border: 1px solid oklch(95% 0.02 100 / 0.3);
+  color: var(--parchment);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: transparent;
+  opacity: 0.75;
+}
+
 .hero-meta .reading-time {
   opacity: 1;
 }
@@ -867,6 +882,7 @@ nav {
 
 .hero-label a,
 .meta-tag a,
+.meta-geo a,
 .card-tag a {
   color: inherit;
   text-decoration: none;
