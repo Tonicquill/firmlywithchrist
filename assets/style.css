@@ -1,6 +1,7 @@
 /* ============================================
    DESIGN SYSTEM — Firmly With Christ
-   Skill: claude-taste-skill + huashu-design
+   Reformed theology. Malaysian / SE Asian texture.
+   Batik backgrounds sourced from Wikimedia Commons.
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Space+Grotesk:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -8,29 +9,19 @@
 /* ============================================
    PARAMETERS
    ============================================ */
-/* DESIGN_VARIANCE: 6 — varied sizing, partial asymmetry, editorial overlap */
-/* MOTION_INTENSITY: 2 — subtle hover, scroll fade-ins, no spectacle */
-/* VISUAL_DENSITY: 4 — content-forward with deliberate breathing room */
 
 :root {
-  /* OKLCH Primary Palette */
+  /* Primary Palette */
   --midnight: oklch(12% 0.03 260);
-  --parchment: oklch(95% 0.01 80);
-  --stone: oklch(93% 0.01 80);
-  --ivory: oklch(97% 0.01 80);
+  --parchment: oklch(95% 0.02 85);
+  --stone: oklch(90% 0.015 82);
+  --ivory: oklch(97% 0.01 85);
 
-  /* OKLCH Accents */
-  --ochre: oklch(68% 0.12 80);
-  --rose: oklch(55% 0.14 25);
-  --sage: oklch(55% 0.06 145);
-
-  /* Fallback Hex */
-  --midnight-fallback: #0B1120;
-  --parchment-fallback: #F4F1EA;
-  --stone-fallback: #EBE7DE;
-  --ochre-fallback: #C9975B;
-  --rose-fallback: #A85D5D;
-  --sage-fallback: #6B7A6A;
+  /* Accents */
+  --ochre: oklch(65% 0.11 75);
+  --ochre-deep: oklch(50% 0.12 70);
+  --rose: oklch(50% 0.13 20);
+  --sage: oklch(48% 0.06 150);
 
   /* Typography */
   --font-display: 'Space Grotesk', sans-serif;
@@ -38,7 +29,7 @@
   --font-body: 'Source Serif 4', Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Spacing Scale (8px grid) */
+  /* Spacing Scale */
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -77,9 +68,12 @@ body {
   font-size: 1.15rem;
   line-height: 1.75;
   color: var(--midnight);
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cpath d='M0 45 Q22 30 45 45 Q68 60 90 45' fill='none' stroke='rgb(201,151,91)' stroke-width='1' opacity='0.4'/%3E%3Cpath d='M0 20 Q22 7 45 20 Q68 33 90 20' fill='none' stroke='rgb(201,151,91)' stroke-width='0.7' opacity='0.25'/%3E%3Cpath d='M0 70 Q22 57 45 70 Q68 83 90 70' fill='none' stroke='rgb(201,151,91)' stroke-width='0.7' opacity='0.25'/%3E%3C/svg%3E") repeat,
-    var(--parchment);
+  background-color: var(--parchment);
+  background-image:
+    linear-gradient(0deg, oklch(95% 0.02 85 / 0.85) 0%, oklch(95% 0.02 85 / 0.85) 100%),
+    url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Ragam_Hias_Sunda_-_Cupat_Manggu.svg');
+  background-size: 300px 300px;
+  background-repeat: repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-wrap: pretty;
@@ -484,9 +478,12 @@ nav {
   padding: var(--space-6) var(--space-4);
   text-align: center;
   position: relative;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='0' cy='0' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='80' cy='0' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='0' cy='80' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='80' cy='80' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3C/svg%3E") repeat,
-    var(--stone);
+  background-color: var(--stone);
+  background-image:
+    linear-gradient(0deg, oklch(90% 0.015 82 / 0.82) 0%, oklch(90% 0.015 82 / 0.82) 100%),
+    url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Ragam_Hias_Sunda_-_Bilik_I.svg');
+  background-size: 250px 250px;
+  background-repeat: repeat;
   overflow: hidden;
 }
 
@@ -581,9 +578,12 @@ figure.post-image figcaption a:hover {
   padding: var(--space-5) var(--space-4);
   text-align: center;
   position: relative;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='2' fill='rgb(168,93,93)' opacity='0.45'/%3E%3Ccircle cx='24' cy='24' r='9' fill='none' stroke='rgb(168,93,93)' stroke-width='0.5' opacity='0.3'/%3E%3C/svg%3E") repeat,
-    var(--ivory);
+  background-color: var(--ivory);
+  background-image:
+    linear-gradient(0deg, oklch(97% 0.01 85 / 0.88) 0%, oklch(97% 0.01 85 / 0.88) 100%),
+    url('https://upload.wikimedia.org/wikipedia/commons/b/bd/Collectie_NMvWereldculturen%2C_RV-847-85%2C_Batikpatroon%2C_%27Kawung_picis%27%2C_voor_1891.jpg');
+  background-size: 400px 400px;
+  background-repeat: repeat;
   border-top: 2px solid var(--ochre);
   border-bottom: 2px solid var(--ochre);
 }
@@ -734,10 +734,6 @@ figure.post-image figcaption a:hover {
   text-underline-offset: 2px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* Inline citations */
 sup.cite a {
   font-family: var(--font-mono);
@@ -845,7 +841,12 @@ ol.cite-sources a:hover {
    FEED SECTION
    ============================================ */
 .feed {
-  background: linear-gradient(180deg, var(--stone) 0%, var(--parchment) 100%);
+  background-color: var(--stone);
+  background-image:
+    linear-gradient(180deg, oklch(90% 0.015 82 / 0.78) 0%, oklch(93% 0.02 85 / 0.85) 100%),
+    url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Collectie_NMvWereldculturen%2C_RV-847-23%2C_Batikpatroon%2C_%27Endol-endol%27%2C_voor_1891.jpg');
+  background-size: 500px 500px;
+  background-repeat: repeat;
   padding: var(--space-10) var(--space-4);
 }
 
