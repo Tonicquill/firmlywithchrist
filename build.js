@@ -267,11 +267,13 @@ function build() {
 
   const uniqueTags = [...new Set(posts.map(p => p.tag))].sort();
   const uniqueSecularTags = [...new Set(posts.map(p => p.secular_tag))].sort();
+  const uniqueGeoTags = [...new Set(posts.map(p => p.geo).filter(Boolean))].sort();
 
   const archiveHtml = render(archiveTemplate, {
     posts: processedPosts.map(post => ({ ...post, basePath: '' })),
     tags: uniqueTags.map(tag => ({ tag })),
     secularTags: uniqueSecularTags.map(tag => ({ tag })),
+    geoTags: uniqueGeoTags.map(tag => ({ tag })),
     basePath: ''
   });
   write('archive.html', archiveHtml);

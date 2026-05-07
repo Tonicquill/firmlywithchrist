@@ -78,10 +78,18 @@
     {{/each}}
   </div>
 
+  <div class="archive-filter-bar">
+    <span class="archive-filter-label">Region:</span>
+    <button class="archive-filter-btn" data-filter-geo="all">All</button>
+    {{#each geoTags}}
+    <button class="archive-filter-btn" data-filter-geo="{{tag}}">{{tag}}</button>
+    {{/each}}
+  </div>
+
   <section class="feed">
     <div class="feed-grid" id="archiveGrid">
       {{#each posts}}
-      <a href="{{url}}" class="post-card fade-in" data-tag="{{tag}}" data-secular="{{secular_tag}}" data-date="{{date}}" data-scripture="{{scripture_string}}">
+      <a href="{{url}}" class="post-card fade-in" data-tag="{{tag}}" data-secular="{{secular_tag}}" data-geo="{{geo}}" data-date="{{date}}" data-scripture="{{scripture_string}}">
         <div class="card-image">
           <img src="{{hero_image}}" alt="{{title}}" loading="lazy">
         </div>
@@ -90,6 +98,7 @@
           <div class="card-meta">
             <span>{{date_display}}</span>
             <span class="card-tag" data-pagefind-filter="tag">{{tag}}</span>
+            <span class="card-geo" data-pagefind-filter="geo">{{geo}}</span>
           </div>
           <h3 class="card-title">{{title}}</h3>
           <p class="card-excerpt">{{excerpt}}</p>
@@ -121,10 +130,12 @@
       'use strict';
       const tagButtons = document.querySelectorAll('.archive-filter-btn[data-filter-tag]');
       const secularButtons = document.querySelectorAll('.archive-filter-btn[data-filter-secular]');
+      const geoButtons = document.querySelectorAll('.archive-filter-btn[data-filter-geo]');
       const cards = document.querySelectorAll('.post-card[data-tag]');
 
       let activeTag = 'all';
       let activeSecular = 'all';
+      let activeGeo = 'all';
       let activeDate = null;
       let activeScripture = null;
 
@@ -132,9 +143,10 @@
         cards.forEach(function (card) {
           const tagMatch = activeTag === 'all' || card.dataset.tag === activeTag;
           const secularMatch = activeSecular === 'all' || card.dataset.secular === activeSecular;
+          const geoMatch = activeGeo === 'all' || card.dataset.geo === activeGeo;
           const dateMatch = !activeDate || card.dataset.date === activeDate;
           const scriptureMatch = !activeScripture || (card.dataset.scripture && card.dataset.scripture.indexOf(activeScripture) !== -1);
-          if (tagMatch && secularMatch && dateMatch && scriptureMatch) {
+          if (tagMatch && secularMatch && geoMatch && dateMatch && scriptureMatch) {
             card.style.display = '';
           } else {
             card.style.display = 'none';
@@ -148,6 +160,9 @@
         });
         secularButtons.forEach(function (btn) {
           btn.classList.toggle('active', btn.dataset.filterSecular === activeSecular);
+        });
+        geoButtons.forEach(function (btn) {
+          btn.classList.toggle('active', btn.dataset.filterGeo === activeGeo);
         });
       }
 
@@ -167,6 +182,14 @@
         });
       });
 
+      geoButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          activeGeo = btn.dataset.filterGeo;
+          applyFilters();
+          updateButtons();
+        });
+      });
+
       // Parse URL params for deep-linking
       const params = new URLSearchParams(window.location.search);
       if (params.has('tag')) {
@@ -174,6 +197,9 @@
       }
       if (params.has('secular')) {
         activeSecular = params.get('secular');
+      }
+      if (params.has('geo')) {
+        activeGeo = params.get('geo');
       }
       if (params.has('date')) {
         activeDate = params.get('date');
