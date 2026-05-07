@@ -77,7 +77,9 @@ body {
   font-size: 1.15rem;
   line-height: 1.75;
   color: var(--midnight);
-  background: var(--parchment);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cpath d='M0 45 Q22 30 45 45 Q68 60 90 45' fill='none' stroke='rgb(201,151,91)' stroke-width='1' opacity='0.4'/%3E%3Cpath d='M0 20 Q22 7 45 20 Q68 33 90 20' fill='none' stroke='rgb(201,151,91)' stroke-width='0.7' opacity='0.25'/%3E%3Cpath d='M0 70 Q22 57 45 70 Q68 83 90 70' fill='none' stroke='rgb(201,151,91)' stroke-width='0.7' opacity='0.25'/%3E%3C/svg%3E") repeat,
+    var(--parchment);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-wrap: pretty;
@@ -482,7 +484,9 @@ nav {
   padding: var(--space-6) var(--space-4);
   text-align: center;
   position: relative;
-  background: var(--stone);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='0' cy='0' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='80' cy='0' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='0' cy='80' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3Ccircle cx='80' cy='80' r='16' fill='none' stroke='rgb(107,122,106)' stroke-width='1' opacity='0.45'/%3E%3C/svg%3E") repeat,
+    var(--stone);
   overflow: hidden;
 }
 
@@ -539,13 +543,47 @@ nav {
   pointer-events: none;
 }
 
+/* Inline post images */
+figure.post-image {
+  margin: var(--space-5) 0;
+  padding: 0;
+}
+
+figure.post-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+figure.post-image figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--midnight);
+  opacity: 0.6;
+  margin-top: var(--space-2);
+  line-height: 1.5;
+}
+
+figure.post-image figcaption a {
+  color: var(--ochre);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+figure.post-image figcaption a:hover {
+  opacity: 0.7;
+}
+
 /* Key statements — article mic-drop moments, distinct from scripture */
 .key-statement {
   margin: var(--space-6) 0;
   padding: var(--space-5) var(--space-4);
   text-align: center;
   position: relative;
-  background: var(--ivory);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='2' fill='rgb(168,93,93)' opacity='0.45'/%3E%3Ccircle cx='24' cy='24' r='9' fill='none' stroke='rgb(168,93,93)' stroke-width='0.5' opacity='0.3'/%3E%3C/svg%3E") repeat,
+    var(--ivory);
   border-top: 2px solid var(--ochre);
   border-bottom: 2px solid var(--ochre);
 }
@@ -694,6 +732,87 @@ nav {
   color: var(--midnight);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Inline citations */
+sup.cite a {
+  font-family: var(--font-mono);
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--ochre);
+  text-decoration: none;
+  vertical-align: super;
+  line-height: 0;
+}
+
+sup.cite a:hover {
+  text-decoration: underline;
+  opacity: 0.75;
+}
+
+/* Numbered source list */
+ol.cite-sources {
+  counter-reset: cite;
+  list-style: none;
+  padding-left: 0;
+}
+
+ol.cite-sources li {
+  counter-increment: cite;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--midnight);
+  opacity: 0.75;
+  margin-bottom: var(--space-2);
+  padding-left: 2.2em;
+  position: relative;
+  scroll-margin-top: var(--space-4);
+}
+
+ol.cite-sources li::before {
+  content: "[" counter(cite) "]";
+  position: absolute;
+  left: 0;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--ochre);
+  opacity: 0.8;
+  font-size: 0.85em;
+}
+
+ol.cite-sources li:target {
+  background: oklch(68% 0.12 80 / 0.1);
+  border-radius: 4px;
+  padding: 0.2em 0.5em 0.2em 2.2em;
+  margin-left: -0.5em;
+}
+
+ol.cite-sources a {
+  color: var(--ochre);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+ol.cite-sources a:hover {
+  opacity: 0.7;
+}
+
+.cite-backlink {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  text-decoration: none;
+  margin-left: 0.35em;
+  opacity: 0.45;
+  color: var(--ochre);
+}
+
+.cite-backlink:hover {
+  opacity: 1;
 }
 
 /* Post close */
