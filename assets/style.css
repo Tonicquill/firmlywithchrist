@@ -418,6 +418,49 @@ nav {
   border-bottom: 6px solid var(--midnight);
 }
 
+/* Fact vs. fiction comparison table */
+.fact-fiction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-6) 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.fact-fiction-table thead th {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 2px solid var(--midnight);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--midnight);
+}
+
+.fact-fiction-table thead th:first-child {
+  color: oklch(55% 0.08 145);
+}
+
+.fact-fiction-table thead th:last-child {
+  color: oklch(55% 0.14 25);
+}
+
+.fact-fiction-table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid oklch(12% 0.03 260 / 0.1);
+  vertical-align: top;
+}
+
+.fact-fiction-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fact-fiction-table td:first-child {
+  border-right: 1px solid oklch(12% 0.03 260 / 0.08);
+}
+
 /* Pull quotes */
 .scripture-pull {
   margin: var(--space-8) calc(-1 * var(--space-4));
