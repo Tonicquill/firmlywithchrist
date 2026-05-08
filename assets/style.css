@@ -338,6 +338,9 @@ nav {
   padding: var(--space-4) var(--space-4);
   background: var(--midnight);
   border-bottom: 1px solid oklch(100% 0 0 / 0.06);
+  position: sticky;
+  top: calc(64px + 2.5rem);
+  z-index: 850;
 }
 
 /* ============================================
@@ -1183,6 +1186,48 @@ ol.cite-sources a:hover {
 .about-cta:hover {
   background: var(--ochre);
   color: var(--parchment);
+}
+
+/* About page card grid */
+.about-page-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.about-page-cards .about-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page-cards .about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-page-cards .about-card ul,
+.about-page-cards .about-card ol {
+  margin-top: var(--space-2);
+  padding-left: var(--space-4);
+}
+
+.about-page-cards .about-card li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--midnight);
+  opacity: 0.85;
+  margin-bottom: var(--space-2);
+}
+
+.about-page-cards .about-card li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-page-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
