@@ -63,27 +63,33 @@
   </div>
 
   <div class="archive-filter-bar">
-    <span class="archive-filter-label">Filter by:</span>
-    <button class="archive-filter-btn" data-filter-tag="all">All</button>
-    {{#each tags}}
-    <button class="archive-filter-btn" data-filter-tag="{{tag}}">{{tag}}</button>
-    {{/each}}
-  </div>
-
-  <div class="archive-filter-bar">
-    <span class="archive-filter-label">World:</span>
-    <button class="archive-filter-btn" data-filter-secular="all">All</button>
-    {{#each secularTags}}
-    <button class="archive-filter-btn" data-filter-secular="{{tag}}">{{tag}}</button>
-    {{/each}}
-  </div>
-
-  <div class="archive-filter-bar">
-    <span class="archive-filter-label">Region:</span>
-    <button class="archive-filter-btn" data-filter-geo="all">All</button>
-    {{#each geoTags}}
-    <button class="archive-filter-btn" data-filter-geo="{{tag}}">{{tag}}</button>
-    {{/each}}
+    <div class="archive-filter-group">
+      <label class="archive-filter-label" for="filterTag">Filter by</label>
+      <select class="archive-filter-select" id="filterTag" data-filter="tag">
+        <option value="all">All topics</option>
+        {{#each tags}}
+        <option value="{{tag}}">{{tag}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="archive-filter-group">
+      <label class="archive-filter-label" for="filterSecular">World</label>
+      <select class="archive-filter-select" id="filterSecular" data-filter="secular">
+        <option value="all">All categories</option>
+        {{#each secularTags}}
+        <option value="{{tag}}">{{tag}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="archive-filter-group">
+      <label class="archive-filter-label" for="filterGeo">Region</label>
+      <select class="archive-filter-select" id="filterGeo" data-filter="geo">
+        <option value="all">All regions</option>
+        {{#each geoTags}}
+        <option value="{{tag}}">{{tag}}</option>
+        {{/each}}
+      </select>
+    </div>
   </div>
 
   <section class="feed">
@@ -128,9 +134,9 @@
   <script>
     (function () {
       'use strict';
-      const tagButtons = document.querySelectorAll('.archive-filter-btn[data-filter-tag]');
-      const secularButtons = document.querySelectorAll('.archive-filter-btn[data-filter-secular]');
-      const geoButtons = document.querySelectorAll('.archive-filter-btn[data-filter-geo]');
+      const tagSelect = document.getElementById('filterTag');
+      const secularSelect = document.getElementById('filterSecular');
+      const geoSelect = document.getElementById('filterGeo');
       const cards = document.querySelectorAll('.post-card[data-tag]');
 
       let activeTag = 'all';
@@ -154,40 +160,25 @@
         });
       }
 
-      function updateButtons() {
-        tagButtons.forEach(function (btn) {
-          btn.classList.toggle('active', btn.dataset.filterTag === activeTag);
-        });
-        secularButtons.forEach(function (btn) {
-          btn.classList.toggle('active', btn.dataset.filterSecular === activeSecular);
-        });
-        geoButtons.forEach(function (btn) {
-          btn.classList.toggle('active', btn.dataset.filterGeo === activeGeo);
-        });
+      function updateSelects() {
+        if (tagSelect) tagSelect.value = activeTag;
+        if (secularSelect) secularSelect.value = activeSecular;
+        if (geoSelect) geoSelect.value = activeGeo;
       }
 
-      tagButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeTag = btn.dataset.filterTag;
-          applyFilters();
-          updateButtons();
-        });
+      tagSelect.addEventListener('change', function () {
+        activeTag = tagSelect.value;
+        applyFilters();
       });
 
-      secularButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeSecular = btn.dataset.filterSecular;
-          applyFilters();
-          updateButtons();
-        });
+      secularSelect.addEventListener('change', function () {
+        activeSecular = secularSelect.value;
+        applyFilters();
       });
 
-      geoButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeGeo = btn.dataset.filterGeo;
-          applyFilters();
-          updateButtons();
-        });
+      geoSelect.addEventListener('change', function () {
+        activeGeo = geoSelect.value;
+        applyFilters();
       });
 
       // Parse URL params for deep-linking
@@ -224,13 +215,13 @@
           e.stopPropagation();
           activeTag = tagLink.textContent.trim();
           applyFilters();
-          updateButtons();
+          updateSelects();
           return;
         }
       });
 
       applyFilters();
-      updateButtons();
+      updateSelects();
     })();
   </script>
 

@@ -63,125 +63,131 @@
   </div>
 
   <div class="archive-filter-bar">
-    <span class="archive-filter-label">Filter by:</span>
-    <button class="archive-filter-btn" data-filter-tag="all">All</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Conversion">Conversion</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Covenant">Covenant</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Creation">Creation</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Cultural Engagement">Cultural Engagement</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Demographics">Demographics</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Ecclesiology">Ecclesiology</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Idolatry">Idolatry</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Justice">Justice</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Lament">Lament</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Persecution">Persecution</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Perseverance">Perseverance</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Providence">Providence</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Sanctity of Life">Sanctity of Life</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Sufficiency of Scripture">Sufficiency of Scripture</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Truth">Truth</button>
-    
-    <button class="archive-filter-btn" data-filter-tag="Vocation">Vocation</button>
-    
-  </div>
-
-  <div class="archive-filter-bar">
-    <span class="archive-filter-label">World:</span>
-    <button class="archive-filter-btn" data-filter-secular="all">All</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="AI">AI</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Bioethics">Bioethics</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Culture">Culture</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Faith">Faith</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Family">Family</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Finance">Finance</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="History">History</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Human Rights">Human Rights</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Justice">Justice</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Persecution">Persecution</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Politics">Politics</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Religious Freedom">Religious Freedom</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Science">Science</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Technology">Technology</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="War">War</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="Work">Work</button>
-    
-    <button class="archive-filter-btn" data-filter-secular="World Affairs">World Affairs</button>
-    
-  </div>
-
-  <div class="archive-filter-bar">
-    <span class="archive-filter-label">Region:</span>
-    <button class="archive-filter-btn" data-filter-geo="all">All</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Armenia">Armenia</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Canada">Canada</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="China">China</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Egypt">Egypt</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="France">France</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Germany">Germany</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Global">Global</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="India">India</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Indonesia">Indonesia</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Iran">Iran</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Lebanon">Lebanon</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Malaysia">Malaysia</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="North Korea">North Korea</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Palestine/Israel">Palestine/Israel</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="South Korea">South Korea</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Switzerland">Switzerland</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="United Kingdom">United Kingdom</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="United States">United States</button>
-    
-    <button class="archive-filter-btn" data-filter-geo="Vatican City">Vatican City</button>
-    
+    <div class="archive-filter-group">
+      <label class="archive-filter-label" for="filterTag">Filter by</label>
+      <select class="archive-filter-select" id="filterTag" data-filter="tag">
+        <option value="all">All topics</option>
+        
+        <option value="Conversion">Conversion</option>
+        
+        <option value="Covenant">Covenant</option>
+        
+        <option value="Creation">Creation</option>
+        
+        <option value="Cultural Engagement">Cultural Engagement</option>
+        
+        <option value="Demographics">Demographics</option>
+        
+        <option value="Ecclesiology">Ecclesiology</option>
+        
+        <option value="Idolatry">Idolatry</option>
+        
+        <option value="Justice">Justice</option>
+        
+        <option value="Lament">Lament</option>
+        
+        <option value="Persecution">Persecution</option>
+        
+        <option value="Perseverance">Perseverance</option>
+        
+        <option value="Providence">Providence</option>
+        
+        <option value="Sanctity of Life">Sanctity of Life</option>
+        
+        <option value="Sufficiency of Scripture">Sufficiency of Scripture</option>
+        
+        <option value="Truth">Truth</option>
+        
+        <option value="Vocation">Vocation</option>
+        
+      </select>
+    </div>
+    <div class="archive-filter-group">
+      <label class="archive-filter-label" for="filterSecular">World</label>
+      <select class="archive-filter-select" id="filterSecular" data-filter="secular">
+        <option value="all">All categories</option>
+        
+        <option value="AI">AI</option>
+        
+        <option value="Bioethics">Bioethics</option>
+        
+        <option value="Culture">Culture</option>
+        
+        <option value="Faith">Faith</option>
+        
+        <option value="Family">Family</option>
+        
+        <option value="Finance">Finance</option>
+        
+        <option value="History">History</option>
+        
+        <option value="Human Rights">Human Rights</option>
+        
+        <option value="Justice">Justice</option>
+        
+        <option value="Persecution">Persecution</option>
+        
+        <option value="Politics">Politics</option>
+        
+        <option value="Religious Freedom">Religious Freedom</option>
+        
+        <option value="Science">Science</option>
+        
+        <option value="Technology">Technology</option>
+        
+        <option value="War">War</option>
+        
+        <option value="Work">Work</option>
+        
+        <option value="World Affairs">World Affairs</option>
+        
+      </select>
+    </div>
+    <div class="archive-filter-group">
+      <label class="archive-filter-label" for="filterGeo">Region</label>
+      <select class="archive-filter-select" id="filterGeo" data-filter="geo">
+        <option value="all">All regions</option>
+        
+        <option value="Armenia">Armenia</option>
+        
+        <option value="Canada">Canada</option>
+        
+        <option value="China">China</option>
+        
+        <option value="Egypt">Egypt</option>
+        
+        <option value="France">France</option>
+        
+        <option value="Germany">Germany</option>
+        
+        <option value="Global">Global</option>
+        
+        <option value="India">India</option>
+        
+        <option value="Indonesia">Indonesia</option>
+        
+        <option value="Iran">Iran</option>
+        
+        <option value="Lebanon">Lebanon</option>
+        
+        <option value="Malaysia">Malaysia</option>
+        
+        <option value="North Korea">North Korea</option>
+        
+        <option value="Palestine/Israel">Palestine/Israel</option>
+        
+        <option value="South Korea">South Korea</option>
+        
+        <option value="Switzerland">Switzerland</option>
+        
+        <option value="United Kingdom">United Kingdom</option>
+        
+        <option value="United States">United States</option>
+        
+        <option value="Vatican City">Vatican City</option>
+        
+      </select>
+    </div>
   </div>
 
   <section class="feed">
@@ -974,9 +980,9 @@
   <script>
     (function () {
       'use strict';
-      const tagButtons = document.querySelectorAll('.archive-filter-btn[data-filter-tag]');
-      const secularButtons = document.querySelectorAll('.archive-filter-btn[data-filter-secular]');
-      const geoButtons = document.querySelectorAll('.archive-filter-btn[data-filter-geo]');
+      const tagSelect = document.getElementById('filterTag');
+      const secularSelect = document.getElementById('filterSecular');
+      const geoSelect = document.getElementById('filterGeo');
       const cards = document.querySelectorAll('.post-card[data-tag]');
 
       let activeTag = 'all';
@@ -1000,40 +1006,25 @@
         });
       }
 
-      function updateButtons() {
-        tagButtons.forEach(function (btn) {
-          btn.classList.toggle('active', btn.dataset.filterTag === activeTag);
-        });
-        secularButtons.forEach(function (btn) {
-          btn.classList.toggle('active', btn.dataset.filterSecular === activeSecular);
-        });
-        geoButtons.forEach(function (btn) {
-          btn.classList.toggle('active', btn.dataset.filterGeo === activeGeo);
-        });
+      function updateSelects() {
+        if (tagSelect) tagSelect.value = activeTag;
+        if (secularSelect) secularSelect.value = activeSecular;
+        if (geoSelect) geoSelect.value = activeGeo;
       }
 
-      tagButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeTag = btn.dataset.filterTag;
-          applyFilters();
-          updateButtons();
-        });
+      tagSelect.addEventListener('change', function () {
+        activeTag = tagSelect.value;
+        applyFilters();
       });
 
-      secularButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeSecular = btn.dataset.filterSecular;
-          applyFilters();
-          updateButtons();
-        });
+      secularSelect.addEventListener('change', function () {
+        activeSecular = secularSelect.value;
+        applyFilters();
       });
 
-      geoButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeGeo = btn.dataset.filterGeo;
-          applyFilters();
-          updateButtons();
-        });
+      geoSelect.addEventListener('change', function () {
+        activeGeo = geoSelect.value;
+        applyFilters();
       });
 
       // Parse URL params for deep-linking
@@ -1070,13 +1061,13 @@
           e.stopPropagation();
           activeTag = tagLink.textContent.trim();
           applyFilters();
-          updateButtons();
+          updateSelects();
           return;
         }
       });
 
       applyFilters();
-      updateButtons();
+      updateSelects();
     })();
   </script>
 

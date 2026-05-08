@@ -1488,14 +1488,22 @@ footer {
   margin: 0 auto var(--space-6);
   padding: 0 var(--space-4);
   display: flex;
-  gap: var(--space-3);
-  align-items: center;
+  gap: var(--space-4);
+  align-items: flex-end;
   flex-wrap: wrap;
+}
+
+.archive-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  min-width: 180px;
+  flex: 1 1 180px;
 }
 
 .archive-filter-label {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1503,23 +1511,26 @@ footer {
   opacity: 0.5;
 }
 
-.archive-filter-btn {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  padding: 0.35em 0.8em;
-  border: 1px solid oklch(12% 0.03 260 / 0.12);
+.archive-filter-select {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  padding: 0.5em 2.2em 0.5em 0.7em;
+  border: 1px solid oklch(12% 0.03 260 / 0.15);
   border-radius: 3px;
-  background: transparent;
+  background: var(--parchment);
   color: var(--midnight);
   cursor: pointer;
-  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23444' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6em center;
+  transition: border-color var(--transition-fast);
 }
 
-.archive-filter-btn:hover,
-.archive-filter-btn.active {
-  background: var(--ochre);
+.archive-filter-select:hover,
+.archive-filter-select:focus {
   border-color: var(--ochre);
-  color: var(--parchment);
+  outline: none;
 }
 
 /* ============================================
