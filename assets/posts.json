@@ -1,15 +1,28 @@
 [
   {
+    "title": "A stroke hit David Pawson mid-sermon. He finished anyway.",
+    "url": "post/david-pawson-stroke.html",
+    "date": "2026-05-08",
+    "tag": "Perseverance",
+    "secular_tag": "Faith",
+    "excerpt": "David Pawson walked up to the pulpit with two working legs. A stroke hit mid-sermon. His body began to shut down. His mouth kept moving. He finished. Then was helped off — half-paralyzed, fully spent, utterly faithful.",
+    "scripture": "2 Corinthians 4:7 · 2 Corinthians 12:9 · 2 Timothy 4:7 · Exodus 4:10",
+    "hero_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pawson.TIF?width=800",
+    "share_quote": "A stroke hit David Pawson mid-sermon. His body failed. His mouth kept moving. He finished.",
+    "geo": "United Kingdom"
+  },
+  {
     "title": "Son of Hamas. Son of God. The spy who loved not his life unto death.",
     "url": "post/son-of-hamas.html",
     "date": "2026-05-08",
     "tag": "Conversion",
     "secular_tag": "World Affairs",
     "excerpt": "Mosab Hassan Yousef was born into Hamas royalty — son of a founding leader. He became Israel's most valuable spy inside the organization, then a Christian. The bloodline could not save him. The blood of the Lamb could.",
-    "scripture": "John 1:12-13 · Matthew 10:37 · Genesis 50:20 · Revelation 12:11 · Romans 5:10",
+    "scripture": "Acts 9:1 · John 1:12-13 · Matthew 10:37-38 · 2 Timothy 2:19 · Genesis 50:20 · Romans 5:10 · Revelation 12:11 · 1 Corinthians 1:27",
     "hero_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosab_Hassan_Yousef_(2).jpg?width=800",
     "share_quote": "Born in the house of God's enemies. Became a son of God, a spy for life, and a witness for Christ.",
-    "geo": "Palestine/Israel"
+    "geo": "Palestine/Israel",
+    "related": "post/david-pawson-stroke.html"
   },
   {
     "title": "Lebanon can seize rockets. It cannot seize a stronghold.",
