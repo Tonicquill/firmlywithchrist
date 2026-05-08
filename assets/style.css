@@ -1,7 +1,7 @@
 /* ============================================
    DESIGN SYSTEM — Firmly With Christ
-   Reformed theology. Malaysian / SE Asian texture.
-   Batik backgrounds sourced from Wikimedia Commons.
+   Reformed theology. Calm stone texture.
+   Confessionally rooted. Scripture-grounded.
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Space+Grotesk:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -22,6 +22,7 @@
   --ochre-deep: oklch(50% 0.12 70);
   --rose: oklch(50% 0.13 20);
   --sage: oklch(48% 0.06 150);
+  --slate: oklch(45% 0.02 250);
 
   /* Typography */
   --font-display: 'Space Grotesk', sans-serif;
@@ -68,10 +69,11 @@ body {
   font-size: 1.15rem;
   line-height: 1.75;
   color: var(--midnight);
-  background-color: var(--parchment);
-  background-image: url('../assets/batik-background.jpg');
-  background-size: 600px auto;
-  background-repeat: repeat;
+  background-color: oklch(94% 0.01 82);
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 50% 0%, oklch(97% 0.006 88 / 0.7) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 100%, oklch(88% 0.012 78 / 0.5) 0%, transparent 55%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -328,11 +330,11 @@ nav {
    POST BODY (Hero + Article)
    ============================================ */
 .post-article {
-  padding: var(--space-10) var(--space-4);
+  padding: var(--space-12) var(--space-6);
   max-width: var(--container-text);
   margin: 0 auto;
-  background-color: oklch(97% 0.01 85 / 0.93);
-  border-radius: 4px;
+  background-color: oklch(98% 0.006 90);
+  border-radius: 0;
 }
 
 .post-article p {
@@ -475,23 +477,18 @@ nav {
 
 /* Pull quotes */
 .scripture-pull {
-  margin: var(--space-8) calc(-1 * var(--space-4));
-  padding: var(--space-6) var(--space-4);
+  margin: var(--space-8) calc(-1 * var(--space-6));
+  padding: var(--space-8) var(--space-6);
   text-align: center;
   position: relative;
-  background-color: var(--stone);
-  background-image:
-    linear-gradient(0deg, oklch(90% 0.015 82 / 0.82) 0%, oklch(90% 0.015 82 / 0.82) 100%),
-    url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Ragam_Hias_Sunda_-_Bilik_I.svg');
-  background-size: 250px 250px;
-  background-repeat: repeat;
+  background-color: oklch(91% 0.012 82);
   overflow: hidden;
 }
 
 @media (min-width: 1024px) {
   .scripture-pull {
-    margin: var(--space-8) calc(-1 * var(--space-8));
-    padding: var(--space-6) var(--space-8);
+    margin: var(--space-8) calc(-1 * var(--space-10));
+    padding: var(--space-8) var(--space-10);
   }
 }
 
@@ -576,15 +573,10 @@ figure.post-image figcaption a:hover {
 /* Key statements — article mic-drop moments, distinct from scripture */
 .key-statement {
   margin: var(--space-6) 0;
-  padding: var(--space-5) var(--space-4);
+  padding: var(--space-6) var(--space-4);
   text-align: center;
   position: relative;
-  background-color: var(--ivory);
-  background-image:
-    linear-gradient(0deg, oklch(97% 0.01 85 / 0.88) 0%, oklch(97% 0.01 85 / 0.88) 100%),
-    url('https://upload.wikimedia.org/wikipedia/commons/b/bd/Collectie_NMvWereldculturen%2C_RV-847-85%2C_Batikpatroon%2C_%27Kawung_picis%27%2C_voor_1891.jpg');
-  background-size: 400px 400px;
-  background-repeat: repeat;
+  background-color: oklch(96% 0.008 86);
   border-top: 2px solid var(--ochre);
   border-bottom: 2px solid var(--ochre);
 }
@@ -842,8 +834,8 @@ ol.cite-sources a:hover {
    FEED SECTION
    ============================================ */
 .feed {
-  background-color: oklch(90% 0.015 82 / 0.88);
-  padding: var(--space-10) var(--space-4);
+  background-color: oklch(91% 0.012 82);
+  padding: var(--space-12) var(--space-4);
 }
 
 .feed-header {
@@ -1589,7 +1581,7 @@ footer {
   }
 
   .post-article {
-    padding: var(--space-6) var(--space-3);
+    padding: var(--space-8) var(--space-4);
   }
 
   .post-article > p:first-of-type::first-letter {
@@ -1597,8 +1589,8 @@ footer {
   }
 
   .scripture-pull {
-    margin: var(--space-6) calc(-1 * var(--space-3));
-    padding: var(--space-5) var(--space-3);
+    margin: var(--space-6) calc(-1 * var(--space-4));
+    padding: var(--space-6) var(--space-4);
   }
 
   .scripture-pull p {
