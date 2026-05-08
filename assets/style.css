@@ -69,11 +69,10 @@ body {
   line-height: 1.75;
   color: var(--midnight);
   background-color: var(--parchment);
-  background-image:
-    linear-gradient(0deg, oklch(95% 0.02 85 / 0.85) 0%, oklch(95% 0.02 85 / 0.85) 100%),
-    url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Ragam_Hias_Sunda_-_Cupat_Manggu.svg');
-  background-size: 300px 300px;
+  background-image: url('../assets/batik-background.jpg');
+  background-size: 600px auto;
   background-repeat: repeat;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-wrap: pretty;
@@ -332,6 +331,8 @@ nav {
   padding: var(--space-10) var(--space-4);
   max-width: var(--container-text);
   margin: 0 auto;
+  background-color: oklch(97% 0.01 85 / 0.93);
+  border-radius: 4px;
 }
 
 .post-article p {
@@ -841,12 +842,7 @@ ol.cite-sources a:hover {
    FEED SECTION
    ============================================ */
 .feed {
-  background-color: var(--stone);
-  background-image:
-    linear-gradient(180deg, oklch(90% 0.015 82 / 0.78) 0%, oklch(93% 0.02 85 / 0.85) 100%),
-    url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Collectie_NMvWereldculturen%2C_RV-847-23%2C_Batikpatroon%2C_%27Endol-endol%27%2C_voor_1891.jpg');
-  background-size: 500px 500px;
-  background-repeat: repeat;
+  background-color: oklch(90% 0.015 82 / 0.88);
   padding: var(--space-10) var(--space-4);
 }
 
