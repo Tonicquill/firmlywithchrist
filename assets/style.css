@@ -43,7 +43,7 @@
 
   /* Containers */
   --container-max: 1200px;
-  --container-text: 720px;
+  --container-text: clamp(640px, 82vw, 920px);
 
   /* Motion */
   --ease-editorial: cubic-bezier(0.25, 0.1, 0.25, 1);
