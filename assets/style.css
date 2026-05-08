@@ -1130,10 +1130,11 @@ ol.cite-sources a:hover {
 
 .about-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-4);
-  max-width: var(--container-text);
+  max-width: var(--container-max);
   margin: var(--space-8) auto 0;
+  padding: 0 var(--space-4);
   text-align: left;
 }
 
@@ -1228,9 +1229,10 @@ ol.cite-sources a:hover {
 /* About page card grid */
 .about-page-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-4);
   margin-bottom: var(--space-8);
+  padding: 0 var(--space-4);
 }
 
 .about-page-cards .about-card {
@@ -1261,8 +1263,17 @@ ol.cite-sources a:hover {
   margin-bottom: 0;
 }
 
+@media (max-width: 1024px) {
+  .about-card {
+    padding: var(--space-3);
+  }
+}
+
 @media (max-width: 768px) {
   .about-page-cards {
+    grid-template-columns: 1fr;
+  }
+  .about-cards {
     grid-template-columns: 1fr;
   }
 }
@@ -1921,6 +1932,26 @@ footer {
 
   .trending-item {
     font-size: 0.75rem;
+  }
+}
+
+/* Tablet landscape / small desktop */
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 50vh;
+    padding: calc(64px + var(--space-5)) var(--space-4) var(--space-5);
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+
+  .about-section {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .post-article {
+    padding: var(--space-6) var(--space-4);
   }
 }
 
