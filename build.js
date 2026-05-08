@@ -211,6 +211,21 @@ function build() {
 
   const heroData = processedPosts.find(p => p.url === heroPost.url);
 
+  // Compute related posts (same tag, excluding self)
+  function getRelated(currentPost) {
+    const sameTag = processedPosts.filter(p =>
+      p.slug !== currentPost.slug && p.tag === currentPost.tag
+    );
+    const others = processedPosts.filter(p =>
+      p.slug !== currentPost.slug && p.tag !== currentPost.tag
+    );
+    // Fill with same-tag first, then recent posts, max 3
+    const combined = [...sameTag, ...others];
+    return combined.slice(0, 3).map(p => ({
+      title: p.title, slug: p.slug, tag: p.tag, date: p.date_display
+    }));
+  }
+
   // --- 2. Generate post pages ---
   const postTemplate = read('templates/post.html');
 
@@ -231,7 +246,8 @@ function build() {
       basePath: '../',
       pageTitle: `${post.title} | Firmly With Christ`,
       ogType: 'article',
-      allPosts: processedPosts.map(p => ({ title: p.title, url: p.url, date: p.date_display, slug: p.slug }))
+      allPosts: processedPosts.map(p => ({ title: p.title, url: p.url, date: p.date_display, slug: p.slug })),
+      relatedPosts: getRelated(post)
     });
 
     write(post.url, html);

@@ -93,6 +93,19 @@
     {{content}}
   </article>
 
+  <section class="continue-reading">
+    <p class="continue-label">Continue reading</p>
+    <div class="continue-grid">
+      {{#each relatedPosts}}
+      <a href="{{slug}}.html" class="continue-card">
+        <span class="continue-tag">{{tag}}</span>
+        <h4 class="continue-title">{{title}}</h4>
+        <span class="continue-date">{{date}}</span>
+      </a>
+      {{/each}}
+    </div>
+  </section>
+
   <footer>
     <div class="footer-inner">
       <p class="disclaimer">
