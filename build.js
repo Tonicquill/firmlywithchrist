@@ -192,7 +192,7 @@ function build() {
   const featuredIndex = posts.findIndex(p => p.featured);
   const heroPost = featuredIndex >= 0 ? posts[featuredIndex] : posts[0];
   const heroIndex = posts.indexOf(heroPost);
-  const feedPosts = posts.filter((_, i) => i !== heroIndex).slice(0, 6);
+  const feedPosts = posts.filter((_, i) => i !== heroIndex);
 
   // Process each post
   const processedPosts = posts.map(post => {
