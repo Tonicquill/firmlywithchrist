@@ -43,7 +43,7 @@
 
   /* Containers */
   --container-max: 1200px;
-  --container-text: clamp(640px, 70vw, 1400px);
+  --container-text: 70vw;
 
   /* Motion */
   --ease-editorial: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -331,7 +331,9 @@ nav {
    ============================================ */
 .post-article {
   padding: var(--space-12) var(--space-6);
-  max-width: var(--container-text);
+  width: var(--container-text);
+  min-width: 640px;
+  max-width: none;
   margin: 0 auto;
   background-color: oklch(98% 0.006 90);
   border-radius: 0;
@@ -1582,6 +1584,8 @@ footer {
 
   .post-article {
     padding: var(--space-8) var(--space-4);
+    width: 100%;
+    min-width: auto;
   }
 
   .post-article > p:first-of-type::first-letter {
