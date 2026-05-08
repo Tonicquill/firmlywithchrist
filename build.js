@@ -354,7 +354,41 @@ function build() {
   write('verses.html', versesHtml);
   console.log('Generated verses.html');
 
-  // --- 6. Rebuild Pagefind ---
+  // --- 6. Validate image URLs ---
+  console.log('\nValidating image URLs...');
+  const badUrls = [];
+  function checkFileForBadUrls(filePath, isSource = false) {
+    if (!exists(filePath)) return;
+    const html = read(filePath);
+    const matches = html.matchAll(/(https?:\/\/[^"'\s]+)/g);
+    for (const m of matches) {
+      const url = m[1];
+      if (url.includes('Special:FilePath')) {
+        badUrls.push({ file: filePath, url, type: 'Special:FilePath redirect (unreliable)' });
+      }
+    }
+  }
+  // Check source fragments and metadata
+  processedPosts.forEach(post => {
+    if (post.hero_image && post.hero_image.includes('Special:FilePath')) {
+      badUrls.push({ file: 'assets/posts.json', url: post.hero_image, type: 'Special:FilePath redirect (unreliable)' });
+    }
+    checkFileForBadUrls(`content/posts/${post.slug}.html`, true);
+  });
+  // Check generated output
+  const generatedFiles = ['index.html', 'archive.html', 'verses.html'];
+  processedPosts.forEach(post => generatedFiles.push(post.url));
+  generatedFiles.forEach(f => checkFileForBadUrls(f));
+
+  if (badUrls.length) {
+    console.error('\nBUILD FAILED: Bad image URLs detected:\n');
+    badUrls.forEach(b => console.error(`  ${b.file}\n    ${b.url}\n    -> ${b.type}`));
+    console.error('\nFix: Run `python scripts/fix-images.py` or replace URLs with verified Wikimedia Commons thumb URLs.\n');
+    process.exit(1);
+  }
+  console.log('Image URL validation passed.');
+
+  // --- 7. Rebuild Pagefind ---
   console.log('\nRunning Pagefind...');
   try {
     execSync('npx -y pagefind --site .', { stdio: 'inherit' });
