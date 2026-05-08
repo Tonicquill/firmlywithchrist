@@ -50,7 +50,7 @@
       <li><a href="{{basePath}}secular-questions.html">Hard Questions</a></li>
       <li><a href="{{basePath}}reformed-history.html">History</a></li>
       <li><a href="{{basePath}}intro-to-christ.html">Meet Christ</a></li>
-      <li><a href="{{basePath}}index.html">Today</a></li>
+      <li><a href="{{basePath}}archive.html">Articles</a></li>
       <li><a href="{{basePath}}about.html">About</a></li>
     </ul>
     <a href="{{basePath}}archive.html" class="nav-search-trigger" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a>
@@ -79,6 +79,17 @@
   </section>
 
   <article class="post-article" data-pagefind-body>
+
+    <div class="post-nav">
+      <label class="post-nav-label" for="postNav">Jump to article</label>
+      <select class="post-nav-select" id="postNav" onchange="if(this.value) window.location.href=this.value">
+        <option value="">— All articles —</option>
+        {{#each allPosts}}
+        <option value="{{slug}}.html" data-slug="{{slug}}">{{title}} ({{date}})</option>
+        {{/each}}
+      </select>
+    </div>
+
     {{content}}
   </article>
 

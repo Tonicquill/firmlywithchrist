@@ -230,7 +230,8 @@ function build() {
       content: postContent,
       basePath: '../',
       pageTitle: `${post.title} | Firmly With Christ`,
-      ogType: 'article'
+      ogType: 'article',
+      allPosts: processedPosts.map(p => ({ title: p.title, url: p.url, date: p.date_display, slug: p.slug }))
     });
 
     write(post.url, html);

@@ -411,6 +411,43 @@ nav {
 }
 
 /* ============================================
+   POST NAV DROPDOWN
+   ============================================ */
+.post-nav {
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-6);
+  padding: 0 var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.post-nav-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--slate);
+  white-space: nowrap;
+}
+.post-nav-select {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid oklch(85% 0.01 85);
+  border-radius: 6px;
+  background: var(--ivory);
+  color: var(--midnight);
+  cursor: pointer;
+  width: 100%;
+  max-width: 420px;
+}
+.post-nav-select:focus {
+  outline: 2px solid var(--ochre);
+  outline-offset: 1px;
+  border-color: var(--ochre);
+}
+
+/* ============================================
    POST BODY (Hero + Article)
    ============================================ */
 .post-article {
