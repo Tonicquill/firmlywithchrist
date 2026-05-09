@@ -69,6 +69,9 @@ body {
   font-size: 1.15rem;
   line-height: 1.75;
   color: var(--midnight);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   background-color: oklch(94% 0.01 82);
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
@@ -463,6 +466,7 @@ nav {
 .post-article p {
   margin-bottom: var(--space-4);
   text-wrap: pretty;
+  text-align: justify;
 }
 
 .post-article strong {
@@ -1160,6 +1164,7 @@ ol.cite-sources a:hover {
   color: var(--midnight);
   opacity: 0.85;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .about-card a {
@@ -1839,17 +1844,23 @@ footer {
     z-index: 950;
     background: var(--midnight);
     flex-direction: column;
-    padding: var(--space-6);
-    gap: var(--space-4);
+    padding: var(--space-5) var(--space-4);
+    gap: 0;
   }
 
   .nav-links.open {
     display: flex;
   }
 
+  .nav-links li {
+    border-bottom: 1px solid oklch(100% 0 0 / 0.06);
+  }
+
   .nav-links a {
-    font-size: 1.25rem;
+    display: block;
+    font-size: 1.05rem;
     opacity: 1;
+    padding: var(--space-2) 0;
   }
 
   .nav-toggle {
