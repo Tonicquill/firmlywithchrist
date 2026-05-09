@@ -1836,6 +1836,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 950;
     background: var(--midnight);
     flex-direction: column;
     padding: var(--space-6);
