@@ -19,7 +19,7 @@
 - 2 Corinthians 2:11: Satan's advantage in unforgiveness
 - Proverbs 27:4: Wrath as torrent/cruel flood
 - Judicial vs. parental forgiveness distinction
-- **Status:** Response received. Article rewrite pending.
+- **Status:** Response incorporated. Article published.
 
 ### 2026-05-10 — Self-Righteousness / Log in Your Eye
 **Query:** What does the Reformed tradition say about self-righteousness, the Pharisee and the tax collector, and the log in your eye?
@@ -32,7 +32,7 @@
 - Titus 1:16: Profess to know God, but in works deny Him
 - Romans 2:14-15: Conscience bearing witness — even pagans know the law
 - Imputed righteousness as the only ground for confidence
-- **Status:** Response received. Article rewrite pending.
+- **Status:** Response incorporated. Article published.
 
 ### 2026-05-10 — Kipling's "If—" / Biblical Virtues
 **Query:** What does the Reformed tradition say about virtue, moral effort, and the difference between human virtue and the fruit of the Spirit?
@@ -55,8 +55,8 @@
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
 |---------|--------------|------------------|-----------------|----------|
 | if-kipling.html | Common grace vs. saving grace | WCF 10 (effectual calling) | — | Isaiah 64:6, Rom 8:7-8, Gal 5:22-23 |
-| do-not-let-the-sun-go-down.html | Anger as moral deadline | — | — | Eph 4:26-27, Matt 5:21-22 |
-| log-in-your-eye.html | Forensic justification vs. self-righteousness | — | — | Luke 18:9-14, Matt 7:3-5 |
+| do-not-let-the-sun-go-down.html | Anger as moral deadline | — | — | Eph 4:26-27, Matt 5:21-22, 2 Cor 2:11, Prov 27:4, Eph 4:32 |
+| log-in-your-eye.html | Forensic justification vs. self-righteousness | — | — | Luke 18:9-14, Matt 7:3-5, Matt 23:27-28, 2 Tim 2:19, Titus 1:16, Rom 2:14-15 |
 | patterns-become-prisons.html | Discernment as spiritual discipline | — | — | 1 John 4:1, Acts 17:11 |
 | empires-perform-memory.html | Two kinds of memory: empire vs. church | — | — | Daniel 4:30, Deut 4:9 |
 | faithful-presence-congo.html | Faithful presence in exile | — | — | Jeremiah 29:4-7, Phil 1:23-25 |

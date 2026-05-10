@@ -9,8 +9,8 @@
 | # | Title | File | Date | Tag | Secular Tag | NLM Status | Build Status | Notes |
 |---|-------|------|------|-----|-------------|--------------|--------------|-------|
 | 1 | Kipling Wrote the Virtues. The Bible Wrote the Power. | if-kipling.html | 2026-05-10 | Bible Lessons | Culture | yes | live | Queried NLM; Isaiah 64:6, Rom 8:7-8, 2 Cor 4:4, Gal 5:22-23 framing |
-| 2 | Do Not Let the Sun Go Down on Your Wrath | do-not-let-the-sun-go-down.html | 2026-05-10 | Bible Lessons | Culture | pending | live | NLM response received 2026-05-10. Rewrite pending. |
-| 3 | The Pharisee Is in Your Mirror | log-in-your-eye.html | 2026-05-10 | Bible Lessons | Culture | pending | live | NLM response received 2026-05-10. Rewrite pending. |
+| 2 | Do Not Let the Sun Go Down on Your Wrath | do-not-let-the-sun-go-down.html | 2026-05-10 | Bible Lessons | Culture | yes | live | NLM rewrite complete 2026-05-10. 2 Cor 2:11, Prov 27:4, Eph 4:32 added. |
+| 3 | The Pharisee Is in Your Mirror | log-in-your-eye.html | 2026-05-10 | Bible Lessons | Culture | yes | live | NLM rewrite complete 2026-05-10. 2 Tim 2:19, Titus 1:16, Rom 2:14-15, forensic justification added. |
 | 4 | When Patterns Become Prisons | patterns-become-prisons.html | 2026-05-10 | Discernment | Conspiracy & Disinformation | verify | live | Needs NLM verification |
 | 5 | When Empires Perform Their Memory | empires-perform-memory.html | 2026-05-10 | History | Geopolitics | verify | live | Needs NLM verification |
 | 6 | Faithful Presence When the Ground Moves | faithful-presence-congo.html | 2026-05-10 | Missions | War & Conflict | verify | live | Needs NLM verification |
@@ -66,5 +66,4 @@
 
 | File | NLM Query Date | Status | Action |
 |------|----------------|--------|--------|
-| do-not-let-the-sun-go-down.html | 2026-05-10 | pending rewrite | Rewrite with NLM framing, rebuild, commit |
-| log-in-your-eye.html | 2026-05-10 | pending rewrite | Rewrite with NLM framing, rebuild, commit |
+| — | — | — | No pending NLM rewrites. |
