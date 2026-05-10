@@ -1,0 +1,91 @@
+# Theological Frames Log
+
+## NLM Query Protocol
+- Bible-first, open-ended query
+- One sentence, no lists
+- No pre-structured sections
+- Let NLM drive the theological narrative
+
+## Query Log
+
+### 2026-05-10 — Anger / Ephesians 4:26-27
+**Query:** What does the Reformed tradition say about anger, forgiveness, and the command not to let the sun go down on wrath?
+
+**NLM Response Summary:**
+- Matthew 5:21-22: Jesus traces progression from momentary rage to murder
+- Ephesians 4:26-27: Daily deadline for anger; sunset as boundary
+- Ephesians 4:32: Forgiveness modeled on Christ's forgiveness
+- Romans 12:19: Vengeance belongs to God; transferring it back to Him
+- 2 Corinthians 2:11: Satan's advantage in unforgiveness
+- Proverbs 27:4: Wrath as torrent/cruel flood
+- Judicial vs. parental forgiveness distinction
+- **Status:** Response received. Article rewrite pending.
+
+### 2026-05-10 — Self-Righteousness / Log in Your Eye
+**Query:** What does the Reformed tradition say about self-righteousness, the Pharisee and the tax collector, and the log in your eye?
+
+**NLM Response Summary:**
+- Matthew 23:27-28: Whitewashed tombs — outward beauty, inward death
+- Luke 18:9-14: Pharisee prayed to himself; tax collector went home justified (forensic justification)
+- Matthew 7:3-5: Log/speck — self-examination prerequisite for correction
+- 2 Timothy 2:19: Seal of God's firm foundation — "The Lord knows those who are His"
+- Titus 1:16: Profess to know God, but in works deny Him
+- Romans 2:14-15: Conscience bearing witness — even pagans know the law
+- Imputed righteousness as the only ground for confidence
+- **Status:** Response received. Article rewrite pending.
+
+### 2026-05-10 — Kipling's "If—" / Biblical Virtues
+**Query:** What does the Reformed tradition say about virtue, moral effort, and the difference between human virtue and the fruit of the Spirit?
+
+**NLM Response Summary:**
+- Isaiah 64:6: All righteousnesses as filthy rags
+- Romans 8:7-8: Carnal mind is enmity against God; cannot please God
+- 2 Corinthians 4:4: God of this age has blinded minds
+- Galatians 5:22-23: Fruit of the Spirit vs. achieved virtues
+- John 15:5: Without Me you can do nothing
+- 2 Timothy 2:3-4: Endure hardship as good soldier of Christ
+- James 1:3-4: Patience having its perfect work
+- Proverbs 25:28: Self-control as fortress-building
+- Romans 2:14-15: Common grace — law written on hearts
+- Matthew 5:48: Be perfect as your Father in heaven is perfect
+- **Status:** Response incorporated. Article published.
+
+## Frame Inventory by Article
+
+| Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
+|---------|--------------|------------------|-----------------|----------|
+| if-kipling.html | Common grace vs. saving grace | WCF 10 (effectual calling) | — | Isaiah 64:6, Rom 8:7-8, Gal 5:22-23 |
+| do-not-let-the-sun-go-down.html | Anger as moral deadline | — | — | Eph 4:26-27, Matt 5:21-22 |
+| log-in-your-eye.html | Forensic justification vs. self-righteousness | — | — | Luke 18:9-14, Matt 7:3-5 |
+| patterns-become-prisons.html | Discernment as spiritual discipline | — | — | 1 John 4:1, Acts 17:11 |
+| empires-perform-memory.html | Two kinds of memory: empire vs. church | — | — | Daniel 4:30, Deut 4:9 |
+| faithful-presence-congo.html | Faithful presence in exile | — | — | Jeremiah 29:4-7, Phil 1:23-25 |
+| kenya-leader-forgets-frame.html | Performative religion vs. obedience | — | — | Matt 23:27-28, 1 Sam 15:22-23 |
+| prisoner-exchange-ransom.html | Ransom / substitutionary atonement | — | — | Numbers 3:45-47, Matt 20:28 |
+
+## Theological Tag Distribution
+
+| Tag | Count |
+|-----|-------|
+| Persecution | 12 |
+| Ecclesiology | 8 |
+| Providence | 6 |
+| Idolatry | 5 |
+| Sufficiency of Scripture | 3 |
+| Bible Lessons | 3 |
+| Politics | 2 |
+| Discernment | 1 |
+| History | 1 |
+| Missions | 1 |
+| Redemption | 1 |
+| Perseverance | 1 |
+| Conversion | 1 |
+| Cultural Engagement | 1 |
+| Demographics | 1 |
+| Vocation | 1 |
+| Covenant | 1 |
+| Lament | 1 |
+| Justice | 1 |
+| Truth | 1 |
+| Creation | 1 |
+| Sanctity of Life | 2 |
