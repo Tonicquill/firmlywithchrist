@@ -34,6 +34,21 @@
 - Imputed righteousness as the only ground for confidence
 - **Status:** Response incorporated. Article published.
 
+### 2026-05-11 — Russia / Illegal Missionary Work / Acts 5:29
+**Query:** What does the Reformed tradition say about the state's right to license or register the church, and how should believers respond when the state forbids unregistered worship?
+
+**NLM Response Summary:**
+- Acts 5:29: "We ought to obey God rather than men" — stated limit of earthly authority
+- Colossians 1:18: Christ is the head of the church; no president or permit office can share it
+- Matthew 16:18: Church built by Christ, gates of Hades shall not prevail
+- John Huss burned for teaching Christ alone is Head of the church
+- Hebrews 12:22-23: Church of the firstborn registered in heaven
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- Romans 13:1 / 1 Peter 2:13 / Acts 5:29: No contradiction, only a boundary
+- Matthew 22:21: Render to Caesar what is Caesar's, to God what is God's
+- John 18:36: "My kingdom is not of this world"
+- **Status:** Response incorporated. Article published.
+
 ### 2026-05-10 — Kipling's "If—" / Biblical Virtues
 **Query:** What does the Reformed tradition say about virtue, moral effort, and the difference between human virtue and the fruit of the Spirit?
 
@@ -62,13 +77,14 @@
 | faithful-presence-congo.html | Faithful presence in exile | — | — | Jeremiah 29:4-7, Phil 1:23-25 |
 | kenya-leader-forgets-frame.html | Performative religion vs. obedience | — | — | Matt 23:27-28, 1 Sam 15:22-23 |
 | prisoner-exchange-ransom.html | Ransom / substitutionary atonement | — | — | Numbers 3:45-47, Matt 20:28 |
+| russia-missionaries-arrested.html | State usurpation vs. Christ's headship | WCF 23 (civil magistrate) | John Huss | Acts 5:29, Col 1:18, Matt 16:18, Heb 12:22-23, 2 Tim 2:19 |
 
 ## Theological Tag Distribution
 
 | Tag | Count |
 |-----|-------|
 | Persecution | 12 |
-| Ecclesiology | 8 |
+| Ecclesiology | 9 |
 | Providence | 6 |
 | Idolatry | 5 |
 | Sufficiency of Scripture | 3 |

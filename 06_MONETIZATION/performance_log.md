@@ -36,6 +36,7 @@
 ## Article Performance (Site-Level, No Analytics)
 | Article | Date | Tag | Notes |
 |---------|------|-----|-------|
+| Russia missionaries | 2026-05-11 | Ecclesiology | NLM-queried. Acts 5:29, Col 1:18, Matt 16:18, Heb 12:22-23, 2 Tim 2:19. John Huss reference. |
 | Kipling article | 2026-05-10 | Bible Lessons | NLM-rewritten, strong theological framing |
 | Anger article | 2026-05-10 | Bible Lessons | NLM-rewritten, judicial forgiveness added |
 | Log-in-your-eye | 2026-05-10 | Bible Lessons | NLM-rewritten, forensic justification added |
