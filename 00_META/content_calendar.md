@@ -24,10 +24,10 @@
 
 | Slot | Theme | NLM Status |
 |------|-------|------------|
-| Mon 2026-05-12 | News-reactive hot take | Not started |
-| Wed 2026-05-14 | Theological explainer | Not started |
-| Fri 2026-05-16 | News-reactive hot take | Not started |
-| Sun 2026-05-18 | Personal/devotional | Not started |
+| Mon 2026-05-11 | News-reactive hot take | Not started |
+| Wed 2026-05-13 | Theological explainer | Not started |
+| Fri 2026-05-15 | News-reactive hot take | Not started |
+| Sun 2026-05-17 | Personal/devotional | Not started |
 
 ## Weekly Target Progress (Week of 2026-05-04)
 
