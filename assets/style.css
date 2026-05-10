@@ -69,7 +69,6 @@ body {
   font-size: 1.15rem;
   line-height: 1.75;
   color: var(--midnight);
-  text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
   background-color: oklch(94% 0.01 82);
@@ -466,7 +465,6 @@ nav {
 .post-article p {
   margin-bottom: var(--space-4);
   text-wrap: pretty;
-  text-align: justify;
 }
 
 .post-article strong {
@@ -1164,7 +1162,6 @@ ol.cite-sources a:hover {
   color: var(--midnight);
   opacity: 0.85;
   margin-bottom: 0;
-  text-align: justify;
 }
 
 .about-card a {
