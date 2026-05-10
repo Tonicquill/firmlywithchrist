@@ -60,7 +60,7 @@
 | 50 | $42 million for costumes while Christians sat in an Indian jail. | met-gala-persecuted-church.html | 2026-05-07 | Providence | Culture | verify | live | Needs NLM verification |
 | 51 | Wyoming banned abortion. Not because life is sacred. | wyoming-abortion-ban.html | 2026-05-07 | Sanctity of Life | Politics | verify | live | Needs NLM verification |
 | 52 | R.F. Kuang wrote a novel with an Israeli character. | rf-kuang-boycott.html | 2026-05-07 | Cultural Engagement | Culture | verify | live | Needs NLM verification |
-| 53 | Samsung bet a trillion dollars on chips. | samsung-nvidia-factories.html | 2026-05-07 | Providence | Finance | verify | live | Needs NLM verification |
+| 53 | Samsung bet a trillion dollars on chips. | samsung-nvidia-factories.html | 2026-05-07 | Providence | Finance | yes | live | NLM involved. Rewritten 2026-05-10 with WCF 5.2 guardrails (primary/secondary causation). |
 
 ## NLM Backlog
 
