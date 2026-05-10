@@ -340,9 +340,6 @@ nav {
   padding: var(--space-4) var(--space-4);
   background: var(--midnight);
   border-bottom: 1px solid oklch(100% 0 0 / 0.06);
-  position: sticky;
-  top: calc(64px + 2.5rem);
-  z-index: 850;
 }
 
 /* ============================================
@@ -456,7 +453,7 @@ nav {
   padding: var(--space-12) var(--space-6);
   width: var(--container-text);
   min-width: 640px;
-  max-width: none;
+  max-width: 780px;
   margin: 0 auto;
   background-color: oklch(98% 0.006 90);
   border-radius: 0;
