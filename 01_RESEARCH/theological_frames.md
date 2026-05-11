@@ -49,6 +49,60 @@
 - John 18:36: "My kingdom is not of this world"
 - **Status:** Response incorporated. Article published.
 
+### 2026-05-11 — Patterns Become Prisons / Discernment & Conspiracy
+**Query:** What does the Reformed tradition say about discernment, conspiracy thinking, and the Christian's responsibility to test spirits and examine evidence?
+
+**NLM Response Summary:**
+- 1 John 4:1: Test the spirits; default posture is testing, not belief
+- Acts 17:11: Bereans searched Scriptures daily — even apostolic teaching warranted verification
+- 2 Timothy 4:3-4: Time will come when they turn aside to fables
+- Proverbs 28:26: He who trusts in his own heart is a fool
+- Proverbs 18:13: Answers before hearing = folly
+- Jeremiah 17:9: Heart is deceitful above all things
+- Romans 1:21-22: Professing to be wise, they became fools
+- John 7:24: Judge with righteous judgment, not appearance
+- WCF 1.6: Nothing at any time to be added to whole counsel of God
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Empires Perform Memory / National Memory vs. Church Memory
+**Query:** What does the Reformed tradition say about national memory, military pride, and how the church should remember history differently from empires?
+
+**NLM Response Summary:**
+- Daniel 4:30 / Genesis 11:4: Empires perform power through monuments to pride
+- 1 Samuel 13:5 / 2 Corinthians 10:4-5: Military display vs. sword of the Spirit
+- Acts 2:23: Greatest display of worldly power was God's instrument of salvation
+- Deuteronomy 4:9 / Romans 15:4: Church memory is instruction, not nostalgia
+- Revelation 11:15 / Matthew 16:18: Kingdoms become Christ's; gates of Hades shall not prevail
+- Hebrews 1:3: Upholds all things by word of His power
+- Isaiah 40:8 / Psalm 102:3: Word stands forever; empires vanish like smoke
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Faithful Presence Congo / Exile & Displacement
+**Query:** What does the Reformed tradition say about faithful presence in suffering, exile, and displacement, and how should believers think about staying versus fleeing?
+
+**NLM Response Summary:**
+- Jeremiah 29:5-7: Build, plant, seek peace of the city where God caused captivity
+- Philippians 1:23-25: Remaining is more needful for others
+- Matthew 2:13 / Acts 20:22-23: Sometimes fleeing is commanded; sometimes going into danger is commanded
+- Hebrews 6:18-19: Fled for refuge to lay hold of hope — anchor of the soul
+- Romans 12:1-2: Living sacrifice, renewing mind
+- 1 Corinthians 15:58: Labor not in vain in the Lord
+- Acts 17:24 / 1 Peter 2:5: God does not dwell in temples made with hands; living stones
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Kenya Leader Forgets Frame / Performative Religion
+**Query:** What does the Reformed tradition say about hypocrisy in Christian leadership, performative religion, and the danger of professing Christ while denying Him in works?
+
+**NLM Response Summary:**
+- Matthew 23:27-28: Whitewashed tombs — outward beauty, inward death
+- 1 Samuel 15:22-23: To obey is better than sacrifice
+- Luke 18:13-14: Tax collector justified; Pharisee rejected — forensic justification
+- Titus 1:16: Profess to know God, but in works deny Him
+- Matthew 7:21-23: Not everyone who says "Lord, Lord" shall enter
+- John 12:43 / Luke 16:13: Love praise of men more than praise of God; cannot serve two masters
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
 ### 2026-05-10 — Kipling's "If—" / Biblical Virtues
 **Query:** What does the Reformed tradition say about virtue, moral effort, and the difference between human virtue and the fruit of the Spirit?
 

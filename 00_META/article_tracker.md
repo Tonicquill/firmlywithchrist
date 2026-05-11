@@ -12,10 +12,10 @@
 | 2 | Kipling Wrote the Virtues. The Bible Wrote the Power. | if-kipling.html | 2026-05-10 | Bible Lessons | Culture | yes | live | Queried NLM; Isaiah 64:6, Rom 8:7-8, 2 Cor 4:4, Gal 5:22-23 framing |
 | 3 | Do Not Let the Sun Go Down on Your Wrath | do-not-let-the-sun-go-down.html | 2026-05-10 | Bible Lessons | Culture | yes | live | NLM rewrite complete 2026-05-10. 2 Cor 2:11, Prov 27:4, Eph 4:32 added. |
 | 4 | The Pharisee Is in Your Mirror | log-in-your-eye.html | 2026-05-10 | Bible Lessons | Culture | yes | live | NLM rewrite complete 2026-05-10. 2 Tim 2:19, Titus 1:16, Rom 2:14-15, forensic justification added. |
-| 5 | When Patterns Become Prisons | patterns-become-prisons.html | 2026-05-10 | Discernment | Conspiracy & Disinformation | verify | live | Needs NLM verification |
-| 6 | When Empires Perform Their Memory | empires-perform-memory.html | 2026-05-10 | History | Geopolitics | verify | live | Needs NLM verification |
-| 7 | Faithful Presence When the Ground Moves | faithful-presence-congo.html | 2026-05-10 | Missions | War & Conflict | verify | live | Needs NLM verification |
-| 8 | When a Christian Leader Forgets His Frame | kenya-leader-forgets-frame.html | 2026-05-10 | Politics | Leadership & Ethics | verify | live | Needs NLM verification |
+| 5 | When Patterns Become Prisons | patterns-become-prisons.html | 2026-05-10 | Discernment | Conspiracy & Disinformation | yes | live | NLM verified 2026-05-11. 1 John 4:1, Acts 17:11, Jer 17:9, John 7:24, Rom 1:21-22 confirmed. |
+| 6 | When Empires Perform Their Memory | empires-perform-memory.html | 2026-05-10 | History | Geopolitics | yes | live | NLM verified 2026-05-11. Daniel 4:30, Gen 11:4, 2 Cor 10:4-5, 1 Sam 13:5, Acts 2:23, Deut 4:9, Rom 15:4, Rev 11:15, Matt 16:18, Isa 40:8, 2 Tim 2:19 confirmed. |
+| 7 | Faithful Presence When the Ground Moves | faithful-presence-congo.html | 2026-05-10 | Missions | War & Conflict | yes | live | NLM verified 2026-05-11. Jer 29:5-7, Phil 1:23-24, Gal 6:17, Acts 17:24, 1 Cor 6:19, 1 Pet 2:5, 1 Cor 15:58 confirmed. |
+| 8 | When a Christian Leader Forgets His Frame | kenya-leader-forgets-frame.html | 2026-05-10 | Politics | Leadership & Ethics | yes | live | NLM verified 2026-05-11. Matt 23:27-28, 1 Sam 15:22-23, Luke 16:13, John 12:43, Titus 1:16, Matt 7:21-23, 2 Tim 2:19 confirmed. |
 | 9 | 1,000 prisoners exchanged today. The Bible has a word for that. | prisoner-exchange-ransom.html | 2026-05-09 | Redemption | War | verify | live | Needs NLM verification |
 | 10 | A stroke hit David Pawson mid-sermon. He finished anyway. | david-pawson-stroke.html | 2026-05-08 | Perseverance | Faith | verify | live | Needs NLM verification |
 | 11 | Son of Hamas. Son of God. | son-of-hamas.html | 2026-05-08 | Conversion | World Affairs | verify | live | Needs NLM verification |

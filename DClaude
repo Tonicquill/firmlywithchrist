@@ -1,0 +1,7 @@
+Usage: nlm query notebook [OPTIONS] NOTEBOOK QUESTION
+Try 'nlm query notebook --help' for help.
++- Error ---------------------------------------------------------------------+
+| Got unexpected extra arguments (Code                                        |
+| Porjectsreformed_theology_content_creatorfirmlywithchrist_site01_RESEARCHnl |
+| m_empires_memory.txt)                                                       |
++-----------------------------------------------------------------------------+
