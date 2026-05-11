@@ -49,6 +49,69 @@
 - John 18:36: "My kingdom is not of this world"
 - **Status:** Response incorporated. Article published.
 
+### 2026-05-11 — Prisoner Exchange / Ransom & Substitutionary Atonement
+**Query:** What does the Reformed tradition say about ransom, substitutionary atonement, and the biblical theology of redemption as exchange?
+
+**NLM Response Summary:**
+- Matthew 20:28: Ransom (antilutron) — payment that secures release
+- 1 Peter 1:18-19: Not silver/gold but precious blood of Christ
+- 2 Corinthians 5:21: Made Him sin for us, we become righteousness of God
+- Hebrews 9:28: Christ offered once to bear sins of many
+- Romans 5:19: Federal headship — one Man's obedience makes many righteous
+- 1 Corinthians 6:19-20: Bought at a price, royal slavery
+- John 8:36: If the Son makes you free, free indeed
+- Hebrews 10:14: By one offering perfected forever those being sanctified
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — David Pawson Stroke / Perseverance in Ministry
+**Query:** What does the Reformed tradition say about perseverance in ministry, suffering while preaching, and God's sovereignty over affliction?
+
+**NLM Response Summary:**
+- Isaiah 46:9-10: God declares end from beginning, counsel shall stand
+- 2 Corinthians 12:9: Grace sufficient, strength made perfect in weakness
+- 2 Timothy 2:3-4: Endure hardship as good soldier of Christ
+- Jude 24-25: Able to keep you from stumbling
+- Romans 8:28: All things work together for good
+- Psalm 103:19: His kingdom rules over all
+- 1 Corinthians 15:58: Labor not in vain in the Lord
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Son of Hamas / Conversion of Enemies
+**Query:** What does the Reformed tradition say about conversion of enemies, providence in the lives of persecutors-turned-witnesses, and the doctrine of regeneration?
+
+**NLM Response Summary:**
+- Acts 9:1-5: Saul transformed by miracle of God, not human effort
+- John 3:3-7: Born again of water and Spirit, not will of flesh
+- Acts 7:59-60: Stephen's martyrdom became occasion for Saul's conversion
+- Romans 8:28: God causes all things to work together for good
+- 1 Timothy 1:15: Chief of sinners saved to show patience
+- 1 Peter 1:23: Born again of incorruptible seed
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Lebanon Hezbollah / State Sword & Spiritual Warfare
+**Query:** What does the Reformed tradition say about the state authority to bear the sword, spiritual warfare against principalities, and the limits of political disarmament?
+
+**NLM Response Summary:**
+- Romans 13:4: State is God's minister, avenger to execute wrath
+- Ephesians 6:12: Wrestle against principalities, not flesh and blood
+- Matthew 26:52: All who take sword will perish by sword
+- Revelation 11:15: Kingdoms of this world become Christ's
+- Isaiah 2:4: Beat swords into plowshares
+- Colossians 2:15: Disarmed principalities and powers at the cross
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Iran Peace / False Peace vs. Shalom
+**Query:** What does the Reformed tradition say about false peace, the difference between ceasefire and shalom, and biblical prophecy about peace without righteousness?
+
+**NLM Response Summary:**
+- Isaiah 57:19-21: No peace for the wicked; true peace is attribute of God
+- John 14:27: My peace I give, not as world gives
+- Amos 5:21-24: Let justice run down like water; righteousness like mighty stream
+- Jeremiah 6:14 / 1 Thessalonians 5:3: "Peace, peace" when there is no peace
+- Colossians 1:20: Made peace through blood of His cross
+- Revelation 11:15 / Isaiah 2:4: Final triumph, swords into plowshares
+- **Status:** NLM verified. No rewrite needed.
+
 ### 2026-05-11 — Patterns Become Prisons / Discernment & Conspiracy
 **Query:** What does the Reformed tradition say about discernment, conspiracy thinking, and the Christian's responsibility to test spirits and examine evidence?
 
