@@ -182,6 +182,73 @@
 - Matthew 5:48: Be perfect as your Father in heaven is perfect
 - **Status:** Response incorporated. Article published.
 
+### 2026-05-11 — China Pastors Freed / Imprisonment & Release
+**Query:** What does the Reformed tradition say about God's sovereignty over the imprisonment and release of His ministers, and how should the church understand suffering for the gospel in light of texts like Genesis 50:20 and 2 Timothy 2:9?
+
+**NLM Response Summary:**
+- Genesis 50:20: You meant evil against me, but God meant it for good
+- 2 Timothy 2:9: The word of God is not chained
+- Acts 4:27-28: Herod and Pilate gathered to do what God's hand determined
+- Acts 12:7, 11: Angel releases Peter; "Now I know the Lord has sent His angel"
+- Philippians 1:6: He who began a good work will complete it
+- 2 Timothy 2:19: The firm foundation stands, "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — North Korea Constitutional Idolatry / State Claims Divine Authority
+**Query:** What does the Reformed tradition say about idolatrous state power, the biblical pattern of rulers who claim divine authority, and God's sovereignty over tyrants who write themselves into God's office?
+
+**NLM Response Summary:**
+- Daniel 4:30: "Is not this great Babylon, that I have built?"
+- Exodus 9:16 / Romans 9:17: For this purpose I have raised you up
+- 2 Thessalonians 2:4: Sits as God in the temple of God
+- Daniel 5:26-28: Numbered, weighed, found wanting; kingdom divided
+- Isaiah 14:14: "I will make myself like the Most High"
+- Psalm 2:1: Nations rage and people plot a vain thing
+- 2 Timothy 2:19: Firm foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Raymond Koh / Enforced Disappearance & Martyrdom
+**Query:** What does the Reformed tradition say about enforced disappearance of pastors, state persecution of the church, and the biblical theology of martyrdom when no grave exists?
+
+**NLM Response Summary:**
+- Genesis 50:20: God meant it for good
+- Acts 5:29: We ought to obey God rather than men
+- 2 Timothy 2:9: The word of God is not chained
+- Hebrews 12:22-23: Church of the firstborn registered in heaven
+- Revelation 6:10: "How long, O Lord, until You judge and avenge our blood?"
+- Hebrews 11:38: Wandered in deserts, dens, and caves of the earth
+- Daniel 5:27: Weighed in the balances and found wanting
+- 2 Timothy 2:19: The Lord knows those who are His
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Bajau Laut / State Coercion of Religious Identity
+**Query:** What does the Reformed tradition say about state coercion of religious identity, the treatment of stateless sojourners, and when civil power oversteps its jurisdiction into matters of conscience and worship?
+
+**NLM Response Summary:**
+- Matthew 22:21: Render to Caesar what is Caesar's, to God what is God's
+- Exodus 22:21: You shall neither mistreat a stranger nor oppress him
+- Deuteronomy 10:18: God administers justice for the fatherless and loves the stranger
+- Matthew 10:28: Do not fear those who kill the body but cannot kill the soul
+- Acts 5:29: We must obey God rather than men
+- Hebrews 12:23: Registered in heaven
+- Daniel 5:26-27: Numbered, weighed, found deficient
+- 2 Timothy 2:19: The Lord knows those who are His
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Nazi Occult Roots / Occult State Religion
+**Query:** What does the Reformed tradition say about occult influence in political power, the biblical prohibition of divination and sorcery in Deuteronomy 18, and the spiritual architecture of regimes that replace Christianity with state religion?
+
+**NLM Response Summary:**
+- Deuteronomy 18:9-13: Abominations — witchcraft, sorcery, mediums, necromancy
+- Exodus 7:11-12: Egyptian magicians' rods swallowed by Aaron's
+- Genesis 11:4: Let us make a name for ourselves
+- 2 Thessalonians 2:4: Sits as God in the temple of God
+- Daniel 4:30 / Daniel 5:26-28: Monument of pride; numbered and found wanting
+- 2 Timothy 2:19: The firm foundation stands
+- Ephesians 6:12: Wrestle against principalities, not flesh and blood
+- 2 Corinthians 10:5: Cast down arguments against the knowledge of God
+- **Status:** NLM verified. No rewrite needed.
+
 ## Frame Inventory by Article
 
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
@@ -195,15 +262,20 @@
 | kenya-leader-forgets-frame.html | Performative religion vs. obedience | — | — | Matt 23:27-28, 1 Sam 15:22-23 |
 | prisoner-exchange-ransom.html | Ransom / substitutionary atonement | — | — | Numbers 3:45-47, Matt 20:28 |
 | russia-missionaries-arrested.html | State usurpation vs. Christ's headship | WCF 23 (civil magistrate) | John Huss | Acts 5:29, Col 1:18, Matt 16:18, Heb 12:22-23, 2 Tim 2:19 |
+| china-christians-freed-2026.html | Providence over imprisonment; word unchained | — | — | Gen 50:20, 2 Tim 2:9, Phil 1:12, Ps 40:1-3, Acts 5:29 |
+| north-korea-nukes-2026.html | Constitutional idolatry; state as false god | WCF 23.1 | — | Dan 4:30, Dan 5:25-28, Isa 14:13-15, Ps 2:2-5, 2 Thess 2:4 |
+| raymond-koh.html | Enforced disappearance and heavenly registry | — | — | Rom 13:1-4, Acts 5:29, 1 Sam 2:6-8, Ps 10:1-2, Heb 11:4, Rev 6:9-11 |
+| bajau-laut-stateless.html | State coercion of conscience vs. sojourner justice | WCF 20.2, WCF 23.1 | — | Deut 24:17-18, Lev 19:33-34, Matt 22:21, Acts 5:29, James 2:15-16 |
+| nazi-occult-roots.html | Occult state religion replacing Christianity | WCF 23.1 | — | Deut 18:9-13, Eph 6:12, 2 Thess 2:3-4, 2 Cor 10:5, Dan 5:26-28 |
 
 ## Theological Tag Distribution
 
 | Tag | Count |
 |-----|-------|
-| Persecution | 12 |
+| Persecution | 15 |
 | Ecclesiology | 9 |
 | Providence | 6 |
-| Idolatry | 5 |
+| Idolatry | 7 |
 | Sufficiency of Scripture | 3 |
 | Bible Lessons | 3 |
 | Politics | 2 |
