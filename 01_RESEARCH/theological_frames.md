@@ -249,6 +249,20 @@
 - 2 Corinthians 10:5: Cast down arguments against the knowledge of God
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-12 — Silicon Valley Faith-AI / Moralism Without Regeneration
+**Query:** What does the Reformed tradition say about the world seeking moral wisdom from religion while rejecting divine authority, the difference between common grace and saving faith in public ethics, and the insufficiency of moralism without regeneration?
+
+**NLM Response Summary:**
+- Romans 1:21-22: They knew God, did not glorify Him, professing to be wise became fools
+- Romans 8:7: Carnal mind is enmity against God, not subject to God's law
+- Matthew 5:45: Common grace — sun rises on evil and good, rain on just and unjust
+- Matthew 23:27-28: Whitewashed tombs — beautiful outward, dead inward
+- Isaiah 64:6: All righteousnesses as filthy rags
+- John 3:3: Unless one is born again, cannot see the kingdom of God
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- WCF 16.7: Works of unregenerate men — good use but not saving works
+- **Status:** Response incorporated. Article published.
+
 ## Frame Inventory by Article
 
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
@@ -267,6 +281,7 @@
 | raymond-koh.html | Enforced disappearance and heavenly registry | — | — | Rom 13:1-4, Acts 5:29, 1 Sam 2:6-8, Ps 10:1-2, Heb 11:4, Rev 6:9-11 |
 | bajau-laut-stateless.html | State coercion of conscience vs. sojourner justice | WCF 20.2, WCF 23.1 | — | Deut 24:17-18, Lev 19:33-34, Matt 22:21, Acts 5:29, James 2:15-16 |
 | nazi-occult-roots.html | Occult state religion replacing Christianity | WCF 23.1 | — | Deut 18:9-13, Eph 6:12, 2 Thess 2:3-4, 2 Cor 10:5, Dan 5:26-28 |
+| silicon-valley-faith-ai.html | Moralism without regeneration; ethics without authority | WCF 16.7 | — | Rom 1:21-22, Rom 8:7, Matt 5:45, Matt 23:27-28, Isa 64:6, John 3:3, 2 Tim 2:19 |
 
 ## Theological Tag Distribution
 
@@ -285,7 +300,7 @@
 | Redemption | 1 |
 | Perseverance | 1 |
 | Conversion | 1 |
-| Cultural Engagement | 1 |
+| Cultural Engagement | 2 |
 | Demographics | 1 |
 | Vocation | 1 |
 | Covenant | 1 |
