@@ -249,6 +249,72 @@
 - 2 Corinthians 10:5: Cast down arguments against the knowledge of God
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-11 — CERN Shiva / Idolatry of Knowledge
+**Query:** What does the Reformed tradition say about idolatry in scientific institutions and the temptation of knowledge apart from God?
+
+**NLM Response Summary:**
+- Romans 1:21-22: Professing to be wise, they became fools — futility of thought without God
+- Genesis 3:5-6: Temptation of knowledge without God — "desirable to make one wise"
+- Romans 1:25: Exchanged truth of God for the lie, worshiped creature rather than Creator
+- Jeremiah 9:24: Boast in knowing and understanding the Lord, not human achievement
+- Proverbs 28:26: He who trusts in his own heart is a fool
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Indonesia Church Permit / State Bureaucracy vs. Christ's Headship
+**Query:** What does the Reformed tradition say about state permit requirements for churches and how should believers respond when bureaucracy blocks worship indefinitely?
+
+**NLM Response Summary:**
+- Colossians 1:18: Christ is head of the church — no state official can share that title
+- Matthew 16:18: Christ builds His church; gates of Hades shall not prevail
+- Luke 18:1-3: Parable of persistent widow — "always ought to pray and not lose heart"
+- Acts 5:29: "We ought to obey God rather than men" — boundary on civil authority
+- 2 Timothy 2:9: "The word of God is not chained" — bureaucracy cannot bind the gospel
+- Hebrews 12:22-23: Church of the firstborn registered in heaven, not in a state office
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Notre Dame Stained Glass / Beauty in Worship & Sola Scriptura
+**Query:** What does the Reformed tradition say about beauty in worship, sacred spaces, and the difference between human tradition and biblical authority in how we arrange our assemblies?
+
+**NLM Response Summary:**
+- Matthew 15:9 / Deuteronomy 12:32: Regulative Principle — worship God as He requires, not by human invention
+- Exodus 28:2: Old Testament beauty for glory — typified the coming Messiah
+- 1 Peter 3:3-4: Incorruptible beauty of gentle and quiet spirit — inward, not outward adornment
+- 1 Kings 8:27 / Acts 7:48: Most High does not dwell in temples made with hands
+- 1 Corinthians 6:19: Body is temple of Holy Spirit — believer as portable sanctuary
+- Mark 7:13: Making word of God of no effect through tradition
+- Zephaniah 3:11 / Martin Luther: Conscience captive to Word of God, not councils or popes
+- 2 Timothy 2:19: Firm foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Armenian Cathedral / Desecration of Sanctuaries & Lament
+**Query:** What does the Reformed tradition say about the destruction and desecration of church buildings, and how should believers lament and respond when their sanctuaries are burned?
+
+**NLM Response Summary:**
+- Isaiah 46:9-10: God declares end from beginning — no desecration thwarts His sovereign plan
+- Isaiah 64:10-11: "Our holy and beautiful temple is burned up with fire" — biblical pattern of lament
+- 1 Corinthians 6:19: The true temple is the believer's body — indestructible sanctuary
+- Revelation 11:15: Kingdoms of this world become Christ's — final triumph over all desecration
+- Revelation 21:22: No temple in new Jerusalem — Lord God Almighty and Lamb are its temple
+- Lamentations 3:22: Through the Lord's mercies we are not consumed
+- 2 Timothy 2:19: Firm foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-11 — Malaysia Unauthorised Worship / House Church Validity & State Registration
+**Query:** What does the Reformed tradition say about state registration of churches, the validity of house churches, and whether state permits are necessary for legitimate worship?
+
+**NLM Response Summary:**
+- Colossians 1:18: Jesus Christ alone is head of the church — no state license confers legitimacy
+- Matthew 28:18: All authority given to Christ — church legitimacy from submission to the King
+- Acts 2:46: Breaking bread from house to house — apostolic pattern of house church
+- Matthew 18:20: "Where two or three are gathered in My name, I am there in the midst"
+- Acts 5:29: "We ought to obey God rather than men" — ultimate allegiance
+- 2 Timothy 2:9: "The word of God is not chained" — gospel unbound by permit denials
+- Matthew 6:6 / 1 Peter 2:5: Inner room prayer; living stones — no prescribed building required
+- 2 Timothy 2:19: Firm foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
 ### 2026-05-12 — India Church Federation / Unity Under Persecution
 **Query:** What does the Reformed tradition say about church unity across denominations, the nature of the visible church under persecution, and how should believers think about ecumenical cooperation when the gospel is at stake?
 
@@ -279,6 +345,76 @@
 - WCF 16.7: Works of unregenerate men — good use but not saving works
 - **Status:** Response incorporated. Article published.
 
+### 2026-05-12 — Lebanon Convent Burning / Church Under Hostile Powers
+**Query:** What does the Reformed tradition say about the church's posture toward hostile political powers, the destruction of church buildings and monasteries, and God's sovereignty over persecution and desecrated sanctuaries?
+
+**NLM Response Summary:**
+- Romans 13:1-4: Subject to governing authorities; no authority except from God
+- Acts 5:29-31: We ought to obey God rather than men
+- Genesis 50:20: You meant evil against me, but God meant it for good
+- Isaiah 64:10-11: Holy temple burned with fire — biblical pattern of lament
+- 1 Corinthians 6:19-20: Body is temple of Holy Spirit — indestructible sanctuary
+- Colossians 1:18: Christ alone is head of the church
+- 1 Peter 2:5: Living stones built into spiritual house
+- Ephesians 1:11: God works all things according to counsel of His will
+- Revelation 21:4: God will wipe away every tear
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Record Highs, Empty Wallets / Economic Divergence & Providence
+**Query:** What does the Reformed tradition say about economic divergence, material prosperity as a measure of human worth, and the danger of confusing common grace with divine blessing?
+
+**NLM Response Summary:**
+- Luke 12:15: One's life does not consist in abundance of possessions
+- 1 Samuel 2:7-8: The Lord makes poor and makes rich; He brings low and lifts up
+- Matthew 5:45: Sun rises on evil and good — common grace to all
+- Haggai 2:8: The silver is Mine and the gold is Mine, says the Lord
+- 1 Corinthians 6:19-20: Body is temple of Holy Spirit; you are not your own
+- Romans 14:17: Kingdom is righteousness, peace, joy in Holy Spirit — not material
+- 1 Timothy 6:6: Godliness with contentment is great gain
+- Ephesians 1:11: God works all things according to counsel of His will
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Economic Precarity 2026 / Anxiety & Sovereignty
+**Query:** What does the Reformed tradition say about economic precarity, the anxiety of financial instability, and how believers should understand God's sovereignty over their material circumstances?
+
+**NLM Response Summary:**
+- Luke 12:15: Life does not consist in abundance of possessions
+- Psalm 102:4-6: Heart stricken and withered like grass — biblical lament for distress
+- 1 Samuel 2:7-8: The Lord makes poor and rich; He brings low and lifts up
+- Revelation 21:4: God will wipe away every tear — final hope beyond precarity
+- Isaiah 40:8: The Word of our God stands forever — while riches vanish like smoke
+- Philippians 1:6: He who began a good work will complete it until the day of Christ
+- Haggai 2:8: The silver and gold belong to the Lord
+- Psalm 94:19: When anxiety was great, Your consolation brought joy to my soul
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Egypt YouTuber Imprisonment / Public Witness Under Criminalization
+**Query:** What does the Reformed tradition say about the mandate of public witness when the state forbids it, criminal prosecution for evangelism, and the believer's response to persecution for sharing the gospel?
+
+**NLM Response Summary:**
+- Acts 5:29-31: We ought to obey God rather than men — ultimate allegiance
+- Romans 13:1-4: Subject to governing authorities — civil peace framework
+- John 15:20-21: If they persecuted Me, they will also persecute you — expected hostility
+- 1 Peter 2:18: Be submissive to masters, not only the good but also the harsh
+- 2 Timothy 2:9: The word of God is not chained — gospel unbound by prison walls
+- 2 Timothy 3:12: All who desire to live godly in Christ Jesus will suffer persecution
+- Revelation 11:15: Kingdoms of this world become Christ's — final triumph
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Deepfake Truth / Propositional Truth & Ninth Commandment
+**Query:** What does the Reformed tradition say about propositional truth, the ninth commandment's application in the digital age, and the Christian's responsibility regarding AI-generated deception and false witness?
+
+**NLM Response Summary:**
+- John 14:6: I am the way, the truth, and the life — truth is personal in Christ
+- John 17:17: Sanctify them by Your truth; Your word is truth — truth is propositional
+- Exodus 20:16: You shall not bear false witness against your neighbor
+- Exodus 23:1: You shall not circulate a false report
+- 1 Thessalonians 5:21-22: Test all things; hold fast what is good
+- Proverbs 12:22: Lying lips are an abomination to the Lord
+- Ephesians 4:25: Put away lying; speak truth with his neighbor
+- 2 Timothy 2:19: Firm foundation of God stands — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
 ## Frame Inventory by Article
 
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
@@ -298,16 +434,26 @@
 | bajau-laut-stateless.html | State coercion of conscience vs. sojourner justice | WCF 20.2, WCF 23.1 | — | Deut 24:17-18, Lev 19:33-34, Matt 22:21, Acts 5:29, James 2:15-16 |
 | nazi-occult-roots.html | Occult state religion replacing Christianity | WCF 23.1 | — | Deut 18:9-13, Eph 6:12, 2 Thess 2:3-4, 2 Cor 10:5, Dan 5:26-28 |
 | silicon-valley-faith-ai.html | Moralism without regeneration; ethics without authority | WCF 16.7 | — | Rom 1:21-22, Rom 8:7, Matt 5:45, Matt 23:27-28, Isa 64:6, John 3:3, 2 Tim 2:19 |
+| cern-shiva-statue.html | Idolatry of knowledge; futility of wisdom without God | — | Voddie Baucham | Rom 1:21-22, Gen 3:5-6, Rom 1:25, Jer 9:24, Prov 28:26, 2 Tim 2:19 |
+| indonesia-church-permit.html | State bureaucracy vs. Christ's headship; heavenly registry | — | John Calvin, Charles Spurgeon | Col 1:18, Matt 16:18, Luke 18:1-3, Acts 5:29, 2 Tim 2:9, Heb 12:22-23, 2 Tim 2:19 |
+| notre-dame-stained-glass.html | Regulative Principle; beauty in worship; sola scriptura | — | John MacArthur, Martin Luther, Jonathan Edwards | Matt 15:9, Deut 12:32, Exod 28:2, 1 Pet 3:3-4, 1 Kgs 8:27, 1 Cor 6:19, Mark 7:13, Zeph 3:11, 2 Tim 2:19 |
+| armenian-cathedral.html | Desecration as lament; indestructible temple; final triumph | — | John MacArthur, Voddie Baucham, Paul Washer | Isa 46:9-10, Isa 64:10-11, 1 Cor 6:19, Rev 11:15, Rev 21:22, Lam 3:22, 2 Tim 2:19 |
+| malaysia-unauthorised-worship.html | House church validity; state registration unnecessary; Christ's presence | — | Charles Spurgeon, John MacArthur | Col 1:18, Matt 28:18, Acts 2:46, Matt 18:20, Acts 5:29, 2 Tim 2:9, Matt 6:6, 1 Pet 2:5, 2 Tim 2:19 |
 | india-church-federation-2026.html | Church unity under persecution; ecumenical cooperation | — | — | Eph 4:1-6, Gal 3:28, Col 1:18, Acts 8:1-4, Matt 16:18, Amos 3:3, Jude 3, 2 John 10-11, Rev 19:7-8, 2 Tim 2:19 |
+| lebanon-convent.html | Church under hostile powers; indestructible temple | — | John MacArthur, Voddie Baucham | Rom 13:1-4, Acts 5:29-31, Gen 50:20, Isa 64:10-11, 1 Cor 6:19-20, Col 1:18, 1 Pet 2:5, Eph 1:11, Rev 21:4, 2 Tim 2:19 |
+| record-highs-empty-wallets.html | Economic divergence; common grace vs. saving faith | — | John MacArthur, Voddie Baucham, Paul Washer | Luke 12:15, 1 Sam 2:7-8, Matt 5:45, Hag 2:8, 1 Cor 6:19-20, Rom 14:17, 1 Tim 6:6, Eph 1:11, 2 Tim 2:19 |
+| economic-precarity-2026.html | Economic precarity; anxiety & divine sovereignty | — | Charles Spurgeon, Voddie Baucham | Luke 12:15, Ps 102:4-6, 1 Sam 2:7-8, Rev 21:4, Isa 40:8, Phil 1:6, Hag 2:8, Ps 94:19, 2 Tim 2:19 |
+| egypt-youtuber.html | Public witness under criminalization; persecution as theatre of grace | — | John Calvin, John MacArthur, Charles Spurgeon | Acts 5:29-31, Rom 13:1-4, John 15:20-21, 1 Pet 2:18, 2 Tim 2:9, 2 Tim 3:12, Rev 11:15, 2 Tim 2:19 |
+| deepfake-truth.html | Propositional truth; ninth commandment in digital age | — | John MacArthur | John 14:6, John 17:17, Exod 20:16, Exod 23:1, 1 Thess 5:21-22, Prov 12:22, Eph 4:25, 2 Tim 2:19 |
 
 ## Theological Tag Distribution
 
 | Tag | Count |
 |-----|-------|
-| Persecution | 15 |
-| Ecclesiology | 10 |
-| Providence | 6 |
-| Idolatry | 7 |
+| Persecution | 17 |
+| Ecclesiology | 14 |
+| Providence | 8 |
+| Idolatry | 8 |
 | Sufficiency of Scripture | 3 |
 | Bible Lessons | 3 |
 | Politics | 2 |
@@ -323,6 +469,6 @@
 | Covenant | 1 |
 | Lament | 1 |
 | Justice | 1 |
-| Truth | 1 |
+| Truth | 2 |
 | Creation | 1 |
 | Sanctity of Life | 2 |
