@@ -43,11 +43,11 @@
 | 31 | 38% of AI spiritual advice is sycophancy. | ai-sycophancy.html | 2026-05-03 | Sufficiency of Scripture | AI | yes | live | NLM verified 2026-05-12. 2 Tim 3:16-17, Ps 19:7-8, 2 Tim 4:3-4, Jer 5:30-31, Luke 16:29-31, Rev 22:18, Matt 7:23, 2 Tim 2:19 confirmed. |
 | 32 | 70 people showed up. It took 25 years. | church-attendance.html | 2026-05-03 | Ecclesiology | Culture | yes | live | NLM verified 2026-05-12. Matt 28:19-20, Col 1:18, Matt 23:27-28, Jude 3, 1 Cor 6:19, 2 Tim 2:19 confirmed. |
 | 33 | 1 in 3 women. The church told her to submit more. | domestic-abuse.html | 2026-05-02 | Justice | Justice | yes | live | NLM verified 2026-05-12. Ps 68:5, Isa 1:17, Eph 5:25, 1 Pet 3:7, Rev 6:10, Gen 18:25, 2 Tim 2:19 confirmed. |
-| 34 | For the first time, young men are more religious than young women. | young-men-religion.html | 2026-05-02 | Demographics | Culture | verify | live | Needs NLM verification |
-| 35 | Work is not a curse. | labor-day.html | 2026-05-01 | Vocation | Work | verify | live | Needs NLM verification |
-| 36 | Your child spends 5 hours a day in worship. | screen-addiction.html | 2026-05-01 | Idolatry | Technology | verify | live | Needs NLM verification |
-| 37 | 40% of births are now outside marriage. | out-of-wedlock.html | 2026-05-01 | Covenant | Family | verify | live | Needs NLM verification |
-| 38 | 2,362 dead. 217 of them children. | iran-war.html | 2026-05-01 | Lament | War | verify | live | Needs NLM verification |
+| 34 | For the first time, young men are more religious than young women. | young-men-religion.html | 2026-05-02 | Demographics | Culture | yes | live | NLM verified 2026-05-12. Isaiah 46:10, 1 John 2:15-16, John 3:19, John 6:44, 2 Timothy 4:2, 2 Timothy 2:19 confirmed. |
+| 35 | Work is not a curse. | labor-day.html | 2026-05-01 | Vocation | Work | yes | live | NLM verified 2026-05-12. Genesis 1:26-27, Genesis 2:15, Genesis 3:17-19, 1 Corinthians 10:31, Revelation 22:3, 2 Timothy 2:19 confirmed. |
+| 36 | Your child spends 5 hours a day in worship. | screen-addiction.html | 2026-05-01 | Idolatry | Technology | yes | live | NLM verified 2026-05-12. Romans 1:21-22, Romans 12:2, Deuteronomy 6:6-7, Ephesians 6:4, Proverbs 22:6, 2 Timothy 4:3, 2 Timothy 2:19 confirmed. |
+| 37 | 40% of births are now outside marriage. | out-of-wedlock.html | 2026-05-01 | Covenant | Family | yes | live | NLM verified 2026-05-12. Genesis 16:13, Exodus 22:22-24, Deuteronomy 10:18, Galatians 4:4-5, Romans 8:15, James 1:27, Isaiah 1:17, 2 Timothy 2:19 confirmed. |
+| 38 | 2,362 dead. 217 of them children. | iran-war.html | 2026-05-01 | Lament | War | yes | live | NLM verified 2026-05-12. Lamentations 1:20, Exodus 22:22-24, Isaiah 46:9-10, Revelation 21:4, Romans 8:28, Acts 2:23, 2 Timothy 2:19 confirmed. |
 | 39 | Lost for 500 years. | codex-h.html | 2026-05-01 | Providence | History | verify | live | Needs NLM verification |
 | 40 | The mob came with iron rods. | odisha-persecution-2026.html | 2026-05-06 | Persecution | Religious Freedom | verify | live | Needs NLM verification |
 | 41 | Four churches. One week. Zero headlines. | chhattisgarh-church-burnings-2026.html | 2026-05-06 | Persecution | Religious Freedom | verify | live | Needs NLM verification |

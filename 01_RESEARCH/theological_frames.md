@@ -479,6 +479,70 @@
 - 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-12 — Young Men & Religion / Divine Draw vs. Worldly Drift
+**Query:** What does the Reformed tradition say about the religious gender gap among young adults, the spiritual drift of young men from the faith, and what Scripture reveals about God's sovereign drawing of sinners?
+
+**NLM Response Summary:**
+- Isaiah 46:10: God's counsel shall stand — no demographic shift thwarts His sovereign plan
+- 1 John 2:15-16: The world's appeal — lust of flesh, lust of eyes, pride of life
+- John 3:19: Men loved darkness rather than light because deeds were evil
+- John 6:44: No one can come unless the Father draws him — divine initiative in conversion
+- 2 Timothy 4:2: Preach the word; be ready in season and out of season
+- 2 Timothy 2:19: The Lord knows those who are His — foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Labor Day / Theology of Work as Pre-Fall Worship
+**Query:** What does the Reformed tradition say about the theology of work, the dignity of labor before the Fall, the curse of toil after sin entered, and the redemptive meaning of vocation?
+
+**NLM Response Summary:**
+- Genesis 1:26-27: Imago Dei — human dignity as image-bearers, foundation of meaningful labor
+- Genesis 2:15: Tend and keep the garden — work as pre-Fall worship and stewardship
+- Genesis 3:17-19: Curse on the ground — toil, sweat, thorns as distortion of labor
+- 1 Corinthians 10:31: Whatever you do, do all to the glory of God
+- Revelation 22:3: No more curse; His servants shall serve Him — restored labor in new creation
+- 2 Timothy 2:19: The Lord knows those who are His — foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Screen Addiction / Idolatry of Attention & Parental Mandate
+**Query:** What does the Reformed tradition say about idolatry, the deformation of desires through digital media, and the biblical mandate for parents to guard their children's hearts and discipline their attention?
+
+**NLM Response Summary:**
+- Romans 1:21-22: Professing to be wise, they became fools — darkened hearts from disordered worship
+- Romans 12:2: Be transformed by renewing of mind — counter-formation against worldly patterns
+- Deuteronomy 6:6-7: Teach children diligently, talk of commandments at all times
+- Ephesians 6:4: Bring children up in training and admonition of the Lord
+- Proverbs 22:6: Train up a child in the way he should go
+- 2 Timothy 4:3: Time will come when they will not endure sound doctrine — itching ears
+- 2 Timothy 2:19: The Lord knows those who are His — foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Out-of-Wedlock Births / Covenant, Adoption & the Fatherless
+**Query:** What does the Reformed tradition say about children born outside of marriage, the church's duty to the fatherless and the widow, and the biblical doctrine of adoption into God's covenant family?
+
+**NLM Response Summary:**
+- Genesis 16:13: You-Are-the-God-Who-Sees — God's care for the outcast mother Hagar
+- Exodus 22:22-24: You shall not afflict any widow or fatherless child; God's wrath burns against oppressors
+- Deuteronomy 10:18: God administers justice for the fatherless and the widow
+- Galatians 4:4-5: God sent forth His Son to redeem, that we might receive adoption as sons
+- Romans 8:15: Spirit of adoption by which we cry, "Abba! Father!"
+- James 1:27: Pure and undefiled religion — visit orphans and widows in their trouble
+- Isaiah 1:17: Seek justice, rebuke the oppressor, defend the fatherless
+- 2 Timothy 2:19: The Lord knows those who are His — foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Iran War / Lament, Sovereignty & the Death of Children
+**Query:** What does the Reformed tradition say about war, mass civilian death, God's sovereignty over national violence, and the biblical practice of lament over the death of innocents?
+
+**NLM Response Summary:**
+- Lamentations 1:20: My soul is troubled; my heart is overturned — biblical language for national anguish
+- Exodus 22:22-24: God's special protection and wrath over the death of children and the vulnerable
+- Isaiah 46:9-10: Declaring the end from the beginning — no war thwarts God's sovereign decree
+- Revelation 21:4: God will wipe away every tear; no more death, sorrow, or pain
+- Romans 8:28: All things work together for good to those who love God
+- Acts 2:23: Christ's death — the greatest atrocity — was by God's determinate counsel and foreknowledge
+- 2 Timothy 2:19: The Lord knows those who are His — foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
 ## Frame Inventory by Article
 
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
@@ -514,6 +578,11 @@
 | ai-sycophancy.html | Sufficiency of Scripture; danger of itching ears | — | John MacArthur, John Calvin | 2 Tim 3:16-17, Ps 19:7-8, 2 Tim 4:3-4, Jer 5:30-31, Luke 16:29-31, Rev 22:18, Matt 7:23, 2 Tim 2:19 |
 | church-attendance.html | Marks of true church; mission of gathered assembly | — | John MacArthur, Martin Luther, Paul Washer | Matt 28:19-20, Col 1:18, Matt 23:27-28, Jude 3, 1 Cor 6:19, 2 Tim 2:19 |
 | domestic-abuse.html | Justice for the vulnerable; protection within marriage covenant | — | John MacArthur, Voddie Baucham | Ps 68:5, Isa 1:17, Eph 5:25, 1 Pet 3:7, Rev 6:10, Gen 18:25, 2 Tim 2:19 |
+| young-men-religion.html | Divine draw vs. worldly drift; young men returning to religion | John 6:44 | John MacArthur, Voddie Baucham, Paul Washer | Isa 46:10, 1 John 2:15-16, John 3:19, John 6:44, 2 Tim 4:2, 2 Tim 2:19 |
+| labor-day.html | Theology of work; pre-Fall dignity and post-Fall redemption of labor | — | John MacArthur | Gen 1:26-27, Gen 2:15, Gen 3:17-19, 1 Cor 10:31, Rev 22:3, 2 Tim 2:19 |
+| screen-addiction.html | Idolatry of attention; parental mandate for guarding children's hearts | — | John MacArthur, Paul Washer, Voddie Baucham | Rom 1:21-22, Rom 12:2, Deut 6:6-7, Eph 6:4, Prov 22:6, 2 Tim 4:3, 2 Tim 2:19 |
+| out-of-wedlock.html | Covenant care for the fatherless; adoption into God's family | — | John MacArthur, Voddie Baucham, Paul Washer | Gen 16:13, Exod 22:22-24, Deut 10:18, Gal 4:4-5, Rom 8:15, James 1:27, Isa 1:17, 2 Tim 2:19 |
+| iran-war.html | Lament over national violence; sovereignty over death of innocents | — | John MacArthur, Voddie Baucham | Lam 1:20, Exod 22:22-24, Isa 46:9-10, Rev 21:4, Rom 8:28, Acts 2:23, 2 Tim 2:19 |
 
 ## Theological Tag Distribution
 
@@ -522,7 +591,7 @@
 | Persecution | 18 |
 | Ecclesiology | 15 |
 | Providence | 8 |
-| Idolatry | 8 |
+| Idolatry | 9 |
 | Sufficiency of Scripture | 4 |
 | Bible Lessons | 3 |
 | Politics | 2 |
@@ -533,10 +602,10 @@
 | Perseverance | 1 |
 | Conversion | 1 |
 | Cultural Engagement | 2 |
-| Demographics | 1 |
-| Vocation | 1 |
-| Covenant | 1 |
-| Lament | 1 |
+| Demographics | 2 |
+| Vocation | 2 |
+| Covenant | 2 |
+| Lament | 2 |
 | Justice | 2 |
 | Truth | 2 |
 | Creation | 2 |
