@@ -415,6 +415,70 @@
 - 2 Timothy 2:19: Firm foundation of God stands — "The Lord knows those who are His"
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-12 — Pastor Arrest / State Authority vs. Christ's Headship
+**Query:** What does the Reformed tradition say about the state's authority to arrest pastors and how should believers respond when the Word of God conflicts with commands of civil rulers?
+
+**NLM Response Summary:**
+- Acts 5:29-31: We ought to obey God rather than men — apostles' defense before Sanhedrin
+- Colossians 1:18: Christ is the head of the church — no civil ruler shares that title
+- Romans 13:1-2: Governing authorities ordained by God for civil peace
+- Genesis 50:20: God meant evil for good — sovereignty over persecution
+- 2 Timothy 2:9: The word of God is not chained
+- Revelation 11:15: Kingdoms of this world become Christ's — final triumph
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Rawness as Proof / Imago Dei
+**Query:** What does the Reformed tradition say about the Imago Dei, what makes humans distinct from animals and machines, and why human creativity cannot be replicated by artificial intelligence?
+
+**NLM Response Summary:**
+- Genesis 1:27: Man created in God's image — crown of creation
+- Genesis 2:7: Breath of life breathed into man — living soul
+- Exodus 31:3-4: Bezalel filled with Spirit in wisdom and workmanship — creativity as gift
+- 1 Corinthians 6:19-20: Body as temple of Holy Spirit; bought at a price
+- Galatians 5:22-23: Fruit of the Spirit — love, joy, peace — which no machine can produce
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — AI Sycophancy / Sufficiency of Scripture
+**Query:** What does the Reformed tradition say about the sufficiency of Scripture, the danger of itching ears, and how should believers respond to AI-generated spiritual advice that tells people what they want to hear?
+
+**NLM Response Summary:**
+- 2 Timothy 3:16-17: All Scripture God-breathed; man of God complete, thoroughly equipped
+- Psalm 19:7-8: Law of the Lord perfect, sure, right, pure — converting the soul
+- 2 Timothy 4:3-4: Time coming when they will not endure sound doctrine; itching ears
+- Jeremiah 5:30-31: Prophets prophesy falsely, priests rule by own power, people love it so
+- Luke 16:29-31: They have Moses and the prophets — if they will not hear them, neither will they be persuaded though one rise from dead
+- Revelation 22:18: If anyone adds to these things, God will add plagues to him
+- Matthew 7:23: "I never knew you; depart from Me, you who practice lawlessness"
+- 2 Timothy 2:19: Firm foundation seal
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Church Attendance / Ecclesiology
+**Query:** What does the Reformed tradition say about the gathered church, its mission, and how can believers discern a faithful assembly from one that has lost its biblical foundation?
+
+**NLM Response Summary:**
+- Matthew 28:19-20: Great Commission — make disciples, baptize, teach all Christ commanded
+- Colossians 1:18: Christ alone head of the body, the church
+- Matthew 23:27-28: Whitewashed tombs — outward beauty, inward death
+- Jude 3: Contend earnestly for the faith once delivered to the saints
+- 1 Corinthians 6:19: Body is temple of Holy Spirit — believer as portable sanctuary
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Domestic Abuse / Justice
+**Query:** What does the Reformed tradition say about domestic abuse, the church's duty to protect the vulnerable, and how the marriage covenant is violated when husbands become oppressors rather than protectors?
+
+**NLM Response Summary:**
+- Psalm 68:5: Father of the fatherless, defender of widows — God's heart for the helpless
+- Isaiah 1:17: Learn to do good; seek justice, rebuke the oppressor, defend the fatherless
+- Ephesians 5:25: Husbands, love wives as Christ loved the church and gave Himself for her
+- 1 Peter 3:7: Husbands dwell with understanding, honor the wife as weaker vessel
+- Revelation 6:10: "How long, O Lord, until You judge and avenge our blood?"
+- Genesis 18:25: Shall not the Judge of all the earth do right?
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM verified. No rewrite needed.
+
 ## Frame Inventory by Article
 
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
@@ -445,16 +509,21 @@
 | economic-precarity-2026.html | Economic precarity; anxiety & divine sovereignty | — | Charles Spurgeon, Voddie Baucham | Luke 12:15, Ps 102:4-6, 1 Sam 2:7-8, Rev 21:4, Isa 40:8, Phil 1:6, Hag 2:8, Ps 94:19, 2 Tim 2:19 |
 | egypt-youtuber.html | Public witness under criminalization; persecution as theatre of grace | — | John Calvin, John MacArthur, Charles Spurgeon | Acts 5:29-31, Rom 13:1-4, John 15:20-21, 1 Pet 2:18, 2 Tim 2:9, 2 Tim 3:12, Rev 11:15, 2 Tim 2:19 |
 | deepfake-truth.html | Propositional truth; ninth commandment in digital age | — | John MacArthur | John 14:6, John 17:17, Exod 20:16, Exod 23:1, 1 Thess 5:21-22, Prov 12:22, Eph 4:25, 2 Tim 2:19 |
+| pastor-arrest.html | State authority vs. Christ's headship; obedience boundaries | — | John Calvin, John MacArthur | Acts 5:29-31, Col 1:18, Rom 13:1-2, Gen 50:20, 2 Tim 2:9, Rev 11:15, 2 Tim 2:19 |
+| rawness-proof.html | Imago Dei; human uniqueness vs. machine mimicry | — | John MacArthur | Gen 1:27, Gen 2:7, Exod 31:3-4, 1 Cor 6:19-20, Gal 5:22-23, 2 Tim 2:19 |
+| ai-sycophancy.html | Sufficiency of Scripture; danger of itching ears | — | John MacArthur, John Calvin | 2 Tim 3:16-17, Ps 19:7-8, 2 Tim 4:3-4, Jer 5:30-31, Luke 16:29-31, Rev 22:18, Matt 7:23, 2 Tim 2:19 |
+| church-attendance.html | Marks of true church; mission of gathered assembly | — | John MacArthur, Martin Luther, Paul Washer | Matt 28:19-20, Col 1:18, Matt 23:27-28, Jude 3, 1 Cor 6:19, 2 Tim 2:19 |
+| domestic-abuse.html | Justice for the vulnerable; protection within marriage covenant | — | John MacArthur, Voddie Baucham | Ps 68:5, Isa 1:17, Eph 5:25, 1 Pet 3:7, Rev 6:10, Gen 18:25, 2 Tim 2:19 |
 
 ## Theological Tag Distribution
 
 | Tag | Count |
 |-----|-------|
-| Persecution | 17 |
-| Ecclesiology | 14 |
+| Persecution | 18 |
+| Ecclesiology | 15 |
 | Providence | 8 |
 | Idolatry | 8 |
-| Sufficiency of Scripture | 3 |
+| Sufficiency of Scripture | 4 |
 | Bible Lessons | 3 |
 | Politics | 2 |
 | Discernment | 1 |
@@ -468,7 +537,7 @@
 | Vocation | 1 |
 | Covenant | 1 |
 | Lament | 1 |
-| Justice | 1 |
+| Justice | 2 |
 | Truth | 2 |
-| Creation | 1 |
+| Creation | 2 |
 | Sanctity of Life | 2 |

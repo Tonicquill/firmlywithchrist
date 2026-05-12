@@ -38,11 +38,11 @@
 | 26 | Resilient on paper. Precarious in person. | economic-precarity-2026.html | 2026-05-06 | Providence | Finance | yes | live | NLM verified 2026-05-12. Luke 12:15, Ps 102:4-6, 1 Sam 2:7-8, Rev 21:4, Isa 40:8, Phil 1:6, Hag 2:8, Ps 94:19, 2 Tim 2:19 confirmed. |
 | 27 | 100,000 subscribers. 5 years in prison. | egypt-youtuber.html | 2026-05-05 | Persecution | Persecution | yes | live | NLM verified 2026-05-12. Acts 5:29-31, Rom 13:1-4, John 15:20-21, 1 Pet 2:18, 2 Tim 2:9, 2 Tim 3:12, Rev 11:15, 2 Tim 2:19 confirmed. |
 | 28 | The video was perfect. It was also a lie. | deepfake-truth.html | 2026-05-05 | Truth | AI | yes | live | NLM verified 2026-05-12. John 14:6, John 17:17, Exod 20:16, Exod 23:1, 1 Thess 5:21-22, Prov 12:22, Eph 4:25, 2 Tim 2:19 confirmed. |
-| 29 | "In the name of Jesus, get in the car." | pastor-arrest.html | 2026-05-04 | Persecution | Persecution | verify | live | Needs NLM verification |
-| 30 | Rawness is proof. So is the soul. | rawness-proof.html | 2026-05-04 | Creation | AI | verify | live | Needs NLM verification |
-| 31 | 38% of AI spiritual advice is sycophancy. | ai-sycophancy.html | 2026-05-03 | Sufficiency of Scripture | AI | verify | live | Needs NLM verification |
-| 32 | 70 people showed up. It took 25 years. | church-attendance.html | 2026-05-03 | Ecclesiology | Culture | verify | live | Needs NLM verification |
-| 33 | 1 in 3 women. The church told her to submit more. | domestic-abuse.html | 2026-05-02 | Justice | Justice | verify | live | Needs NLM verification |
+| 29 | "In the name of Jesus, get in the car." | pastor-arrest.html | 2026-05-04 | Persecution | Persecution | yes | live | NLM verified 2026-05-12. Acts 5:29-31, Col 1:18, Rom 13:1-2, Gen 50:20, 2 Tim 2:9, Rev 11:15, 2 Tim 2:19 confirmed. |
+| 30 | Rawness is proof. So is the soul. | rawness-proof.html | 2026-05-04 | Creation | AI | yes | live | NLM verified 2026-05-12. Gen 1:27, Gen 2:7, Exod 31:3-4, 1 Cor 6:19-20, Gal 5:22-23, 2 Tim 2:19 confirmed. |
+| 31 | 38% of AI spiritual advice is sycophancy. | ai-sycophancy.html | 2026-05-03 | Sufficiency of Scripture | AI | yes | live | NLM verified 2026-05-12. 2 Tim 3:16-17, Ps 19:7-8, 2 Tim 4:3-4, Jer 5:30-31, Luke 16:29-31, Rev 22:18, Matt 7:23, 2 Tim 2:19 confirmed. |
+| 32 | 70 people showed up. It took 25 years. | church-attendance.html | 2026-05-03 | Ecclesiology | Culture | yes | live | NLM verified 2026-05-12. Matt 28:19-20, Col 1:18, Matt 23:27-28, Jude 3, 1 Cor 6:19, 2 Tim 2:19 confirmed. |
+| 33 | 1 in 3 women. The church told her to submit more. | domestic-abuse.html | 2026-05-02 | Justice | Justice | yes | live | NLM verified 2026-05-12. Ps 68:5, Isa 1:17, Eph 5:25, 1 Pet 3:7, Rev 6:10, Gen 18:25, 2 Tim 2:19 confirmed. |
 | 34 | For the first time, young men are more religious than young women. | young-men-religion.html | 2026-05-02 | Demographics | Culture | verify | live | Needs NLM verification |
 | 35 | Work is not a curse. | labor-day.html | 2026-05-01 | Vocation | Work | verify | live | Needs NLM verification |
 | 36 | Your child spends 5 hours a day in worship. | screen-addiction.html | 2026-05-01 | Idolatry | Technology | verify | live | Needs NLM verification |
