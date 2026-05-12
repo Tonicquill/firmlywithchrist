@@ -25,6 +25,7 @@
 | Slot | Theme | NLM Status |
 |------|-------|------------|
 | Mon 2026-05-11 | Russia called it 'illegal missionary work.' The church called it Sunday. | Published |
+| Tue 2026-05-12 | Silicon Valley found religion. It didn't find God. | Published |
 | Wed 2026-05-13 | Theological explainer | Not started |
 | Fri 2026-05-15 | News-reactive hot take | Not started |
 | Sun 2026-05-17 | Personal/devotional | Not started |
