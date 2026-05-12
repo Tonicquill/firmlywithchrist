@@ -10,6 +10,7 @@
 |---|-------|------|------|-----|-------------|--------------|--------------|-------|
 | 1 | Russia called it 'illegal missionary work.' The church called it Sunday. | russia-missionaries-arrested.html | 2026-05-11 | Ecclesiology | Religious Freedom | yes | live | NLM-queried. Acts 5:29, Col 1:18, Matt 16:18, Heb 12:22-23, 2 Tim 2:19. John Huss reference. |
 | — | Silicon Valley found religion. It didn't find God. | silicon-valley-faith-ai.html | 2026-05-12 | Cultural Engagement | AI | yes | live | NLM-queried 2026-05-11. Rom 1:21-22, Rom 8:7, Matt 5:45, Matt 23:27-28, Isa 64:6, John 3:3, 2 Tim 2:19. |
+| — | 45 denominations. One federation. 834 reasons why. | india-church-federation-2026.html | 2026-05-12 | Ecclesiology | Religious Freedom | yes | draft | NLM-queried 2026-05-12. Eph 4:1-6, Gal 3:28, Col 1:18, Acts 8:1-4, Matt 16:18, Amos 3:3, Jude 3, 2 John 10-11, Rev 19:7-8, 2 Tim 2:19. |
 | 2 | Kipling Wrote the Virtues. The Bible Wrote the Power. | if-kipling.html | 2026-05-10 | Bible Lessons | Culture | yes | live | Queried NLM; Isaiah 64:6, Rom 8:7-8, 2 Cor 4:4, Gal 5:22-23 framing |
 | 3 | Do Not Let the Sun Go Down on Your Wrath | do-not-let-the-sun-go-down.html | 2026-05-10 | Bible Lessons | Culture | yes | live | NLM rewrite complete 2026-05-10. 2 Cor 2:11, Prov 27:4, Eph 4:32 added. |
 | 4 | The Pharisee Is in Your Mirror | log-in-your-eye.html | 2026-05-10 | Bible Lessons | Culture | yes | live | NLM rewrite complete 2026-05-10. 2 Tim 2:19, Titus 1:16, Rom 2:14-15, forensic justification added. |

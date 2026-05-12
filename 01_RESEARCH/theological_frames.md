@@ -249,6 +249,22 @@
 - 2 Corinthians 10:5: Cast down arguments against the knowledge of God
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-12 — India Church Federation / Unity Under Persecution
+**Query:** What does the Reformed tradition say about church unity across denominations, the nature of the visible church under persecution, and how should believers think about ecumenical cooperation when the gospel is at stake?
+
+**NLM Response Summary:**
+- Ephesians 4:1-6: Unity grounded in seven "ones" — one body, Spirit, hope, Lord, faith, baptism, God
+- Galatians 3:28: One in Christ — no Jew/Greek, slave/free, male/female
+- Colossians 1:18: Christ alone is Head of the church
+- Acts 8:1-4: Persecution scattered church → scattering became sending. God harnesses wicked deeds for gospel advance.
+- Matthew 16:18: Christ builds His church; gates of Hades shall not prevail
+- Amos 3:3: "Can two walk together, unless they are agreed?" — unity requires doctrinal agreement
+- Jude 3: Contend earnestly for the faith once delivered. The verb is combative.
+- 2 John 10-11: Boundary of Christian fellowship is doctrinal, not organizational
+- Revelation 19:7-8: Marriage supper of Lamb as final unity, bride made ready
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** Response incorporated. Article drafted.
+
 ### 2026-05-12 — Silicon Valley Faith-AI / Moralism Without Regeneration
 **Query:** What does the Reformed tradition say about the world seeking moral wisdom from religion while rejecting divine authority, the difference between common grace and saving faith in public ethics, and the insufficiency of moralism without regeneration?
 
@@ -282,13 +298,14 @@
 | bajau-laut-stateless.html | State coercion of conscience vs. sojourner justice | WCF 20.2, WCF 23.1 | — | Deut 24:17-18, Lev 19:33-34, Matt 22:21, Acts 5:29, James 2:15-16 |
 | nazi-occult-roots.html | Occult state religion replacing Christianity | WCF 23.1 | — | Deut 18:9-13, Eph 6:12, 2 Thess 2:3-4, 2 Cor 10:5, Dan 5:26-28 |
 | silicon-valley-faith-ai.html | Moralism without regeneration; ethics without authority | WCF 16.7 | — | Rom 1:21-22, Rom 8:7, Matt 5:45, Matt 23:27-28, Isa 64:6, John 3:3, 2 Tim 2:19 |
+| india-church-federation-2026.html | Church unity under persecution; ecumenical cooperation | — | — | Eph 4:1-6, Gal 3:28, Col 1:18, Acts 8:1-4, Matt 16:18, Amos 3:3, Jude 3, 2 John 10-11, Rev 19:7-8, 2 Tim 2:19 |
 
 ## Theological Tag Distribution
 
 | Tag | Count |
 |-----|-------|
 | Persecution | 15 |
-| Ecclesiology | 9 |
+| Ecclesiology | 10 |
 | Providence | 6 |
 | Idolatry | 7 |
 | Sufficiency of Scripture | 3 |
