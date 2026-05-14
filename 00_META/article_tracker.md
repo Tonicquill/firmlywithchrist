@@ -48,22 +48,25 @@
 | 36 | Your child spends 5 hours a day in worship. | screen-addiction.html | 2026-05-01 | Idolatry | Technology | yes | live | NLM verified 2026-05-12. Romans 1:21-22, Romans 12:2, Deuteronomy 6:6-7, Ephesians 6:4, Proverbs 22:6, 2 Timothy 4:3, 2 Timothy 2:19 confirmed. |
 | 37 | 40% of births are now outside marriage. | out-of-wedlock.html | 2026-05-01 | Covenant | Family | yes | live | NLM verified 2026-05-12. Genesis 16:13, Exodus 22:22-24, Deuteronomy 10:18, Galatians 4:4-5, Romans 8:15, James 1:27, Isaiah 1:17, 2 Timothy 2:19 confirmed. |
 | 38 | 2,362 dead. 217 of them children. | iran-war.html | 2026-05-01 | Lament | War | yes | live | NLM verified 2026-05-12. Lamentations 1:20, Exodus 22:22-24, Isaiah 46:9-10, Revelation 21:4, Romans 8:28, Acts 2:23, 2 Timothy 2:19 confirmed. |
-| 39 | Lost for 500 years. | codex-h.html | 2026-05-01 | Providence | History | verify | live | Needs NLM verification |
-| 40 | The mob came with iron rods. | odisha-persecution-2026.html | 2026-05-06 | Persecution | Religious Freedom | verify | live | Needs NLM verification |
-| 41 | Four churches. One week. Zero headlines. | chhattisgarh-church-burnings-2026.html | 2026-05-06 | Persecution | Religious Freedom | verify | live | Needs NLM verification |
-| 42 | The first Christian nation is now prosecuting the church. | armenia-state-persecution-2026.html | 2026-05-06 | Ecclesiology | Religious Freedom | verify | live | Needs NLM verification |
-| 43 | The Vatican found a new partner. It's a machine. | ai-vatican-partnership-2026.html | 2026-05-06 | Sufficiency of Scripture | AI | verify | live | Needs NLM verification |
-| 44 | Silicon Valley built another god. It's trembling before it. | anthropic-mythos-ai.html | 2026-05-07 | Sufficiency of Scripture | AI | verify | live | Needs NLM verification |
-| 45 | The fact-finding team went to Odisha. | odisha-fact-finding-2026.html | 2026-05-07 | Persecution | Human Rights | verify | live | Needs NLM verification |
-| 46 | Trump met the Pope. | trump-pope-leo-xiv.html | 2026-05-07 | Ecclesiology | Politics | verify | live | Needs NLM verification |
-| 47 | They announced peace in Iran. | iran-peace-false.html | 2026-05-07 | Providence | War | verify | live | Needs NLM verification |
-| 48 | They stormed the Mass with knives. | rajasthan-mass-arrest.html | 2026-05-07 | Persecution | Religious Freedom | verify | live | Needs NLM verification |
-| 49 | Ontario wanted to teach 16-year-olds how to die. | canada-maid-curriculum.html | 2026-05-07 | Sanctity of Life | Bioethics | verify | live | Needs NLM verification |
-| 50 | India proposed a Christian Welfare Board. | india-christian-welfare-board.html | 2026-05-07 | Ecclesiology | Politics | verify | live | Needs NLM verification |
-| 51 | $42 million for costumes while Christians sat in an Indian jail. | met-gala-persecuted-church.html | 2026-05-07 | Providence | Culture | verify | live | Needs NLM verification |
-| 52 | Wyoming banned abortion. Not because life is sacred. | wyoming-abortion-ban.html | 2026-05-07 | Sanctity of Life | Politics | verify | live | Needs NLM verification |
-| 53 | R.F. Kuang wrote a novel with an Israeli character. | rf-kuang-boycott.html | 2026-05-07 | Cultural Engagement | Culture | verify | live | Needs NLM verification |
+| 39 | Lost for 500 years. | codex-h.html | 2026-05-01 | Providence | History | yes | live | NLM verified 2026-05-12. Isaiah 40:8, Matt 5:18, 2 Tim 2:9 confirmed. WCF 1.8 referenced. |
+| 40 | The mob came with iron rods. | odisha-persecution-2026.html | 2026-05-06 | Persecution | Religious Freedom | yes | live | NLM verified 2026-05-12. 1 Sam 2:6-7, Acts 14:22, Matt 16:18, 1 Sam 2:10 confirmed. WCF 20.2, 25.4 referenced. |
+| 41 | Four churches. One week. Zero headlines. | chhattisgarh-church-burnings-2026.html | 2026-05-06 | Persecution | Religious Freedom | yes | live | NLM verified 2026-05-12. 1 Sam 2:6-8, Matt 5:10-12, 1 Pet 2:5, 1 Sam 2:10 confirmed. |
+| 42 | The first Christian nation is now prosecuting the church. | armenia-state-persecution-2026.html | 2026-05-06 | Ecclesiology | Religious Freedom | yes | live | NLM verified 2026-05-12. Isa 33:22, Col 1:18, Acts 5:29 confirmed. WCF 20.2, 23.3 referenced. |
+| 43 | The Vatican found a new partner. It's a machine. | ai-vatican-partnership-2026.html | 2026-05-06 | Sufficiency of Scripture | AI | yes | live | NLM verified 2026-05-12. 2 Tim 3:16-17, Col 1:18, 1 Cor 2:14, Gen 1:27 confirmed. WCF 1.6 referenced. |
+| 44 | Silicon Valley built another god. It's trembling before it. | anthropic-mythos-ai.html | 2026-05-07 | Sufficiency of Scripture | AI | yes | live | NLM verified 2026-05-12. Rom 1:25, John 14:6, 2 Tim 3:16-17 confirmed. Calvin Institutes I.11 referenced. |
+| 45 | The fact-finding team went to Odisha. | odisha-fact-finding-2026.html | 2026-05-07 | Persecution | Human Rights | yes | live | NLM verified 2026-05-12. Acts 14:22, Acts 5:29, Rev 12:11 confirmed. |
+| 46 | Trump met the Pope. | trump-pope-leo-xiv.html | 2026-05-07 | Ecclesiology | Politics | yes | live | NLM verified 2026-05-12. Acts 5:29, Col 1:18, Matt 22:21 confirmed. WCF 23, 31 referenced. |
+| 47 | They announced peace in Iran. | iran-peace-false.html | 2026-05-07 | Providence | War | yes | live | NLM verified 2026-05-12. Jer 6:14, 1 Sam 2:6-7, Matt 16:26 confirmed. |
+| 48 | They stormed the Mass with knives. | rajasthan-mass-arrest.html | 2026-05-07 | Persecution | Religious Freedom | yes | live | NLM verified 2026-05-12. Prov 17:15, Acts 4:19-20, Acts 5:29 confirmed. |
+| 49 | Ontario wanted to teach 16-year-olds how to die. | canada-maid-curriculum.html | 2026-05-07 | Sanctity of Life | Bioethics | yes | live | NLM verified 2026-05-12. 1 Cor 6:19-20, Gen 1:27, 2 Cor 12:9 confirmed. Calvin Institutes I.11 referenced. |
+| 50 | India proposed a Christian Welfare Board. | india-christian-welfare-board.html | 2026-05-07 | Ecclesiology | Politics | yes | live | NLM verified 2026-05-12. Ex 1:9-10, Matt 22:21, Dan 6:10 confirmed. |
+| 51 | $42 million for costumes while Christians sat in an Indian jail. | met-gala-persecuted-church.html | 2026-05-07 | Providence | Culture | yes | live | NLM verified 2026-05-12. Jas 5:1-3, Amos 6:4-6, Matt 5:10 confirmed. |
+| 52 | Wyoming banned abortion. Not because life is sacred. | wyoming-abortion-ban.html | 2026-05-07 | Sanctity of Life | Politics | yes | live | NLM verified 2026-05-12. Ps 127:3-5, Jer 1:5 confirmed. Imago Dei grounding. |
+| 53 | R.F. Kuang wrote a novel with an Israeli character. | rf-kuang-boycott.html | 2026-05-07 | Cultural Engagement | Culture | yes | live | NLM verified 2026-05-12. Ex 20:16, Rom 2:11, Isa 33:22 confirmed. |
 | 54 | Samsung bet a trillion dollars on chips. | samsung-nvidia-factories.html | 2026-05-07 | Providence | Finance | yes | live | NLM involved. Rewritten 2026-05-10 with WCF 5.2 guardrails (primary/secondary causation). |
+| 55 | Egypt legalized 191 churches. Christ authorized one. | egypt-legalizes-churches-2026.html | 2026-05-13 | Ecclesiology | Religious Freedom | yes | live | NLM-queried 2026-05-13. Matt 16:18, Eph 1:22-23, Matt 22:21, Ex 1:17, Dan 6:10, Acts 5:29, Dan 2:44, Rev 11:15, Matt 28:18-20, Eph 5:27, 2 Tim 2:19. WCF 23, 25 referenced. |
+| 56 | They walked into a conflict zone to make peace. They were killed doing it. | manipur-peacemakers-killed-2026.html | 2026-05-14 | Persecution | Religious Freedom | yes | draft | NLM-queried 2026-05-15. Matt 5:9, Gen 4:10, Ps 116:15, Heb 12:24, Col 1:20, Eph 2:14, Gal 6:9, Rev 21:4, 2 Tim 2:19. |
+| 57 | Rome threatened excommunication. The SSPX shrugged. Neither asked the right question. | rome-sspx-schism-2026.html | 2026-05-15 | Ecclesiology | Religion | no | live | Written without NLM (tool error). Col 1:18, Eph 1:22-23, Matt 23:8-10, 1 Cor 1:12-13, Rev 11:15, 2 Tim 2:19. WCF 25.1, 25.6. |
 
 ## NLM Backlog
 

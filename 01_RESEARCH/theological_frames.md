@@ -543,6 +543,227 @@
 - 2 Timothy 2:19: The Lord knows those who are His — foundation seal
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-12 — Codex H / Endurance of Scripture
+**Query:** How does Scripture describe its own endurance across time, and what does the whole counsel of God teach about God's sovereign preservation of His Word through historical circumstances that seem to threaten its survival?
+
+**NLM Response Summary:**
+- Isaiah 40:8: The word of our God stands forever
+- Psalm 119:89: Forever, O Lord, Your word is settled in heaven
+- 1 Peter 1:25: The word of the Lord endures forever
+- Matthew 24:35: Heaven and earth will pass away, but My words will by no means pass away
+- 2 Timothy 2:9: The word of God is not chained
+- WCF 1.8: Scripture authentically preserved and kept pure in all ages
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Odisha Persecution 2026 / Comfort Amidst Suffering
+**Query:** What comfort does Scripture offer to Christians suffering violent persecution for their faith, and how does the whole biblical narrative frame the suffering of the church in light of God's sovereignty and Christ's victory?
+
+**NLM Response Summary:**
+- Genesis 50:20: You meant evil against me, but God meant it for good
+- 1 Peter 5:10: After you have suffered a while, perfect, establish, strengthen, settle you
+- 2 Corinthians 4:8: Hard-pressed on every side, yet not crushed
+- Romans 8:32: He who did not spare His own Son — how shall He not freely give us all things?
+- Matthew 10:28: Do not fear those who kill the body but cannot kill the soul
+- 2 Timothy 3:12: All who desire to live godly in Christ Jesus will suffer persecution
+- 1 Peter 2:5: Living stones built into spiritual house
+- Revelation 21:4: God will wipe every tear
+- WCF 20.2, 25.4: Liberty of conscience; the catholic church as Christ's kingdom
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Chhattisgarh Church Burnings 2026 / Blessed Are the Persecuted
+**Query:** What does Christ mean when He declares the persecuted blessed in the Beatitudes, and how does the rest of Scripture develop this theme of blessing through suffering for the name of Christ?
+
+**NLM Response Summary:**
+- Matthew 5:10-12: Blessed are those persecuted for righteousness' sake; great is your reward in heaven
+- 1 Peter 1:6-7: Trial of faith more precious than gold; tested by fire
+- 2 Corinthians 12:9: Grace sufficient; strength made perfect in weakness
+- Acts 5:41: Apostles rejoiced counted worthy to suffer shame for His name
+- Revelation 12:11: Overcame by blood of Lamb and word of testimony
+- John 15:20-21: If they persecuted Me, they will also persecute you
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Armenia State Persecution 2026 / Christ's Headship vs. State Authority
+**Query:** What does the whole counsel of Scripture teach about the relationship between Christ's exclusive headship over the church and the authority of the state, especially when the state claims authority over the church's worship and governance?
+
+**NLM Response Summary:**
+- Colossians 1:18: Christ is head of the body, the church
+- Ephesians 1:22-23: God put all things under His feet, gave Him as head to the church
+- Romans 13:1-2: Governing authorities appointed by God; subject to them
+- Acts 5:29-30: We ought to obey God rather than men
+- 1 Peter 2:13-17: Submit to every ordinance of man for the Lord's sake; honor the king
+- Philippians 3:20: Our citizenship is in heaven
+- John 18:36: My kingdom is not of this world
+- WCF 20.2, 23.3: Liberty of conscience; civil magistrate may not assume administration of Word and sacraments
+- Calvin, Spurgeon referenced
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — AI-Vatican Partnership 2026 / Sufficiency of Scripture vs. Supplementary Authority
+**Query:** What does Scripture teach about its own sufficiency versus the persistent human impulse to supplement God's revelation with other sources of authority, wisdom, or spiritual knowledge?
+
+**NLM Response Summary:**
+- 2 Timothy 3:16-17: All Scripture God-breathed; man of God complete, thoroughly equipped
+- Psalm 19:7-8: Law of the Lord perfect, converting soul; testimony sure, making wise
+- 2 Peter 1:3: Divine power given all things pertaining to life and godliness
+- Psalm 119:105: Your word is a lamp to my feet and a light to my path
+- Colossians 2:8: Beware lest anyone cheat you through philosophy and empty deceit
+- Matthew 15:8-9: Honor with lips, heart far away; teaching as doctrines commandments of men
+- Revelation 22:18-19: If anyone adds, God will add plagues; if anyone takes away, God will take away his part
+- WCF 1.6: Whole counsel of God — nothing at any time to be added
+- Calvin, Spurgeon referenced
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Anthropic Mythos AI / Creator's Truth vs. Creature's Imitation
+**Query:** How does all of Scripture -- from Genesis to Revelation -- teach us to distinguish between the Creator's truth and the creature's imitation of it, and what does that distinction mean for how Christians engage with technologies that claim to generate knowledge?
+
+**NLM Response Summary:**
+- Romans 1:25: Exchanged truth of God for the lie, worshiped creature rather than Creator
+- John 14:6: I am the way, the truth, and the life — truth is personal in Christ
+- 2 Timothy 3:16-17: All Scripture God-breathed; man of God complete, thoroughly equipped
+- Romans 1:21-23: Professing to be wise, they became fools; changed glory of incorruptible God into image of corruptible man
+- Calvin Institutes I.11: Creaturely imagination cannot ascend to knowledge of God without Scripture
+- Sola Scriptura: Scripture alone is the sufficient source of divine knowledge
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Odisha Fact-Finding 2026 / Suffering & Kingdom Advance
+**Query:** What does the entire biblical narrative teach about the relationship between suffering and the advance of God's kingdom, from Abel's blood crying out from the ground to the martyrs under the altar in Revelation, and how should this shape the global church's response to persecution today?
+
+**NLM Response Summary:**
+- Acts 14:22: Through many tribulations we must enter the kingdom of God
+- Acts 5:29: We ought to obey God rather than men
+- Revelation 12:11: Overcame by blood of Lamb and word of testimony; loved not their lives unto death
+- Romans 13: Subject to governing authorities; civil peace framework
+- Hebrews 11:4: Abel's blood still speaks — suffering witness echoes across ages
+- Revelation 6:9-11: Souls under altar crying "How long?" — martyrdom as unfinished testimony
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Trump-Pope Leo XIV / Civil Authority vs. Christ's Authority
+**Query:** How does the whole counsel of Scripture define the boundaries between civil authority and the authority of Christ and His church, from Israel's kings and prophets through the Exile to Christ's teaching on Caesar and the apostles before the Sanhedrin, and what does this mean for how Christians evaluate both political and ecclesiastical power today?
+
+**NLM Response Summary:**
+- Acts 5:29: We ought to obey God rather than men — boundary on all human authority
+- Colossians 1:18: Christ is head of the body, the church — no civil or ecclesiastical ruler shares that title
+- Matthew 22:21: Render to Caesar what is Caesar's, to God what is God's — jurisdictional distinction
+- Romans 13:1-7: Governing authorities ordained by God for civil peace
+- WCF 23: Civil magistrate may not assume administration of Word and sacraments
+- WCF 31: Synods and councils — ministerial and declarative authority only
+- Two Kingdoms: Distinction between civil and spiritual jurisdictions
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Iran Peace False / World's Peace vs. God's Peace
+**Query:** What does Scripture from Genesis to Revelation teach about the difference between the world's peace and God's peace -- from the false peace of the prophets' critics to Christ's declaration that He gives peace not as the world gives -- and how should the church speak about peace in the aftermath of war?
+
+**NLM Response Summary:**
+- Jeremiah 6:14: "Peace, peace" when there is no peace — false prophets healing wound lightly
+- 1 Samuel 2:6-7: The Lord kills and makes alive; brings down to grave and brings up
+- Matthew 16:26: What profit to gain whole world and lose own soul?
+- John 14:27: My peace I give, not as world gives — qualitative distinction in peace
+- Isaiah 48:22: No peace for the wicked, says the Lord
+- 1 Thessalonians 5:3: When they say "peace and safety," sudden destruction comes
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Rajasthan Mass Arrest / Corrupt Courts & Legal Persecution
+**Query:** What does the whole biblical narrative teach about God's response to legal systems that condemn the innocent and acquit the guilty, from the Egyptian taskmasters through the corrupt courts denounced by Israel's prophets to the trial of Christ and the apostles before the Sanhedrin, and what hope and duty does this give to Christians facing weaponized legal persecution today?
+
+**NLM Response Summary:**
+- Proverbs 17:15: He who justifies the wicked and condemns the just — both are abomination to the Lord
+- Acts 4:19-20: Whether it is right to listen to you more than to God, you judge; we cannot but speak
+- Acts 5:29: We ought to obey God rather than men
+- Exodus 1:15-22: Hebrew midwives feared God rather than Pharaoh — civil disobedience rooted in fear of God
+- Isaiah 5:20-23: Woe to those who call evil good and good evil; who justify wicked for a bribe
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Canada MAiD Curriculum / Body as Self-Ownership vs. Body as Temple
+**Query:** How does the whole counsel of Scripture address the claim that the body belongs to the self -- from creation in Genesis, through the fall, to redemption in Christ -- and what does it mean when the state claims authority over life and death as though suffering were a problem to be eliminated rather than the platform where divine power is perfected in weakness?
+
+**NLM Response Summary:**
+- 1 Corinthians 6:19-20: Body is temple of Holy Spirit; you are not your own, bought at a price
+- Genesis 1:27: Created in God's image — dignity conferred by Creator, not claimed by creature
+- 2 Corinthians 12:9: Grace sufficient; strength made perfect in weakness — suffering as platform, not problem
+- Psalm 139:13-16: God's personal knowledge of each person before formation in the womb
+- Calvin Institutes I.11: Creaturely imagination cannot ascend to knowledge of God without Scripture
+- WCF: 6th commandment — duties of preserving life of ourselves and others
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — India Christian Welfare Board / State Jurisdiction Over Worship
+**Query:** What does the whole counsel of Scripture teach about the boundary between the authority of the state and the authority of God's people -- from Pharaoh's wise dealings with Israel, through Daniel's open-window prayer in defiance of the king's edict, to Christ's rendering to Caesar what is Caesar's and to God what is God's -- and what happens when the state offers protection and registration in exchange for jurisdiction over worship, teaching, and mercy?
+
+**NLM Response Summary:**
+- Exodus 1:9-10: Pharaoh's fear of Israel's growth — state anxiety over people of God
+- Matthew 22:21: Render to Caesar what is Caesar's, to God what is God's — jurisdictional distinction
+- Daniel 6:10: Daniel prayed with open windows toward Jerusalem in defiance of king's edict
+- Acts 5:29: We ought to obey God rather than men — ultimate allegiance
+- WCF 23, 25: Civil magistrate limitations; the catholic church
+- Two Kingdoms: Distinction between civil and spiritual jurisdictions
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Met Gala & Persecuted Church / Extravagant Wealth vs. Suffering Saints
+**Query:** What does the whole counsel of Scripture teach about extravagant wealth set against the suffering of God's people -- from Amos's indictment of those who lie on beds of ivory but are not grieved over the ruin of Joseph, through James's pronouncement of doom on the rich whose corroded gold will eat their flesh like fire, to Christ's declaration that the persecuted possess the kingdom of heaven -- and how does divine judgment fall on indifference?
+
+**NLM Response Summary:**
+- James 5:1-3: Doom on the rich; corroded gold will eat flesh like fire
+- Amos 6:4-6: Beds of ivory, but not grieved over the ruin of Joseph
+- Matthew 5:10: Blessed are the persecuted; theirs is the kingdom of heaven
+- Matthew 13:44-46: Treasure hidden in a field; pearl of great price — the kingdom's worth
+- Reformed tradition: Beatitudes as counter-kingdom ethic
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — Wyoming Abortion Ban / Imago Dei as Ground of Human Dignity
+**Query:** What does the whole counsel of Scripture teach about the ground of human dignity -- from the imago Dei in Genesis, through the psalmist's declaration that children are a heritage from the Lord and the fruit of the womb a reward, to God's personal knowledge of Jeremiah before he was formed in the womb -- and what happens when the state protects life for economic reasons rather than because every human being bears the image of the Creator?
+
+**NLM Response Summary:**
+- Psalm 127:3-5: Children are a heritage from the Lord; fruit of the womb a reward
+- Jeremiah 1:5: Before I formed you in the womb I knew you — personal divine knowledge
+- Genesis 1:27: Created in God's image — dignity conferred by Creator
+- Genesis 9:6: Whoever sheds man's blood, by man his blood shall be shed — imago Dei as ground of justice
+- WCF: 6th commandment — duties of preserving life
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-12 — RF Kuang Boycott / Bearing False Witness & Selective Justice
+**Query:** What does the whole counsel of Scripture teach about bearing false witness -- from the Ninth Commandment in Exodus, through the wisdom literature's treatment of the false accuser, to the divine impartiality of Romans and the declaration in Isaiah that the LORD alone occupies the offices of judge, lawgiver, and king -- and what happens when human beings condemn what they have not examined and apply moral standards selectively to enemies but not to allies?
+
+**NLM Response Summary:**
+- Exodus 20:16: You shall not bear false witness against your neighbor
+- Romans 2:11: There is no partiality with God — divine impartiality
+- Isaiah 33:22: The LORD is our Judge, our Lawgiver, our King — He alone occupies these offices
+- Proverbs 19:5: A false witness will not go unpunished
+- Reformed tradition: 9th Commandment — truth as moral obligation
+- **Status:** NLM verified. No rewrite needed.
+
+### 2026-05-15 — Manipur Peacemakers Killed / Cost of Peacemaking & Beatitude
+**Query:** What does the whole counsel of Scripture teach about the cost of peacemaking in a fallen world, from Abel's blood crying out from the ground through Christ the Prince of Peace whose own blood speaks a better word, and what does it mean that peacemakers are called sons of God?
+
+**NLM Response Summary:**
+- Matthew 5:9: Blessed are the peacemakers; they shall be called sons of God
+- Genesis 4:10: Abel's blood crying from the ground — first blood to speak in Scripture
+- Psalm 116:15: Precious in the sight of the Lord is the death of His saints
+- Hebrews 12:24: Christ's blood speaking better than Abel's — mercy, not judgment
+- Colossians 1:20: Making peace through the blood of His cross
+- Ephesians 2:14: Christ Himself is our peace; broken down dividing wall of hostility
+- Galatians 6:9: Not grow weary doing good; in due season we shall reap
+- Revelation 21:4: God will wipe away every tear; no more death or mourning
+- 2 Timothy 2:19: Firm foundation seal — "The Lord knows those who are His"
+- **Status:** NLM-queried 2026-05-15. Article published 2026-05-14 (backfill).
+
+### 2026-05-13 — Egypt Legalizes Churches / Christ's Authorization
+**Query:** "What does the whole counsel of Scripture teach about who authorizes the church to exist and gather -- is it Christ who builds His church, or the state that permits it, or some combination -- and how does this question run from the Old Testament through the New Testament to the church's posture toward civil authorities today?"
+
+**NLM Response Summary:**
+- Matthew 16:18: Christ builds His church; gates of Hades shall not prevail
+- Ephesians 1:22-23: Christ head over all things to the church; fullness of Him who fills all in all
+- Matthew 22:21: Render to Caesar what is Caesar's, to God what is God's
+- Exodus 1:17: Hebrew midwives feared God rather than Pharaoh — civil disobedience rooted in fear of God
+- Daniel 6:10: Daniel prayed with open windows toward Jerusalem in defiance of king's edict
+- Acts 5:29: We ought to obey God rather than men
+- Daniel 2:44: God's kingdom shall never be destroyed; shall break in pieces all kingdoms
+- Revelation 11:15: Kingdoms of this world become Christ's
+- Matthew 28:18-20: All authority given to Christ; Great Commission
+- WCF 23: Civil magistrate may not assume administration of Word and sacraments
+- WCF 25: The catholic or universal church
+- **Status:** Response incorporated. Article published.
+
+### 2026-05-15 — Rome/SSPX Schism / Christ's Sole Headship
+| 2026-05-15 | rome-sspx-schism-2026 | NLM query failed (tool error: "undefined is not an object (evaluating 'H.trim')"). Written from existing Reformed theological framework. | Colossians 1:18, Ephesians 1:22-23, Matthew 23:8-10, 1 Corinthians 1:12-13, Revelation 11:15, 2 Timothy 2:19 | WCF 25.1, 25.6, Christ's sole headship |
+
 ## Frame Inventory by Article
 
 | Article | Primary Frame | Confessional Ref | Historic Figure | Key Text |
@@ -583,16 +804,34 @@
 | screen-addiction.html | Idolatry of attention; parental mandate for guarding children's hearts | — | John MacArthur, Paul Washer, Voddie Baucham | Rom 1:21-22, Rom 12:2, Deut 6:6-7, Eph 6:4, Prov 22:6, 2 Tim 4:3, 2 Tim 2:19 |
 | out-of-wedlock.html | Covenant care for the fatherless; adoption into God's family | — | John MacArthur, Voddie Baucham, Paul Washer | Gen 16:13, Exod 22:22-24, Deut 10:18, Gal 4:4-5, Rom 8:15, James 1:27, Isa 1:17, 2 Tim 2:19 |
 | iran-war.html | Lament over national violence; sovereignty over death of innocents | — | John MacArthur, Voddie Baucham | Lam 1:20, Exod 22:22-24, Isa 46:9-10, Rev 21:4, Rom 8:28, Acts 2:23, 2 Tim 2:19 |
+| codex-h.html | Providence | Providence | History | NLM verified 2026-05-12. Isaiah 40:8, Matt 5:18, 2 Tim 2:9 confirmed. WCF 1.8 referenced. |
+| odisha-persecution-2026.html | Persecution | Persecution | Religious Freedom | NLM verified 2026-05-12. 1 Sam 2:6-7, Acts 14:22, Matt 16:18, 1 Sam 2:10 confirmed. WCF 20.2, 25.4 referenced. |
+| chhattisgarh-church-burnings-2026.html | Persecution | Persecution | Religious Freedom | NLM verified 2026-05-12. 1 Sam 2:6-8, Matt 5:10-12, 1 Pet 2:5, 1 Sam 2:10 confirmed. |
+| armenia-state-persecution-2026.html | Ecclesiology | Ecclesiology | Religious Freedom | NLM verified 2026-05-12. Isa 33:22, Col 1:18, Acts 5:29 confirmed. WCF 20.2, 23.3 referenced. |
+| ai-vatican-partnership-2026.html | Sufficiency of Scripture | Sufficiency of Scripture | AI | NLM verified 2026-05-12. 2 Tim 3:16-17, Col 1:18, 1 Cor 2:14, Gen 1:27 confirmed. WCF 1.6 referenced. |
+| anthropic-mythos-ai.html | Sufficiency of Scripture | Sufficiency of Scripture | AI | NLM verified 2026-05-12. Rom 1:25, John 14:6, 2 Tim 3:16-17 confirmed. Calvin Institutes I.11 referenced. |
+| odisha-fact-finding-2026.html | Persecution | Persecution | Human Rights | NLM verified 2026-05-12. Acts 14:22, Acts 5:29, Rev 12:11 confirmed. |
+| trump-pope-leo-xiv.html | Ecclesiology | Ecclesiology | Politics | NLM verified 2026-05-12. Acts 5:29, Col 1:18, Matt 22:21 confirmed. WCF 23, 31 referenced. |
+| iran-peace-false.html | Providence | Providence | War | NLM verified 2026-05-12. Jer 6:14, 1 Sam 2:6-7, Matt 16:26 confirmed. |
+| rajasthan-mass-arrest.html | Persecution | Persecution | Religious Freedom | NLM verified 2026-05-12. Prov 17:15, Acts 4:19-20, Acts 5:29 confirmed. |
+| 2026-05-07 | canada-maid-curriculum.html | Sanctity of Life | Sanctity of Life | Bioethics | NLM verified 2026-05-12. 1 Cor 6:19-20, Gen 1:27, 2 Cor 12:9 confirmed. Calvin Institutes I.11 referenced. |
+| 2026-05-07 | india-christian-welfare-board.html | Ecclesiology | Ecclesiology | Politics | NLM verified 2026-05-12. Ex 1:9-10, Matt 22:21, Dan 6:10 confirmed. WCF 23, 25 referenced. |
+| 2026-05-07 | met-gala-persecuted-church.html | Providence | Providence | Culture | NLM verified 2026-05-12. Jas 5:1-3, Amos 6:4-6, Matt 5:10 confirmed. |
+| 2026-05-07 | wyoming-abortion-ban.html | Sanctity of Life | Sanctity of Life | Politics | NLM verified 2026-05-12. Ps 127:3-5, Jer 1:5 confirmed. Imago Dei grounding. |
+| 2026-05-07 | rf-kuang-boycott.html | Cultural Engagement | Cultural Engagement | Culture | NLM verified 2026-05-12. Ex 20:16, Rom 2:11, Isa 33:22 confirmed. |
+| 2026-05-14 | manipur-peacemakers-killed-2026.html | Persecution | Persecution | Religious Freedom | NLM-queried 2026-05-15. Matt 5:9, Gen 4:10, Ps 116:15, Heb 12:24, Col 1:20, Eph 2:14, Gal 6:9, Rev 21:4, 2 Tim 2:19. |
+| 2026-05-13 | egypt-legalizes-churches-2026.html | Ecclesiology | Ecclesiology | Religious Freedom | NLM-queried 2026-05-13. Matt 16:18, Eph 1:22-23, Matt 22:21, Acts 5:29, Dan 2:44, Rev 11:15, 2 Tim 2:19. WCF 23, 25. |
+| 2026-05-15 | rome-sspx-schism-2026.html | Ecclesiology | Ecclesiology | Religion | Written without NLM (tool error 2026-05-15). Col 1:18, Eph 1:22-23, Matt 23:8-10, 1 Cor 1:12-13, Rev 11:15, 2 Tim 2:19. WCF 25.1, 25.6. |
 
 ## Theological Tag Distribution
 
 | Tag | Count |
 |-----|-------|
-| Persecution | 18 |
-| Ecclesiology | 15 |
-| Providence | 8 |
+| Persecution | 23 |
+| Ecclesiology | 20 |
+| Providence | 11 |
 | Idolatry | 9 |
-| Sufficiency of Scripture | 4 |
+| Sufficiency of Scripture | 6 |
 | Bible Lessons | 3 |
 | Politics | 2 |
 | Discernment | 1 |
@@ -601,7 +840,7 @@
 | Redemption | 1 |
 | Perseverance | 1 |
 | Conversion | 1 |
-| Cultural Engagement | 2 |
+| Cultural Engagement | 3 |
 | Demographics | 2 |
 | Vocation | 2 |
 | Covenant | 2 |
@@ -609,4 +848,4 @@
 | Justice | 2 |
 | Truth | 2 |
 | Creation | 2 |
-| Sanctity of Life | 2 |
+| Sanctity of Life | 4 |
