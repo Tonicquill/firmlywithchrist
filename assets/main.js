@@ -210,7 +210,6 @@
   }
 
   // Reading progress bar (article pages only)
-  var articleBody = document.querySelector('[data-pagefind-body]');
   if (articleBody && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
     var progressBar = document.createElement('div');
     progressBar.className = 'reading-progress';
