@@ -729,6 +729,22 @@
 - Reformed tradition: 9th Commandment — truth as moral obligation
 - **Status:** NLM verified. No rewrite needed.
 
+### 2026-05-15 — Biblical Parenting / Warmth + Boundaries, Provocation Forbidden
+**Query:** What does the whole counsel of Scripture teach about how parents should raise children — from the Shema's command to teach diligently, through Proverbs' rod passages and warnings against provoking children to wrath, to Paul's instruction to bring children up in the discipline and instruction of the Lord — and how does the biblical vision of parenting confront both authoritarian harshness and permissive neglect?
+
+**NLM Response Summary:**
+- Deut 6:4-7: Shema — teach diligently, total way of life, unbroken conversation
+- Prov 13:24: He who spares the rod hates his son; love disciplines promptly
+- Prov 22:15: Foolishness bound up in child's heart; rod of correction drives it far
+- Eph 6:4: Do not provoke children to wrath (parorgizō — exasperate, embitter)
+- Col 3:21: Do not provoke lest they become discouraged
+- 1 Sam 2:22-25, 29: Eli — permissive neglect; honored sons more than God
+- Ps 127:3-4: Children are heritage from the Lord; like arrows in warrior's hand
+- Heb 12:7-11: Discipline as sign of sonship; yields peaceful fruit of righteousness
+- 2 Tim 2:19: Firm foundation seal — "The Lord knows those who are His"
+- Roman patria potestas contrast: Christian father is steward, not owner
+- **Status:** NLM-queried 2026-05-15. Article published 2026-05-15.
+
 ### 2026-05-15 — Manipur Peacemakers Killed / Cost of Peacemaking & Beatitude
 **Query:** What does the whole counsel of Scripture teach about the cost of peacemaking in a fallen world, from Abel's blood crying out from the ground through Christ the Prince of Peace whose own blood speaks a better word, and what does it mean that peacemakers are called sons of God?
 
@@ -819,6 +835,7 @@
 | 2026-05-07 | met-gala-persecuted-church.html | Providence | Providence | Culture | NLM verified 2026-05-12. Jas 5:1-3, Amos 6:4-6, Matt 5:10 confirmed. |
 | 2026-05-07 | wyoming-abortion-ban.html | Sanctity of Life | Sanctity of Life | Politics | NLM verified 2026-05-12. Ps 127:3-5, Jer 1:5 confirmed. Imago Dei grounding. |
 | 2026-05-07 | rf-kuang-boycott.html | Cultural Engagement | Cultural Engagement | Culture | NLM verified 2026-05-12. Ex 20:16, Rom 2:11, Isa 33:22 confirmed. |
+| 2026-05-15 | biblical-parenting-2026.html | Family | Family | Parenting | NLM-queried 2026-05-15. Eph 6:4, Col 3:21, Prov 13:24, Prov 22:15, 1 Sam 2:22-25, Ps 127:3-4, Prov 22:6, Gen 1:27, Heb 12:7, Phil 1:6, Deut 6:6-7, 2 Tim 2:19. Baumrind/Pinquart secular research. |
 | 2026-05-14 | manipur-peacemakers-killed-2026.html | Persecution | Persecution | Religious Freedom | NLM-queried 2026-05-15. Matt 5:9, Gen 4:10, Ps 116:15, Heb 12:24, Col 1:20, Eph 2:14, Gal 6:9, Rev 21:4, 2 Tim 2:19. |
 | 2026-05-13 | egypt-legalizes-churches-2026.html | Ecclesiology | Ecclesiology | Religious Freedom | NLM-queried 2026-05-13. Matt 16:18, Eph 1:22-23, Matt 22:21, Acts 5:29, Dan 2:44, Rev 11:15, 2 Tim 2:19. WCF 23, 25. |
 | 2026-05-15 | rome-sspx-schism-2026.html | Ecclesiology | Ecclesiology | Religion | Written without NLM (tool error 2026-05-15). Col 1:18, Eph 1:22-23, Matt 23:8-10, 1 Cor 1:12-13, Rev 11:15, 2 Tim 2:19. WCF 25.1, 25.6. |
@@ -827,6 +844,7 @@
 
 | Tag | Count |
 |-----|-------|
+| Family | 1 |
 | Persecution | 23 |
 | Ecclesiology | 20 |
 | Providence | 11 |
