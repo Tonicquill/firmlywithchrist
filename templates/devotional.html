@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{excerpt}}">
+
+  <meta property="og:title" content="{{pageTitle}}">
+  <meta property="og:description" content="{{excerpt}}">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{pageTitle}}">
+  <meta name="twitter:description" content="{{excerpt}}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{title}}",
+    "description": "{{excerpt}}",
+    "author": {
+      "@type": "Organization",
+      "name": "Firmly With Christ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Firmly With Christ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tonicquill.github.io/firmlywithchrist/assets/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="{{basePath}}assets/logo.png">
+  <link rel="stylesheet" href="{{basePath}}assets/style.css?v=10">
+</head>
+<body>
+
+  <nav>
+    <a href="{{basePath}}index.html" class="nav-brand"><img src="{{basePath}}assets/logo.png" class="brand-mark" alt="">
+      Firmly With Christ
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="{{basePath}}index.html">Home</a></li>
+      <li><a href="{{basePath}}intro-to-christ.html">Meet Christ</a></li>
+      <li><a href="{{basePath}}devotional/">Daily Reading</a></li>
+      <li><a href="{{basePath}}archive.html">Articles</a></li>
+      <li><a href="{{basePath}}about.html">About</a></li>
+    </ul>
+    <a href="{{basePath}}archive.html" class="nav-search-trigger" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  </nav>
+
+  <article class="post-article devotional-article" data-pagefind-body>
+
+    <header class="devotional-header">
+      <p class="devotional-day-label">Day {{day}} of 365 &middot; {{month}}</p>
+      <h1 class="devotional-title" data-pagefind-meta="title">{{title}}</h1>
+      <p class="devotional-theme"><span class="meta-tag" data-pagefind-filter="tag">{{theme}}</span>{{#if season}}<span class="meta-season meta-season--{{season}}">{{season_label}}</span>{{/if}}</p>
+    </header>
+
+    {{#if scripture_block}}
+    <blockquote class="scripture-pull fade-in">
+      <div class="scripture-pull-bg" style="background-image: url('{{basePath}}assets/corot-sunset.jpg')"></div>
+      <p>{{scripture_block}}</p>
+      <cite>{{scripture_ref}}</cite>
+    </blockquote>
+    {{/if}}
+
+    <div class="devotional-body">
+      {{content}}
+    </div>
+
+    {{#if life_lesson}}
+    <div class="key-statement fade-in">
+      <p class="life-lesson-label">Life Lesson</p>
+      <p>{{life_lesson}}</p>
+    </div>
+    {{/if}}
+
+    {{#if check_in}}
+    <div class="check-in-block fade-in">
+      <p class="check-in-label">{{check_in_type}} Check-In</p>
+      <div class="check-in-content">{{check_in}}</div>
+    </div>
+    {{/if}}
+
+    <nav class="devotional-nav">
+      {{#if prev_day}}
+      <a href="{{prev_day}}/" class="devotional-nav-prev">&larr; Day {{prev_day_num}}: {{prev_title}}</a>
+      {{/if}}
+      {{#if next_day}}
+      <a href="{{next_day}}/" class="devotional-nav-next">Day {{next_day_num}}: {{next_title}} &rarr;</a>
+      {{/if}}
+    </nav>
+
+    <div class="post-share fade-in">
+      <p class="share-label">Share this</p>
+      <div class="share-buttons">
+        <button type="button" onclick="navigator.clipboard.writeText(window.location.href)">Copy link</button>
+        <button type="button" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Daily Reading: ') + '&url=' + encodeURIComponent(window.location.href), '_blank')">Share on X</button>
+      </div>
+    </div>
+
+    <div class="post-close fade-in">
+      <p>
+        Daily reading from Firmly With Christ.
+        <span class="brand-line">Reformed theology for a shaken world &middot; Est. 2026</span>
+      </p>
+    </div>
+
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="disclaimer">
+        <strong>Firmly With Christ</strong> is written by confessionally Reformed laypeople with full-time jobs. We work from Scripture as final authority, informed by the Westminster Confession of Faith, the Three Forms of Unity, and the Reformed tradition. <a href="{{basePath}}about-editorial-standards.html">Read our editorial standards</a>.
+      </p>
+      <ul class="footer-links">
+        <li><a href="{{basePath}}index.html">Latest</a></li>
+        <li><a href="{{basePath}}devotional/">Daily Reading</a></li>
+        <li><a href="{{basePath}}archive.html">Archive</a></li>
+        <li><a href="{{basePath}}verses.html">Scripture Index</a></li>
+        <li><a href="{{basePath}}about.html">About</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="{{basePath}}assets/main.js?v=4"></script>
+</body>
+</html>

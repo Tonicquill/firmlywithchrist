@@ -286,6 +286,21 @@ nav {
   opacity: 1;
 }
 
+/* Standalone meta-tag (archive, devotional headers, etc.) */
+.meta-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3em 0.9em;
+  border: 1px solid var(--ochre);
+  color: var(--ochre);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+}
+
 .hero-meta .meta-geo {
   display: inline-flex;
   align-items: center;
@@ -340,6 +355,11 @@ nav {
   padding: var(--space-4) var(--space-4);
   background: var(--midnight);
   border-bottom: 1px solid oklch(100% 0 0 / 0.06);
+}
+
+.hero-section--short {
+  min-height: 35vh;
+  padding: calc(64px + var(--space-6)) var(--space-4) var(--space-6);
 }
 
 /* ============================================
@@ -1825,6 +1845,324 @@ footer {
 }
 
 /* ============================================
+   DEVOTIONAL — Daily Reading Pages
+   ============================================ */
+
+/* Header */
+.devotional-header {
+  text-align: center;
+  padding-bottom: var(--space-8);
+  margin-bottom: var(--space-8);
+  border-bottom: 1px solid oklch(12% 0.03 260 / 0.08);
+}
+
+.devotional-day-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--midnight);
+  opacity: 0.5;
+  margin-bottom: var(--space-4);
+}
+
+.devotional-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--midnight);
+  text-wrap: balance;
+  margin-bottom: var(--space-4);
+}
+
+.devotional-theme {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Season badge */
+.meta-season {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3em 0.9em;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.meta-season--ordinary {
+  color: oklch(48% 0.06 150);
+  border: 1px solid oklch(48% 0.06 150 / 0.35);
+  background: oklch(48% 0.06 150 / 0.06);
+}
+
+.meta-season--lent {
+  color: oklch(42% 0.08 300);
+  border: 1px solid oklch(42% 0.08 300 / 0.35);
+  background: oklch(42% 0.08 300 / 0.06);
+}
+
+.meta-season--easter {
+  color: oklch(55% 0.13 70);
+  border: 1px solid oklch(55% 0.13 70 / 0.35);
+  background: oklch(55% 0.13 70 / 0.06);
+}
+
+.meta-season--advent {
+  color: oklch(42% 0.14 20);
+  border: 1px solid oklch(42% 0.14 20 / 0.35);
+  background: oklch(42% 0.14 20 / 0.06);
+}
+
+/* Body */
+.devotional-body {
+  margin-top: var(--space-6);
+}
+
+.devotional-body p {
+  margin-bottom: var(--space-4);
+  text-wrap: pretty;
+}
+
+/* Drop cap support for devotional body */
+.post-dropcap::first-letter {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.9;
+  float: left;
+  margin-right: 0.75rem;
+  margin-top: 0.15rem;
+  color: var(--ochre);
+}
+
+/* Life lesson */
+.life-lesson-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ochre);
+  margin-bottom: var(--space-3);
+}
+
+/* Check-in block */
+.check-in-block {
+  margin: var(--space-8) 0;
+  padding: var(--space-6) var(--space-5);
+  background: oklch(96% 0.008 86);
+  border-left: 4px solid var(--ochre);
+}
+
+.check-in-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ochre);
+  margin-bottom: var(--space-4);
+}
+
+.check-in-content p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--midnight);
+  opacity: 0.85;
+  margin-bottom: var(--space-3);
+}
+
+.check-in-content ul,
+.check-in-content ol {
+  padding-left: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.check-in-content li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--midnight);
+  opacity: 0.85;
+  margin-bottom: var(--space-2);
+}
+
+/* Prev / next nav */
+.devotional-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid oklch(12% 0.03 260 / 0.08);
+}
+
+.devotional-nav-prev,
+.devotional-nav-next {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--midnight);
+  line-height: 1.4;
+  max-width: 45%;
+  transition: color var(--transition-fast);
+}
+
+.devotional-nav-prev:hover,
+.devotional-nav-next:hover {
+  color: var(--ochre);
+}
+
+.devotional-nav-next {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* ============================================
+   DEVOTIONAL INDEX PAGE
+   ============================================ */
+
+.devotional-index {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+.devotional-index-intro {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--midnight);
+  opacity: 0.7;
+  max-width: var(--container-text);
+  text-wrap: pretty;
+  margin-bottom: var(--space-6);
+}
+
+/* Today highlight */
+.devotional-today {
+  background: oklch(96% 0.008 86);
+  border: 1px solid oklch(68% 0.12 80 / 0.25);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.today-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ochre);
+}
+
+.today-link {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.today-link a {
+  color: var(--midnight);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.today-link a:hover {
+  color: var(--ochre);
+}
+
+/* Month sections */
+.devotional-month-section {
+  margin-bottom: var(--space-8);
+}
+
+.devotional-month-heading {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--midnight);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--ochre);
+}
+
+.month-theme {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--midnight);
+  opacity: 0.5;
+}
+
+/* Day grid */
+.devotional-day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-2);
+}
+
+.devotional-day-card {
+  display: block;
+  background: oklch(97% 0.008 88);
+  border: 1px solid oklch(12% 0.03 260 / 0.06);
+  border-radius: 4px;
+  padding: var(--space-2) var(--space-3);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.devotional-day-card:hover {
+  border-color: var(--ochre);
+  background: oklch(96% 0.012 85);
+}
+
+.day-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ochre);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.devotional-day-card .day-title {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--midnight);
+}
+
+.day-special {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ochre-deep);
+  margin-top: var(--space-1);
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 640px) {
@@ -1938,6 +2276,53 @@ footer {
 
   .trending-item {
     font-size: 0.75rem;
+  }
+
+  .devotional-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .devotional-header {
+    padding-bottom: var(--space-6);
+    margin-bottom: var(--space-6);
+  }
+
+  .devotional-nav {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .devotional-nav-prev,
+  .devotional-nav-next {
+    max-width: 100%;
+  }
+
+  .devotional-nav-next {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .devotional-day-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+
+  .devotional-index {
+    padding: var(--space-6) var(--space-3);
+  }
+
+  .devotional-today {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .check-in-block {
+    padding: var(--space-4) var(--space-3);
+    margin: var(--space-6) 0;
+  }
+
+  .post-dropcap::first-letter {
+    font-size: 2.8rem;
   }
 }
 

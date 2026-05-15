@@ -371,7 +371,104 @@ function build() {
   write('verses.html', versesHtml);
   console.log('Generated verses.html');
 
-  // --- 6. Validate image URLs ---
+  // --- 6. Generate devotional pages ---
+  function buildDevotionals() {
+    if (!exists('assets/devotionals.json')) {
+      console.log('No devotionals.json found, skipping devotionals.');
+      return;
+    }
+    const devotionals = JSON.parse(read('assets/devotionals.json'));
+
+    // Filter to entries with content
+    const readyDevotionals = devotionals.filter(d => d.has_content);
+    if (readyDevotionals.length === 0) {
+      console.log('No devotionals with content, skipping.');
+      return;
+    }
+
+    const devoTemplate = read('templates/devotional.html');
+    const seasonLabels = {
+      ordinary: 'Ordinary Time',
+      lent: 'Lent',
+      easter: 'Eastertide',
+      advent: 'Advent'
+    };
+
+    // Build prev/next links
+    const allDays = devotionals.map(d => d.day);
+
+    readyDevotionals.forEach(devotional => {
+      const contentPath = `content/devotionals/${devotional.slug}.html`;
+      if (!exists(contentPath)) {
+        console.warn(`Warning: content fragment not found for ${devotional.slug}`);
+        return;
+      }
+      const contentRaw = read(contentPath);
+      const devoContent = contentRaw
+        .replace(/\{\{basePath\}\}/g, '../../')
+        .replace(/\{\{relatedBase\}\}/g, '');
+
+      const dayIndex = allDays.indexOf(devotional.day);
+      const prevDayNum = dayIndex > 0 ? allDays[dayIndex - 1] : null;
+      const nextDayNum = dayIndex < allDays.length - 1 ? allDays[dayIndex + 1] : null;
+      const prevEntry = prevDayNum ? devotionals.find(d => d.day === prevDayNum) : null;
+      const nextEntry = nextDayNum ? devotionals.find(d => d.day === nextDayNum) : null;
+
+      const padded = String(devotional.day).padStart(3, '0');
+
+      const html = render(devoTemplate, {
+        ...devotional,
+        content: devoContent,
+        basePath: '../../',
+        pageTitle: `Day ${devotional.day}: ${devotional.title} | Daily Reading | Firmly With Christ`,
+        ogType: 'article',
+        excerpt: devotional.excerpt || `Day ${devotional.day}: ${devotional.title}`,
+        day_padded: padded,
+        season_label: seasonLabels[devotional.season] || devotional.season,
+        prev_day: prevEntry ? `../${String(prevEntry.day).padStart(3, '0')}` : null,
+        prev_day_num: prevDayNum,
+        prev_title: prevEntry ? prevEntry.title : null,
+        next_day: nextEntry ? `../${String(nextEntry.day).padStart(3, '0')}` : null,
+        next_day_num: nextDayNum,
+        next_title: nextEntry ? nextEntry.title : null
+      });
+
+      write(`devotional/day/${padded}/index.html`, html);
+    });
+    console.log(`Generated ${readyDevotionals.length} devotional pages.`);
+
+    // Generate devotional index page
+    const indexTemplate = read('templates/devotionals.html');
+
+    // Group by month
+    const monthNames = ['January','February','March','April','May','June','July',
+                        'August','September','October','November','December'];
+    const months = monthNames.map(mName => {
+      const monthDays = devotionals.filter(d => d.month === mName);
+      return {
+        month_name: mName,
+        month_theme: monthDays[0] ? monthDays[0].theme : '',
+        days: monthDays.map(d => ({
+          day_num: d.day,
+          day_padded: String(d.day).padStart(3, '0'),
+          title: d.title,
+          is_check_in: !!d.check_in_type,
+          is_special: !!d.check_in_type
+        }))
+      };
+    });
+
+    const indexHtml = render(indexTemplate, {
+      months,
+      basePath: '../'
+    });
+    write('devotional/index.html', indexHtml);
+    console.log('Generated devotional/index.html');
+  }
+
+  buildDevotionals();
+
+  // --- 7. Validate image URLs ---
   console.log('\nValidating image URLs...');
   const badUrls = [];
   function checkFileForBadUrls(filePath, isSource = false) {
@@ -395,6 +492,14 @@ function build() {
   // Check generated output
   const generatedFiles = ['index.html', 'archive.html', 'verses.html'];
   processedPosts.forEach(post => generatedFiles.push(post.url));
+  // Check devotional output too
+  if (exists('assets/devotionals.json')) {
+    const devotionals = JSON.parse(read('assets/devotionals.json'));
+    devotionals.filter(d => d.has_content).forEach(d => {
+      generatedFiles.push(`devotional/day/${String(d.day).padStart(3, '0')}/index.html`);
+    });
+    generatedFiles.push('devotional/index.html');
+  }
   generatedFiles.forEach(f => checkFileForBadUrls(f));
 
   if (badUrls.length) {
@@ -405,7 +510,7 @@ function build() {
   }
   console.log('Image URL validation passed.');
 
-  // --- 7. Rebuild Pagefind ---
+  // --- 8. Rebuild Pagefind ---
   console.log('\nRunning Pagefind...');
   try {
     execSync('npx -y pagefind --site .', { stdio: 'inherit' });
