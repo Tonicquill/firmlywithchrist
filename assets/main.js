@@ -179,6 +179,53 @@
     heroMeta.appendChild(rt);
   }
 
+  // Custom cursor (minimal dot, hidden on touch)
+  if (window.matchMedia('(pointer: fine)').matches) {
+    var cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    document.body.appendChild(cursor);
+    document.body.style.cursor = 'none';
+
+    var cursorX = 0, cursorY = 0, cursorVisible = false;
+    document.addEventListener('mousemove', function (e) {
+      cursorX = e.clientX; cursorY = e.clientY;
+      if (!cursorVisible) { cursor.classList.add('visible'); cursorVisible = true; }
+    });
+    document.addEventListener('mouseleave', function () {
+      cursor.classList.remove('visible'); cursorVisible = false;
+    });
+
+    // Scale on interactive elements
+    var hoverTargets = document.querySelectorAll('a, button, .post-card, .slide-btn, .slide-dot, input, select');
+    hoverTargets.forEach(function (el) {
+      el.addEventListener('mouseenter', function () { cursor.classList.add('cursor--hover'); });
+      el.addEventListener('mouseleave', function () { cursor.classList.remove('cursor--hover'); });
+    });
+
+    function updateCursor() {
+      cursor.style.transform = 'translate3d(' + (cursorX - 4) + 'px, ' + (cursorY - 4) + 'px, 0)';
+      requestAnimationFrame(updateCursor);
+    }
+    requestAnimationFrame(updateCursor);
+  }
+
+  // Reading progress bar (article pages only)
+  var articleBody = document.querySelector('[data-pagefind-body]');
+  if (articleBody && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    var progressBar = document.createElement('div');
+    progressBar.className = 'reading-progress';
+    document.body.appendChild(progressBar);
+
+    function updateProgress() {
+      var scrollH = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollH <= 0) return;
+      var pct = Math.min(window.scrollY / scrollH, 1);
+      progressBar.style.transform = 'scaleX(' + pct + ')';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
   // Slide carousel (Canva-export presentation viewer)
   document.querySelectorAll('.slide-carousel').forEach(function (carousel) {
     const track = carousel.querySelector('.slide-track');

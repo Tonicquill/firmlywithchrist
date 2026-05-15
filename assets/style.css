@@ -1023,9 +1023,10 @@ ol.cite-sources a:hover {
 }
 
 .post-card:hover {
-  border-color: oklch(12% 0.03 260 / 0.25);
+  border-color: var(--ochre);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px oklch(12% 0.03 260 / 0.12);
+  box-shadow: 0 12px 40px oklch(12% 0.03 260 / 0.12),
+              0 0 0 1px oklch(68% 0.12 80 / 0.12);
 }
 
 .card-accent {
@@ -1420,6 +1421,56 @@ footer {
 .stagger-1 { transition-delay: 0.1s; }
 .stagger-2 { transition-delay: 0.2s; }
 .stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* ============================================
+   CUSTOM CURSOR
+   ============================================ */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ochre);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: opacity 0.2s, width 0.2s, height 0.2s, margin 0.2s;
+}
+
+.custom-cursor.visible {
+  opacity: 0.75;
+}
+
+.custom-cursor.cursor--hover {
+  width: 28px;
+  height: 28px;
+  margin: -10px 0 0 -10px;
+  background: transparent;
+  border: 1.5px solid var(--ochre);
+  opacity: 0.9;
+}
+
+/* ============================================
+   READING PROGRESS BAR
+   ============================================ */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--ochre);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 1001;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
 
 /* ============================================
    ARCHIVE PAGE
@@ -1483,11 +1534,15 @@ footer {
   padding: var(--space-5) 0;
   text-decoration: none;
   color: inherit;
-  transition: opacity var(--transition-fast);
+  border-left: 2px solid transparent;
+  padding-left: 0;
+  transition: transform 0.3s var(--ease-editorial), border-color 0.3s var(--ease-editorial), padding-left 0.3s var(--ease-editorial);
 }
 
 .archive-link:hover {
-  opacity: 0.7;
+  transform: translateX(8px);
+  border-left-color: var(--ochre);
+  padding-left: var(--space-3);
 }
 
 .archive-meta {
