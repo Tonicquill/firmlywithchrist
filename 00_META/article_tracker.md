@@ -67,7 +67,7 @@
 | 55 | Egypt legalized 191 churches. Christ authorized one. | egypt-legalizes-churches-2026.html | 2026-05-13 | Ecclesiology | Religious Freedom | yes | live | NLM-queried 2026-05-13. Matt 16:18, Eph 1:22-23, Matt 22:21, Ex 1:17, Dan 6:10, Acts 5:29, Dan 2:44, Rev 11:15, Matt 28:18-20, Eph 5:27, 2 Tim 2:19. WCF 23, 25 referenced. |
 | 56 | They walked into a conflict zone to make peace. They were killed doing it. | manipur-peacemakers-killed-2026.html | 2026-05-14 | Persecution | Religious Freedom | yes | live | NLM-queried 2026-05-15. Matt 5:9, Gen 4:10, Ps 116:15, Heb 12:24, Col 1:20, Eph 2:14, Gal 6:9, Rev 21:4, 2 Tim 2:19. |
 | 57 | Rome threatened excommunication. The SSPX shrugged. Neither asked the right question. | rome-sspx-schism-2026.html | 2026-05-15 | Ecclesiology | Religion | no | live | Written without NLM (tool error). Col 1:18, Eph 1:22-23, Matt 23:8-10, 1 Cor 1:12-13, Rev 11:15, 2 Tim 2:19. WCF 25.1, 25.6. |
-| 58 | Some parents break their children with harshness. Some break them with neglect. The Bible forbids both. | biblical-parenting-2026.html | 2026-05-15 | Family | Parenting | yes | draft | NLM-queried 2026-05-15. Eph 6:4, Col 3:21, Prov 13:24, Prov 22:15, 1 Sam 2:22-25, Ps 127:3-4, Prov 22:6, Gen 1:27, Heb 12:7, Phil 1:6, Deut 6:6-7, 2 Tim 2:19. Baumrind/Pinquart secular parenting research cited. |
+| 58 | Some parents break their children with harshness. Some break them with neglect. The Bible forbids both. | biblical-parenting-2026.html | 2026-05-15 | Family | Parenting | yes | live | NLM-queried 2026-05-15. Eph 6:4, Col 3:21, Prov 13:24, Prov 22:15, 1 Sam 2:22-25, Ps 127:3-4, Prov 22:6, Gen 1:27, Heb 12:7, Phil 1:6, Deut 6:6-7, 2 Tim 2:19. Baumrind/Pinquart secular parenting research cited. |
 
 ## NLM Backlog
 

@@ -51,10 +51,10 @@
 
 | Day | Title | Month | NLM Status | Build Status | Notes |
 |-----|-------|-------|------------|--------------|-------|
-| 1 | Creation ex nihilo | January | — | draft | Genesis 1:1, John 1:1-3, Col 1:16, Heb 11:3 |
-| 2 | Image of God | January | — | draft | Gen 1:26-28, Ps 8:3-5, Col 1:15, Jas 3:9 |
-| 3 | The Sabbath rest | January | — | draft | Gen 2:1-3, Ex 31:13, Mk 2:27, Heb 4:9-10 |
-| 4 | God names and orders | January | — | draft | Gen 2:15, Ps 147:4, 1 Cor 10:31, Col 3:23 |
-| 5 | The Fall | January | — | draft | Gen 3:1-7, 3:15, 1 Jn 2:16, Rom 5:12, 1 Cor 15:22 |
-| 6 | Sin spreads | January | — | draft | Gen 4:1-16, 4:26, Heb 11:4, 1 Jn 3:12 |
-| 7 | The flood and judgment | January | — | draft | Gen 6:5-8, 6:13-22, Heb 11:7, 1 Pet 3:20-21 |
+| 1 | Creation ex nihilo | January | — | live | Genesis 1:1, John 1:1-3, Col 1:16, Heb 11:3 |
+| 2 | Image of God | January | — | live | Gen 1:26-28, Ps 8:3-5, Col 1:15, Jas 3:9 |
+| 3 | The Sabbath rest | January | — | live | Gen 2:1-3, Ex 31:13, Mk 2:27, Heb 4:9-10 |
+| 4 | God names and orders | January | — | live | Gen 2:15, Ps 147:4, 1 Cor 10:31, Col 3:23 |
+| 5 | The Fall | January | — | live | Gen 3:1-7, 3:15, 1 Jn 2:16, Rom 5:12, 1 Cor 15:22 |
+| 6 | Sin spreads | January | — | live | Gen 4:1-16, 4:26, Heb 11:4, 1 Jn 3:12 |
+| 7 | The flood and judgment | January | — | live | Gen 6:5-8, 6:13-22, Heb 11:7, 1 Pet 3:20-21 |
