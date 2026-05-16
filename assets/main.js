@@ -24,6 +24,17 @@
     return lenis ? lenis.scroll : (window.scrollY || window.pageYOffset);
   }
 
+  // Inject archival paper texture overlay (covers static pages too)
+  if (!document.querySelector('.paper-texture')) {
+    var pt = document.createElement('div');
+    pt.className = 'paper-texture';
+    var i, d;
+    for (i = 0; i < 6; i++) { d = document.createElement('div'); d.className = 'foxing'; pt.appendChild(d); }
+    for (i = 0; i < 3; i++) { d = document.createElement('div'); d.className = 'stain-ring'; pt.appendChild(d); }
+    for (i = 0; i < 2; i++) { d = document.createElement('div'); d.className = 'crease'; pt.appendChild(d); }
+    document.body.insertBefore(pt, document.body.firstChild);
+  }
+
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
