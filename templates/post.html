@@ -11,11 +11,11 @@
   <meta property="og:description" content="{{excerpt}}">
   <meta property="og:type" content="{{ogType}}">
 
-  <meta property="og:image" content="{{hero_image}}">
+  <meta property="og:image" content="{{basePath}}{{hero_image}}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{pageTitle}}">
   <meta name="twitter:description" content="{{excerpt}}">
-  <meta name="twitter:image" content="{{hero_image}}">
+  <meta name="twitter:image" content="{{basePath}}{{hero_image}}">
 
   <script type="application/ld+json">
   {
@@ -70,7 +70,7 @@
   </div>
 
   <section class="hero-section">
-    <div class="hero-bg" data-parallax="-0.3" style="background-image: url('{{hero_image}}');"></div>
+    <div class="hero-bg" data-parallax="-0.3" style="background-image: url('{{basePath}}{{hero_image}}');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-label fade-in"><a href="{{basePath}}archive.html?date={{date}}">{{date_display}}</a></p>
