@@ -239,6 +239,41 @@
     requestAnimationFrame(updateCursor);
   }
 
+  // Ink blotch scroll animations (CSS --progress driven)
+  var blotches = document.querySelectorAll('.ink-blotch, .ink-flow, .ink-trail, .brush-stroke');
+  if (blotches.length) {
+    function updateBlotches() {
+      var vh = window.innerHeight;
+      blotches.forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        var center = rect.top + rect.height / 2;
+        var progress = 1 - Math.abs(center - vh / 2) / (vh * 0.75);
+        progress = Math.max(0, Math.min(1, progress));
+        el.style.setProperty('--progress', progress.toFixed(3));
+        if (el.classList.contains('ink-blotch')) {
+          el.style.transform = 'scale(' + (0.3 + progress * 0.9).toFixed(2) + ')';
+          el.style.opacity = (progress * 0.55).toFixed(2);
+          el.style.filter = 'blur(' + (45 - progress * 20).toFixed(1) + 'px)';
+        } else if (el.classList.contains('ink-flow')) {
+          el.style.transform = 'scaleX(' + progress.toFixed(2) + ')';
+          el.style.opacity = (progress * 0.5).toFixed(2);
+        } else if (el.classList.contains('ink-trail')) {
+          el.style.transform = 'scaleY(' + progress.toFixed(2) + ')';
+          el.style.opacity = (progress * 0.45).toFixed(2);
+        } else if (el.classList.contains('brush-stroke')) {
+          el.style.transform = 'rotate(-2deg) scaleX(' + progress.toFixed(2) + ')';
+          el.style.opacity = (progress * 0.35).toFixed(2);
+        }
+      });
+    }
+    if (lenis) {
+      lenis.on('scroll', updateBlotches);
+    } else {
+      window.addEventListener('scroll', updateBlotches, { passive: true });
+    }
+    updateBlotches();
+  }
+
   // Reading progress bar (article pages only)
   if (articleBody && !reducedMotion) {
     var progressBar = document.createElement('div');

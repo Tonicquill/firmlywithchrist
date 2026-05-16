@@ -1,6 +1,6 @@
 /* ============================================
    DESIGN SYSTEM — Firmly With Christ
-   Reformed theology. Calm stone texture.
+   Reformed theology. Aged archival paper.
    Confessionally rooted. Scripture-grounded.
    ============================================ */
 
@@ -14,7 +14,7 @@
   /* Primary Palette */
   --midnight: oklch(12% 0.03 260);
   --parchment: oklch(95% 0.02 85);
-  --stone: oklch(90% 0.015 82);
+  --parchment: oklch(94% 0.02 85);
   --ivory: oklch(97% 0.01 85);
 
   /* Accents */
@@ -75,6 +75,94 @@ html.lenis {
   overflow: hidden;
 }
 
+/* Ink blotches — watercolor scroll animations, no WebGL */
+.ink-blotch {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0;
+  transform: scale(0.3);
+  transition: none;
+  will-change: transform, opacity, filter;
+}
+.ink-blotch--rose {
+  background: radial-gradient(circle, oklch(72% 0.14 20 / 0.18) 0%, oklch(72% 0.14 20 / 0) 70%);
+}
+.ink-blotch--ochre {
+  background: radial-gradient(circle, oklch(78% 0.12 80 / 0.14) 0%, oklch(78% 0.12 80 / 0) 70%);
+}
+.ink-blotch--sepia {
+  background: radial-gradient(circle, oklch(60% 0.08 60 / 0.12) 0%, oklch(60% 0.08 60 / 0) 70%);
+}
+.ink-blotch--indigo {
+  background: radial-gradient(circle, oklch(55% 0.12 260 / 0.10) 0%, oklch(55% 0.12 260 / 0) 70%);
+}
+
+/* Watercolor flows — horizontal streaks */
+.ink-flow {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  height: 3px;
+  border-radius: 2px;
+  filter: blur(2px);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  will-change: transform, opacity;
+}
+.ink-flow--rose {
+  background: linear-gradient(90deg, oklch(72% 0.14 20 / 0.15), oklch(72% 0.14 20 / 0) 80%);
+}
+.ink-flow--ochre {
+  background: linear-gradient(90deg, oklch(78% 0.12 80 / 0.12), oklch(78% 0.12 80 / 0) 80%);
+}
+
+/* Ink trails — vertical drips */
+.ink-trail {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  width: 2px;
+  border-radius: 1px;
+  filter: blur(1px);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  will-change: transform, opacity;
+}
+.ink-trail--sepia {
+  background: linear-gradient(180deg, oklch(60% 0.08 60 / 0.12), oklch(60% 0.08 60 / 0) 90%);
+}
+.ink-trail--indigo {
+  background: linear-gradient(180deg, oklch(55% 0.12 260 / 0.10), oklch(55% 0.12 260 / 0) 90%);
+}
+
+/* Brush strokes — hard-edged marks */
+.brush-stroke {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transform: rotate(-2deg) scaleX(0);
+  transform-origin: left center;
+  will-change: transform, opacity;
+}
+.brush-stroke::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: oklch(55% 0.10 260 / 0.08);
+  border-radius: 1px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M2 6 Q30 2 60 6 T118 6' stroke='black' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M2 6 Q30 2 60 6 T118 6' stroke='black' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+}
+
 body {
   font-family: var(--font-body);
   font-size: 1.15rem;
@@ -82,11 +170,11 @@ body {
   color: var(--midnight);
   hyphens: auto;
   -webkit-hyphens: auto;
-  background-color: oklch(94% 0.01 82);
+  background-color: var(--parchment);
   background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse at 50% 0%, oklch(97% 0.006 88 / 0.7) 0%, transparent 60%),
-    radial-gradient(ellipse at 30% 100%, oklch(88% 0.012 78 / 0.5) 0%, transparent 55%);
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)' opacity='0.035'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 50% 0%, oklch(96% 0.015 75 / 0.5) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 100%, oklch(86% 0.018 78 / 0.25) 0%, transparent 50%);
   /* background-attachment: scroll is default — fixed breaks Lenis smooth scroll */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1606,7 +1694,7 @@ footer {
 
 /* Trending strip */
 .trending-strip {
-  background: var(--stone);
+  background: var(--parchment);
   border-bottom: 1px solid oklch(12% 0.03 260 / 0.06);
   padding: var(--space-2) var(--space-4);
   overflow-x: auto;
@@ -1773,7 +1861,7 @@ footer {
   position: relative;
   margin: var(--space-6) 0;
   overflow: hidden;
-  background: var(--stone);
+  background: var(--parchment);
   border-radius: 4px;
   width: 100%;
   isolation: isolate;
