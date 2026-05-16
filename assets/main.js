@@ -4,6 +4,26 @@
 (function () {
   'use strict';
 
+  // Lenis smooth scroll (honors prefers-reduced-motion)
+  var lenis = null;
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reducedMotion && typeof Lenis !== 'undefined') {
+    lenis = new Lenis({
+      lerp: 0.07,
+      smoothWheel: true,
+      duration: 1.2
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+
+  function getScrollY() {
+    return lenis ? lenis.scroll : (window.scrollY || window.pageYOffset);
+  }
+
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
@@ -59,7 +79,7 @@
     const rect = ref.getBoundingClientRect();
     const tooltipRect = tooltip.getBoundingClientRect();
     const scrollX = window.scrollX || window.pageXOffset;
-    const scrollY = window.scrollY || window.pageYOffset;
+    const scrollY = getScrollY();
     const vw = window.innerWidth;
 
     let left = rect.left + rect.width / 2 - tooltipRect.width / 2;
@@ -128,18 +148,28 @@
     if (activeRef) positionTooltip(activeRef);
   }, { passive: true });
 
-  // Parallax scroll effect (3 layers: fast bg, normal content, slow foreground)
-  const parallaxElements = document.querySelectorAll('[data-parallax]');
+  // Parallax scroll effect
+  var parallaxElements = document.querySelectorAll('[data-parallax]');
   if (parallaxElements.length) {
-    function updateParallax() {
-      const scrollY = window.scrollY || window.pageYOffset;
-      parallaxElements.forEach(function (el) {
-        const speed = parseFloat(el.dataset.parallax);
-        el.style.transform = 'translateY(' + (scrollY * speed).toFixed(2) + 'px)';
+    if (lenis) {
+      lenis.on('scroll', function (_a) {
+        var scroll = _a.scroll;
+        parallaxElements.forEach(function (el) {
+          var speed = parseFloat(el.dataset.parallax);
+          el.style.transform = 'translateY(' + (scroll * speed).toFixed(2) + 'px)';
+        });
       });
+    } else {
+      function updateParallax() {
+        var scrollY = getScrollY();
+        parallaxElements.forEach(function (el) {
+          var speed = parseFloat(el.dataset.parallax);
+          el.style.transform = 'translateY(' + (scrollY * speed).toFixed(2) + 'px)';
+        });
+      }
+      window.addEventListener('scroll', updateParallax, { passive: true });
+      updateParallax();
     }
-    window.addEventListener('scroll', updateParallax, { passive: true });
-    updateParallax();
   }
 
   // Hero meta restructuring: move date label into meta row, add reading time
@@ -210,19 +240,29 @@
   }
 
   // Reading progress bar (article pages only)
-  if (articleBody && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  if (articleBody && !reducedMotion) {
     var progressBar = document.createElement('div');
     progressBar.className = 'reading-progress';
     document.body.appendChild(progressBar);
 
-    function updateProgress() {
-      var scrollH = document.documentElement.scrollHeight - window.innerHeight;
-      if (scrollH <= 0) return;
-      var pct = Math.min(window.scrollY / scrollH, 1);
-      progressBar.style.transform = 'scaleX(' + pct + ')';
+    if (lenis) {
+      lenis.on('scroll', function (_a) {
+        var scroll = _a.scroll;
+        var scrollH = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollH <= 0) return;
+        var pct = Math.min(scroll / scrollH, 1);
+        progressBar.style.transform = 'scaleX(' + pct + ')';
+      });
+    } else {
+      function updateProgress() {
+        var scrollH = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollH <= 0) return;
+        var pct = Math.min(getScrollY() / scrollH, 1);
+        progressBar.style.transform = 'scaleX(' + pct + ')';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
     }
-    window.addEventListener('scroll', updateProgress, { passive: true });
-    updateProgress();
   }
 
   // Slide carousel (Canva-export presentation viewer)
