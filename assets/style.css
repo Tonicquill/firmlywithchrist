@@ -163,6 +163,59 @@ html.lenis {
   -webkit-mask-size: 100% 100%;
 }
 
+/* Fixed ambient watercolor ornaments — always visible in margins */
+.page-ornaments {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.page-ornaments .ornament {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.45;
+  will-change: transform;
+}
+.ornament--rose {
+  width: 520px;
+  height: 420px;
+  top: 2vh;
+  left: -10vw;
+  background: radial-gradient(circle, oklch(72% 0.14 20 / 0.55) 0%, transparent 70%);
+}
+.ornament--ochre {
+  width: 440px;
+  height: 380px;
+  top: 35vh;
+  right: -12vw;
+  background: radial-gradient(circle, oklch(78% 0.12 80 / 0.5) 0%, transparent 70%);
+}
+.ornament--sepia {
+  width: 480px;
+  height: 400px;
+  bottom: -8vh;
+  left: 22vw;
+  background: radial-gradient(circle, oklch(60% 0.08 60 / 0.42) 0%, transparent 70%);
+}
+.ornament--indigo {
+  width: 360px;
+  height: 300px;
+  top: 65vh;
+  left: -8vw;
+  background: radial-gradient(circle, oklch(55% 0.12 260 / 0.35) 0%, transparent 70%);
+}
+@media (max-width: 768px) {
+  .page-ornaments .ornament {
+    opacity: 0.22;
+    filter: blur(50px);
+  }
+  .ornament--rose { width: 280px; height: 240px; left: -15vw; }
+  .ornament--ochre { width: 260px; height: 220px; right: -18vw; }
+  .ornament--sepia { width: 300px; height: 260px; left: 10vw; }
+  .ornament--indigo { display: none; }
+}
+
 body {
   position: relative;
   font-family: var(--font-body);

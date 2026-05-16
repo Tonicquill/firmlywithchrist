@@ -1,0 +1,14 @@
+﻿Authenticating profile: default (tonicquill@gmail.com)
+Launching Google Chrome for authentication...
+Using Chrome DevTools Protocol
+
+Starting Google Chrome...
+Closing Google Chrome...
+
+✓ Successfully authenticated!
+  Profile: default
+  Provider: builtin
+  Cookies: 54 extracted
+  CSRF Token: Yes
+  Account: tonicquill@gmail.com
+  Credentials saved to: C:\Users\User\.notebooklm-mcp-cli\profiles\default

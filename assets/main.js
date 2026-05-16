@@ -274,6 +274,27 @@
     updateBlotches();
   }
 
+  // Fixed ornament parallax
+  var ornaments = document.querySelectorAll('.page-ornaments .ornament');
+  if (ornaments.length) {
+    function updateOrnaments() {
+      var sy = getScrollY();
+      ornaments.forEach(function (el, i) {
+        var speed = 0.02 + (i % 3) * 0.015;
+        el.style.transform = 'translateY(' + (-sy * speed).toFixed(2) + 'px)';
+      });
+    }
+    if (lenis) {
+      lenis.on('scroll', function (_a) {
+        var scroll = _a.scroll;
+        updateOrnaments();
+      });
+    } else {
+      window.addEventListener('scroll', updateOrnaments, { passive: true });
+    }
+    updateOrnaments();
+  }
+
   // Reading progress bar (article pages only)
   if (articleBody && !reducedMotion) {
     var progressBar = document.createElement('div');
