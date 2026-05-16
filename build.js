@@ -445,16 +445,21 @@ function build() {
                         'August','September','October','November','December'];
     const months = monthNames.map(mName => {
       const monthDays = devotionals.filter(d => d.month === mName);
+      // Pre-render days HTML to avoid nested {{#each}} regex bug
+      const daysHtml = monthDays.map(d => {
+        const padded = String(d.day).padStart(3, '0');
+        const specialClass = d.check_in_type ? ' devotional-day-card--special' : '';
+        const badge = d.check_in_type ? '<span class="day-badge">Check-in</span>' : '';
+        return '<a href="day/' + padded + '/" class="devotional-day-card' + specialClass + '" data-pagefind-filter="tag" data-pagefind-sort="title">' +
+          '<span class="day-number">Day ' + d.day + '</span>' +
+          '<span class="day-title">' + d.title + '</span>' +
+          badge +
+          '</a>';
+      }).join('\n');
       return {
         month_name: mName,
         month_theme: monthDays[0] ? monthDays[0].theme : '',
-        days: monthDays.map(d => ({
-          day_num: d.day,
-          day_padded: String(d.day).padStart(3, '0'),
-          title: d.title,
-          is_check_in: !!d.check_in_type,
-          is_special: !!d.check_in_type
-        }))
+        daysHtml: daysHtml
       };
     });
 

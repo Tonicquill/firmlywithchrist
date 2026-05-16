@@ -53,13 +53,7 @@
     <div class="devotional-month-section">
       <h2 class="devotional-month-heading">{{month_name}} <span class="month-theme">&mdash; {{month_theme}}</span></h2>
       <div class="devotional-day-grid">
-        {{#each days}}
-        <a href="day/{{day_padded}}/" class="devotional-day-card {{#if is_special}}devotional-day-card--special{{/if}}" data-pagefind-filter="tag" data-pagefind-sort="title">
-          <span class="day-number">Day {{day_num}}</span>
-          <span class="day-title">{{title}}</span>
-          {{#if is_check_in}}<span class="day-badge">Check-in</span>{{/if}}
-        </a>
-        {{/each}}
+        {{daysHtml}}
       </div>
     </div>
     {{/each}}
