@@ -81,23 +81,23 @@ html.lenis {
   pointer-events: none;
   z-index: 0;
   border-radius: 50%;
-  filter: blur(40px);
+  filter: blur(24px);
   opacity: 0;
   transform: scale(0.3);
   transition: none;
   will-change: transform, opacity, filter;
 }
 .ink-blotch--rose {
-  background: radial-gradient(circle, oklch(72% 0.14 20 / 0.18) 0%, oklch(72% 0.14 20 / 0) 70%);
+  background: radial-gradient(circle, oklch(72% 0.14 20 / 0.45) 0%, oklch(72% 0.14 20 / 0) 70%);
 }
 .ink-blotch--ochre {
-  background: radial-gradient(circle, oklch(78% 0.12 80 / 0.14) 0%, oklch(78% 0.12 80 / 0) 70%);
+  background: radial-gradient(circle, oklch(78% 0.12 80 / 0.38) 0%, oklch(78% 0.12 80 / 0) 70%);
 }
 .ink-blotch--sepia {
-  background: radial-gradient(circle, oklch(60% 0.08 60 / 0.12) 0%, oklch(60% 0.08 60 / 0) 70%);
+  background: radial-gradient(circle, oklch(60% 0.08 60 / 0.32) 0%, oklch(60% 0.08 60 / 0) 70%);
 }
 .ink-blotch--indigo {
-  background: radial-gradient(circle, oklch(55% 0.12 260 / 0.10) 0%, oklch(55% 0.12 260 / 0) 70%);
+  background: radial-gradient(circle, oklch(55% 0.12 260 / 0.28) 0%, oklch(55% 0.12 260 / 0) 70%);
 }
 
 /* Watercolor flows — horizontal streaks */
@@ -114,10 +114,10 @@ html.lenis {
   will-change: transform, opacity;
 }
 .ink-flow--rose {
-  background: linear-gradient(90deg, oklch(72% 0.14 20 / 0.15), oklch(72% 0.14 20 / 0) 80%);
+  background: linear-gradient(90deg, oklch(72% 0.14 20 / 0.35), oklch(72% 0.14 20 / 0) 80%);
 }
 .ink-flow--ochre {
-  background: linear-gradient(90deg, oklch(78% 0.12 80 / 0.12), oklch(78% 0.12 80 / 0) 80%);
+  background: linear-gradient(90deg, oklch(78% 0.12 80 / 0.3), oklch(78% 0.12 80 / 0) 80%);
 }
 
 /* Ink trails — vertical drips */
@@ -134,10 +134,10 @@ html.lenis {
   will-change: transform, opacity;
 }
 .ink-trail--sepia {
-  background: linear-gradient(180deg, oklch(60% 0.08 60 / 0.12), oklch(60% 0.08 60 / 0) 90%);
+  background: linear-gradient(180deg, oklch(60% 0.08 60 / 0.3), oklch(60% 0.08 60 / 0) 90%);
 }
 .ink-trail--indigo {
-  background: linear-gradient(180deg, oklch(55% 0.12 260 / 0.10), oklch(55% 0.12 260 / 0) 90%);
+  background: linear-gradient(180deg, oklch(55% 0.12 260 / 0.25), oklch(55% 0.12 260 / 0) 90%);
 }
 
 /* Brush strokes — hard-edged marks */
