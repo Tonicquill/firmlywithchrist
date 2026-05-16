@@ -405,7 +405,7 @@ function build() {
       }
       const contentRaw = read(contentPath);
       const devoContent = contentRaw
-        .replace(/\{\{basePath\}\}/g, '../../')
+        .replace(/\{\{basePath\}\}/g, '../../../')
         .replace(/\{\{relatedBase\}\}/g, '');
 
       const dayIndex = allDays.indexOf(devotional.day);
@@ -419,7 +419,7 @@ function build() {
       const html = render(devoTemplate, {
         ...devotional,
         content: devoContent,
-        basePath: '../../',
+        basePath: '../../../',
         pageTitle: `Day ${devotional.day}: ${devotional.title} | Daily Reading | Firmly With Christ`,
         ogType: 'article',
         excerpt: devotional.excerpt || `Day ${devotional.day}: ${devotional.title}`,
