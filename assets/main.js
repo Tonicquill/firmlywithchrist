@@ -246,14 +246,20 @@
     requestAnimationFrame(updateCursor);
   }
 
-  // Fixed ornament parallax
+  // Fixed ornament parallax with rotation
   var ornaments = document.querySelectorAll('.page-ornaments .ornament');
   if (ornaments.length) {
+    var rotations_1 = [];
+    ornaments.forEach(function (el) {
+      rotations_1.push(getComputedStyle(el).getPropertyValue('--rotate').trim() || '0deg');
+    });
+    var speeds_1 = [0.012, 0.035, 0.022, 0.045, 0.018, 0.03, 0.05];
     function updateOrnaments() {
       var sy = getScrollY();
       ornaments.forEach(function (el, i) {
-        var speed = 0.02 + (i % 3) * 0.015;
-        el.style.transform = 'translateY(' + (-sy * speed).toFixed(2) + 'px)';
+        var speed = speeds_1[i] || 0.02;
+        var rot = rotations_1[i] || '0deg';
+        el.style.transform = 'translateY(' + (-sy * speed).toFixed(2) + 'px) rotate(' + rot + ')';
       });
     }
     if (lenis) {

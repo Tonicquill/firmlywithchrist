@@ -103,6 +103,9 @@ if __name__ == "__main__":
         ("splash_ochre", make_workflow_splash("ochre", "warm ochre gold amber", 102)),
         ("splash_sepia", make_workflow_splash("sepia", "brown sepia ink wash", 103)),
         ("splash_indigo", make_workflow_splash("indigo", "muted indigo gray blue", 104)),
+        ("splash_sunset", make_workflow_splash("sunset", "sunset orange and golden yellow blending, warm gradient watercolor, two colors merging organically", 105)),
+        ("splash_sage", make_workflow_splash("sage", "muted sage green olive, soft moss watercolor wash", 106)),
+        ("splash_dusk", make_workflow_splash("dusk", "dusty lavender purple and muted blue merging, twilight watercolor, two colors blending organically", 107)),
         ("stroke_horizontal", make_workflow_stroke()),
         ("cursor_dot", make_workflow_cursor()),
     ]

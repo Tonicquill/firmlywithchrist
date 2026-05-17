@@ -108,40 +108,68 @@ html.lenis {
   opacity: 0.5;
   mix-blend-mode: multiply;
 }
+
+/* Varied rotations for organic feel */
+.ornament--rose   { --rotate: -10deg; }
+.ornament--ochre  { --rotate:  14deg; }
+.ornament--sepia  { --rotate:  -6deg; }
+.ornament--indigo { --rotate:  20deg; }
+.ornament--sunset { --rotate:   8deg; }
+.ornament--sage   { --rotate: -16deg; }
+.ornament--dusk   { --rotate:  22deg; }
+
 .ornament--rose {
-  width: 420px;
-  height: 360px;
-  top: 6vh;
-  left: -5vw;
+  width: 560px; height: 480px;
+  top: -18vh; left: -12vw;
   background-image: url('generated/splash_rose_00002_.png');
+  opacity: 0.42;
 }
 .ornament--ochre {
-  width: 380px;
-  height: 320px;
-  top: 38vh;
-  right: -5vw;
+  width: 260px; height: 220px;
+  top: 26vh; right: -10vw;
   background-image: url('generated/splash_ochre_00002_.png');
+  opacity: 0.35;
 }
 .ornament--sepia {
-  width: 400px;
-  height: 340px;
-  bottom: 2vh;
-  left: 18vw;
+  width: 340px; height: 290px;
+  bottom: -8vh; right: 8vw;
   background-image: url('generated/splash_sepia_00002_.png');
+  opacity: 0.26;
 }
 .ornament--indigo {
-  width: 340px;
-  height: 280px;
-  top: 68vh;
-  left: -2vw;
+  width: 180px; height: 150px;
+  top: 58vh; left: -8vw;
   background-image: url('generated/splash_indigo_00002_.png');
+  opacity: 0.22;
 }
+.ornament--sunset {
+  width: 480px; height: 410px;
+  top: 12vh; right: 18vw;
+  background-image: url('generated/splash_sunset_00001_.png');
+  opacity: 0.3;
+}
+.ornament--sage {
+  width: 240px; height: 200px;
+  bottom: 22vh; left: 12vw;
+  background-image: url('generated/splash_sage_00001_.png');
+  opacity: 0.28;
+}
+.ornament--dusk {
+  width: 160px; height: 130px;
+  bottom: 2vh; right: -4vw;
+  background-image: url('generated/splash_dusk_00001_.png');
+  opacity: 0.24;
+}
+
 @media (max-width: 768px) {
-  .page-ornaments .ornament { opacity: 0.3; }
-  .ornament--rose { width: 260px; height: 220px; top: 8vh; left: -12vw; }
-  .ornament--ochre { width: 240px; height: 200px; top: 42vh; right: -12vw; }
-  .ornament--sepia { width: 260px; height: 220px; bottom: 5vh; left: 8vw; }
+  .page-ornaments .ornament { opacity: 0.28; }
+  .ornament--rose   { width: 300px; height: 260px; top: -10vh; left: -15vw; }
+  .ornament--ochre  { width: 200px; height: 170px; top: 32vh; right: -15vw; }
+  .ornament--sepia  { width: 240px; height: 200px; bottom: -5vh; right: 5vw; left: auto; }
   .ornament--indigo { display: none; }
+  .ornament--sunset { width: 260px; height: 220px; top: 10vh; right: -10vw; }
+  .ornament--sage   { width: 180px; height: 150px; bottom: 18vh; left: -8vw; }
+  .ornament--dusk   { display: none; }
 }
 
 /* Decorative horizontal watercolor stroke */
@@ -155,75 +183,6 @@ html.lenis {
   background-position: center;
   opacity: 0.5;
   margin: var(--space-4) auto;
-}
-
-/* ============================================
-   ARCHIVAL PAPER TEXTURE — generated watercolor
-   ============================================ */
-.paper-texture {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image: url('generated/paper_tile_00002_.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  mix-blend-mode: multiply;
-}
-
-/* ============================================
-   WATERCOLOR ORNAMENTS — generated splashes
-   ============================================ */
-.page-ornaments {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-.page-ornaments .ornament {
-  position: absolute;
-  will-change: transform;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-  mix-blend-mode: multiply;
-}
-.ornament--rose {
-  width: 420px;
-  height: 360px;
-  top: 6vh;
-  left: -5vw;
-  background-image: url('generated/splash_rose_00002_.png');
-}
-.ornament--ochre {
-  width: 380px;
-  height: 320px;
-  top: 38vh;
-  right: -5vw;
-  background-image: url('generated/splash_ochre_00002_.png');
-}
-.ornament--sepia {
-  width: 400px;
-  height: 340px;
-  bottom: 2vh;
-  left: 18vw;
-  background-image: url('generated/splash_sepia_00002_.png');
-}
-.ornament--indigo {
-  width: 340px;
-  height: 280px;
-  top: 68vh;
-  left: -2vw;
-  background-image: url('generated/splash_indigo_00002_.png');
-}
-@media (max-width: 768px) {
-  .page-ornaments .ornament { opacity: 0.3; }
-  .ornament--rose { width: 260px; height: 220px; top: 8vh; left: -12vw; }
-  .ornament--ochre { width: 240px; height: 200px; top: 42vh; right: -12vw; }
-  .ornament--sepia { width: 260px; height: 220px; bottom: 5vh; left: 8vw; }
-  .ornament--indigo { display: none; }
 }
 
 /* Decorative horizontal watercolor stroke */
