@@ -28,10 +28,6 @@
   if (!document.querySelector('.paper-texture')) {
     var pt = document.createElement('div');
     pt.className = 'paper-texture';
-    var i, d;
-    for (i = 0; i < 6; i++) { d = document.createElement('div'); d.className = 'foxing'; pt.appendChild(d); }
-    for (i = 0; i < 3; i++) { d = document.createElement('div'); d.className = 'stain-ring'; pt.appendChild(d); }
-    for (i = 0; i < 2; i++) { d = document.createElement('div'); d.className = 'crease'; pt.appendChild(d); }
     document.body.insertBefore(pt, document.body.firstChild);
   }
 
@@ -248,41 +244,6 @@
       requestAnimationFrame(updateCursor);
     }
     requestAnimationFrame(updateCursor);
-  }
-
-  // Ink blotch scroll animations (CSS --progress driven)
-  var blotches = document.querySelectorAll('.ink-blotch, .ink-flow, .ink-trail, .brush-stroke');
-  if (blotches.length) {
-    function updateBlotches() {
-      var vh = window.innerHeight;
-      blotches.forEach(function (el) {
-        var rect = el.getBoundingClientRect();
-        var center = rect.top + rect.height / 2;
-        var progress = 1 - Math.abs(center - vh / 2) / (vh * 0.75);
-        progress = Math.max(0, Math.min(1, progress));
-        el.style.setProperty('--progress', progress.toFixed(3));
-        if (el.classList.contains('ink-blotch')) {
-          el.style.transform = 'scale(' + (0.3 + progress * 0.9).toFixed(2) + ')';
-          el.style.opacity = (progress * 0.9).toFixed(2);
-          el.style.filter = 'blur(' + (28 - progress * 8).toFixed(1) + 'px)';
-        } else if (el.classList.contains('ink-flow')) {
-          el.style.transform = 'scaleX(' + progress.toFixed(2) + ')';
-          el.style.opacity = (progress * 0.75).toFixed(2);
-        } else if (el.classList.contains('ink-trail')) {
-          el.style.transform = 'scaleY(' + progress.toFixed(2) + ')';
-          el.style.opacity = (progress * 0.7).toFixed(2);
-        } else if (el.classList.contains('brush-stroke')) {
-          el.style.transform = 'rotate(-2deg) scaleX(' + progress.toFixed(2) + ')';
-          el.style.opacity = (progress * 0.6).toFixed(2);
-        }
-      });
-    }
-    if (lenis) {
-      lenis.on('scroll', updateBlotches);
-    } else {
-      window.addEventListener('scroll', updateBlotches, { passive: true });
-    }
-    updateBlotches();
   }
 
   // Fixed ornament parallax

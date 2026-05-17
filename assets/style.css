@@ -75,210 +75,169 @@ html.lenis {
   overflow: hidden;
 }
 
-/* Ink blotches — watercolor scroll animations, no WebGL */
-.ink-blotch {
-  position: absolute;
+/* ============================================
+   ARCHIVAL PAPER TEXTURE — generated watercolor
+   ============================================ */
+.paper-texture {
+  position: fixed;
+  inset: 0;
   pointer-events: none;
   z-index: 0;
-  border-radius: 50%;
-  filter: blur(24px);
-  opacity: 0;
-  transform: scale(0.3);
-  transition: none;
-  will-change: transform, opacity, filter;
-}
-.ink-blotch--rose {
-  background: radial-gradient(circle, oklch(72% 0.14 20 / 0.45) 0%, oklch(72% 0.14 20 / 0) 70%);
-}
-.ink-blotch--ochre {
-  background: radial-gradient(circle, oklch(78% 0.12 80 / 0.38) 0%, oklch(78% 0.12 80 / 0) 70%);
-}
-.ink-blotch--sepia {
-  background: radial-gradient(circle, oklch(60% 0.08 60 / 0.32) 0%, oklch(60% 0.08 60 / 0) 70%);
-}
-.ink-blotch--indigo {
-  background: radial-gradient(circle, oklch(55% 0.12 260 / 0.28) 0%, oklch(55% 0.12 260 / 0) 70%);
+  background-image: url('generated/paper_tile_00002_.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
 }
 
-/* Watercolor flows — horizontal streaks */
-.ink-flow {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-  height: 3px;
-  border-radius: 2px;
-  filter: blur(2px);
-  opacity: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  will-change: transform, opacity;
-}
-.ink-flow--rose {
-  background: linear-gradient(90deg, oklch(72% 0.14 20 / 0.35), oklch(72% 0.14 20 / 0) 80%);
-}
-.ink-flow--ochre {
-  background: linear-gradient(90deg, oklch(78% 0.12 80 / 0.3), oklch(78% 0.12 80 / 0) 80%);
-}
-
-/* Ink trails — vertical drips */
-.ink-trail {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-  width: 2px;
-  border-radius: 1px;
-  filter: blur(1px);
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  will-change: transform, opacity;
-}
-.ink-trail--sepia {
-  background: linear-gradient(180deg, oklch(60% 0.08 60 / 0.3), oklch(60% 0.08 60 / 0) 90%);
-}
-.ink-trail--indigo {
-  background: linear-gradient(180deg, oklch(55% 0.12 260 / 0.25), oklch(55% 0.12 260 / 0) 90%);
-}
-
-/* Brush strokes — hard-edged marks */
-.brush-stroke {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0;
-  transform: rotate(-2deg) scaleX(0);
-  transform-origin: left center;
-  will-change: transform, opacity;
-}
-.brush-stroke::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: oklch(55% 0.10 260 / 0.08);
-  border-radius: 1px;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M2 6 Q30 2 60 6 T118 6' stroke='black' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  mask-size: 100% 100%;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M2 6 Q30 2 60 6 T118 6' stroke='black' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  -webkit-mask-size: 100% 100%;
-}
-
-/* Fixed ambient watercolor ornaments — organic splashes, not circles */
+/* ============================================
+   WATERCOLOR ORNAMENTS — generated splashes
+   ============================================ */
 .page-ornaments {
   position: fixed;
   inset: 0;
   pointer-events: none;
+  z-index: 0;
 }
 .page-ornaments .ornament {
   position: absolute;
-  opacity: 0.6;
   will-change: transform;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
 }
-/* Organic splash shapes via mask-image (SVG ink-blot paths) */
 .ornament--rose {
   width: 420px;
   height: 360px;
   top: 6vh;
-  left: 0vw;
-  background: radial-gradient(ellipse 55% 45% at 42% 48%, oklch(72% 0.14 20 / 0.7) 0%, oklch(72% 0.14 20 / 0.3) 40%, transparent 70%);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M85,18 C125,12 155,28 168,62 C178,88 170,118 145,138 C120,158 85,162 55,148 C28,135 12,108 18,78 C24,48 48,22 85,18 Z M150,75 C168,68 185,82 182,102 C178,118 160,125 145,118 C132,110 132,90 142,80 C145,77 148,76 150,75 Z M55,42 C38,38 28,52 32,68 C35,80 50,85 62,78 C72,70 68,52 58,45 C57,44 56,43 55,42 Z' fill='white'/%3E%3C/svg%3E");
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M85,18 C125,12 155,28 168,62 C178,88 170,118 145,138 C120,158 85,162 55,148 C28,135 12,108 18,78 C24,48 48,22 85,18 Z M150,75 C168,68 185,82 182,102 C178,118 160,125 145,118 C132,110 132,90 142,80 C145,77 148,76 150,75 Z M55,42 C38,38 28,52 32,68 C35,80 50,85 62,78 C72,70 68,52 58,45 C57,44 56,43 55,42 Z' fill='white'/%3E%3C/svg%3E");
-  mask-size: 100% 100%;
-  -webkit-mask-size: 100% 100%;
+  left: -5vw;
+  background-image: url('generated/splash_rose_00002_.png');
 }
 .ornament--ochre {
   width: 380px;
   height: 320px;
   top: 38vh;
-  right: -2vw;
-  background: radial-gradient(ellipse 50% 55% at 50% 40%, oklch(78% 0.12 80 / 0.65) 0%, oklch(78% 0.12 80 / 0.28) 42%, transparent 72%);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M100,15 C140,10 172,32 180,68 C188,102 172,138 138,152 C108,165 68,160 40,138 C15,115 8,82 22,52 C35,22 68,8 100,15 Z M160,55 C175,48 192,58 188,78 C185,92 170,98 158,90 C148,82 148,65 158,58 C159,57 160,56 160,55 Z M45,105 C32,102 22,115 28,130 C32,142 48,145 58,135 C68,125 60,108 48,105 C47,105 46,105 45,105 Z' fill='white'/%3E%3C/svg%3E");
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M100,15 C140,10 172,32 180,68 C188,102 172,138 138,152 C108,165 68,160 40,138 C15,115 8,82 22,52 C35,22 68,8 100,15 Z M160,55 C175,48 192,58 188,78 C185,92 170,98 158,90 C148,82 148,65 158,58 C159,57 160,56 160,55 Z M45,105 C32,102 22,115 28,130 C32,142 48,145 58,135 C68,125 60,108 48,105 C47,105 46,105 45,105 Z' fill='white'/%3E%3C/svg%3E");
-  mask-size: 100% 100%;
-  -webkit-mask-size: 100% 100%;
+  right: -5vw;
+  background-image: url('generated/splash_ochre_00002_.png');
 }
 .ornament--sepia {
   width: 400px;
   height: 340px;
   bottom: 2vh;
-  left: 22vw;
-  background: radial-gradient(ellipse 52% 48% at 45% 52%, oklch(60% 0.08 60 / 0.55) 0%, oklch(60% 0.08 60 / 0.22) 45%, transparent 70%);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M95,20 C132,15 162,35 170,70 C178,105 158,140 122,152 C88,162 52,152 32,125 C12,98 15,62 38,38 C58,18 78,15 95,20 Z M148,48 C162,42 178,52 175,70 C172,85 155,92 142,85 C130,78 132,58 144,50 C145,49 147,48 148,48 Z M62,118 C50,115 38,128 45,142 C50,155 68,158 78,148 C88,138 78,122 65,118 C64,118 63,118 62,118 Z' fill='white'/%3E%3C/svg%3E");
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M95,20 C132,15 162,35 170,70 C178,105 158,140 122,152 C88,162 52,152 32,125 C12,98 15,62 38,38 C58,18 78,15 95,20 Z M148,48 C162,42 178,52 175,70 C172,85 155,92 142,85 C130,78 132,58 144,50 C145,49 147,48 148,48 Z M62,118 C50,115 38,128 45,142 C50,155 68,158 78,148 C88,138 78,122 65,118 C64,118 63,118 62,118 Z' fill='white'/%3E%3C/svg%3E");
-  mask-size: 100% 100%;
-  -webkit-mask-size: 100% 100%;
+  left: 18vw;
+  background-image: url('generated/splash_sepia_00002_.png');
 }
 .ornament--indigo {
   width: 340px;
   height: 280px;
   top: 68vh;
-  left: 2vw;
-  background: radial-gradient(ellipse 48% 52% at 38% 48%, oklch(55% 0.12 260 / 0.48) 0%, oklch(55% 0.12 260 / 0.18) 45%, transparent 72%);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 165'%3E%3Cpath d='M88,18 C125,12 155,30 165,65 C174,95 158,128 125,142 C92,155 55,148 35,122 C15,95 18,58 42,35 C60,18 75,15 88,18 Z M145,62 C160,55 178,68 172,88 C168,102 150,108 138,100 C126,90 130,72 142,64 C143,63 144,62 145,62 Z M52,95 C38,92 28,105 35,120 C40,132 58,135 68,125 C78,115 68,98 55,95 C54,95 53,95 52,95 Z' fill='white'/%3E%3C/svg%3E");
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 165'%3E%3Cpath d='M88,18 C125,12 155,30 165,65 C174,95 158,128 125,142 C92,155 55,148 35,122 C15,95 18,58 42,35 C60,18 75,15 88,18 Z M145,62 C160,55 178,68 172,88 C168,102 150,108 138,100 C126,90 130,72 142,64 C143,63 144,62 145,62 Z M52,95 C38,92 28,105 35,120 C40,132 58,135 68,125 C78,115 68,98 55,95 C54,95 53,95 52,95 Z' fill='white'/%3E%3C/svg%3E");
-  mask-size: 100% 100%;
-  -webkit-mask-size: 100% 100%;
+  left: -2vw;
+  background-image: url('generated/splash_indigo_00002_.png');
 }
 @media (max-width: 768px) {
-  .page-ornaments .ornament { opacity: 0.35; }
-  .ornament--rose { width: 260px; height: 220px; top: 8vh; left: -8vw; }
-  .ornament--ochre { width: 240px; height: 200px; top: 42vh; right: -8vw; }
-  .ornament--sepia { width: 260px; height: 220px; bottom: 5vh; left: 12vw; }
+  .page-ornaments .ornament { opacity: 0.3; }
+  .ornament--rose { width: 260px; height: 220px; top: 8vh; left: -12vw; }
+  .ornament--ochre { width: 240px; height: 200px; top: 42vh; right: -12vw; }
+  .ornament--sepia { width: 260px; height: 220px; bottom: 5vh; left: 8vw; }
   .ornament--indigo { display: none; }
 }
 
-/* Archival paper texture — fixed overlay with age marks, foxing, grain */
+/* Decorative horizontal watercolor stroke */
+.watercolor-stroke {
+  width: 100%;
+  max-width: 280px;
+  height: 70px;
+  background-image: url('generated/stroke_horizontal_00002_.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  margin: var(--space-4) auto;
+}
+
+/* ============================================
+   ARCHIVAL PAPER TEXTURE — generated watercolor
+   ============================================ */
 .paper-texture {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 1;
+  z-index: 0;
+  background-image: url('generated/paper_tile_00002_.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
 }
-/* Base grain — two frequencies for fine + coarse paper tooth */
-.paper-texture::before {
-  content: '';
-  position: absolute;
+
+/* ============================================
+   WATERCOLOR ORNAMENTS — generated splashes
+   ============================================ */
+.page-ornaments {
+  position: fixed;
   inset: 0;
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.065'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.18' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 1;
-}
-/* Foxing spots — brown age marks */
-.paper-texture .foxing {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, oklch(55% 0.06 75 / 0.28) 0%, oklch(55% 0.06 75 / 0.08) 40%, transparent 70%);
-  filter: blur(12px);
   pointer-events: none;
+  z-index: 0;
 }
-.paper-texture .foxing:nth-child(1) { width: 180px; height: 140px; top: 12%; left: 8%; }
-.paper-texture .foxing:nth-child(2) { width: 120px; height: 90px; top: 35%; right: 15%; }
-.paper-texture .foxing:nth-child(3) { width: 220px; height: 160px; top: 55%; left: 30%; }
-.paper-texture .foxing:nth-child(4) { width: 100px; height: 80px; top: 78%; right: 25%; }
-.paper-texture .foxing:nth-child(5) { width: 160px; height: 130px; top: 88%; left: 55%; }
-.paper-texture .foxing:nth-child(6) { width: 90px; height: 70px; top: 22%; left: 65%; }
-/* Water / tea ring stains */
-.paper-texture .stain-ring {
+.page-ornaments .ornament {
   position: absolute;
-  border-radius: 50%;
-  border: 2px solid oklch(50% 0.04 80 / 0.12);
-  background: radial-gradient(circle, oklch(55% 0.03 80 / 0.06) 0%, transparent 60%);
-  filter: blur(3px);
-  pointer-events: none;
+  will-change: transform;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
 }
-.paper-texture .stain-ring:nth-child(7) { width: 140px; height: 110px; top: 18%; left: 72%; transform: rotate(15deg); }
-.paper-texture .stain-ring:nth-child(8) { width: 90px; height: 70px; top: 62%; left: 12%; transform: rotate(-8deg); border-width: 1.5px; }
-.paper-texture .stain-ring:nth-child(9) { width: 170px; height: 130px; top: 42%; left: 48%; transform: rotate(25deg); opacity: 0.6; }
-/* Crease / fold shadows */
-.paper-texture .crease {
-  position: absolute;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, oklch(12% 0.03 260 / 0.04) 20%, oklch(12% 0.03 260 / 0.07) 50%, oklch(12% 0.03 260 / 0.04) 80%, transparent 100%);
-  pointer-events: none;
+.ornament--rose {
+  width: 420px;
+  height: 360px;
+  top: 6vh;
+  left: -5vw;
+  background-image: url('generated/splash_rose_00002_.png');
 }
-.paper-texture .crease:nth-child(10) { width: 60%; top: 28%; left: 20%; transform: rotate(0.3deg); }
-.paper-texture .crease:nth-child(11) { width: 40%; top: 68%; left: 35%; transform: rotate(-0.2deg); }
+.ornament--ochre {
+  width: 380px;
+  height: 320px;
+  top: 38vh;
+  right: -5vw;
+  background-image: url('generated/splash_ochre_00002_.png');
+}
+.ornament--sepia {
+  width: 400px;
+  height: 340px;
+  bottom: 2vh;
+  left: 18vw;
+  background-image: url('generated/splash_sepia_00002_.png');
+}
+.ornament--indigo {
+  width: 340px;
+  height: 280px;
+  top: 68vh;
+  left: -2vw;
+  background-image: url('generated/splash_indigo_00002_.png');
+}
+@media (max-width: 768px) {
+  .page-ornaments .ornament { opacity: 0.3; }
+  .ornament--rose { width: 260px; height: 220px; top: 8vh; left: -12vw; }
+  .ornament--ochre { width: 240px; height: 200px; top: 42vh; right: -12vw; }
+  .ornament--sepia { width: 260px; height: 220px; bottom: 5vh; left: 8vw; }
+  .ornament--indigo { display: none; }
+}
+
+/* Decorative horizontal watercolor stroke */
+.watercolor-stroke {
+  width: 100%;
+  max-width: 280px;
+  height: 70px;
+  background-image: url('generated/stroke_horizontal_00002_.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  margin: var(--space-4) auto;
+}
 
 body {
   position: relative;
