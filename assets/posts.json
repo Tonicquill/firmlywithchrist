@@ -730,5 +730,29 @@
     "hero_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Samsung_headquarters.jpg/1280px-Samsung_headquarters.jpg",
     "share_quote": "$1 trillion is an impressive number. It is not a saving number. The silicon holds together because Christ holds it together.",
     "geo": "South Korea"
+  },
+  {
+    "title": "The Bible is not sixty-six books that happen to share a binding.",
+    "url": "post/covenant-theology.html",
+    "date": "2026-05-17",
+    "tag": "Covenant",
+    "secular_tag": "Bible",
+    "excerpt": "Most readers treat the Bible like an anthology. The Reformed tradition has never read it that way.",
+    "scripture": "Genesis 3:15 · Jeremiah 31:31-33 · Galatians 3:23-24",
+    "hero_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Rembrandt_-_Moses_with_the_Ten_Commandments_-_Google_Art_Project.jpg/1280px-Rembrandt_-_Moses_with_the_Ten_Commandments_-_Google_Art_Project.jpg",
+    "share_quote": "The Bible is not sixty-six books that happen to share a binding. It is one book, one covenant, one rescue.",
+    "geo": "Global"
+  },
+  {
+    "title": "Union with Christ is not a metaphor. It is the channel through which every blessing flows.",
+    "url": "post/union-with-christ.html",
+    "date": "2026-05-18",
+    "tag": "Salvation",
+    "secular_tag": "Spirituality",
+    "excerpt": "Ask the average Christian how they are saved, and you will hear a list. Ask what connects those blessings to their actual life, and the answer gets quieter.",
+    "scripture": "John 15:4-5 · 1 Corinthians 1:30 · Colossians 3:3-4 · Galatians 2:20",
+    "hero_image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Christ_the_Vine.png",
+    "share_quote": "You are not forgiven and then joined to Christ. You are forgiven because you are joined to Christ. Every blessing flows from one source: the vine.",
+    "geo": "Global"
   }
 ]
