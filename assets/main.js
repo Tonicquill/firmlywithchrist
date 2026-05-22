@@ -361,4 +361,56 @@
       carousel.addEventListener('touchstart', function () { clearInterval(timer); }, { passive: true });
     }
   });
+
+  /* ===== WATERCOLOR ORBS ===== */
+  document.querySelectorAll('.hero-section').forEach(function (hero) {
+    if (hero.querySelector('.hero-orb')) return;
+    var ochreOrb = document.createElement('div');
+    ochreOrb.className = 'hero-orb hero-orb--ochre';
+    var midnightOrb = document.createElement('div');
+    midnightOrb.className = 'hero-orb hero-orb--midnight';
+    var sepiaOrb = document.createElement('div');
+    sepiaOrb.className = 'hero-orb hero-orb--sepia';
+    hero.insertBefore(ochreOrb, hero.firstChild);
+    hero.insertBefore(midnightOrb, hero.firstChild);
+    hero.insertBefore(sepiaOrb, hero.firstChild);
+  });
+
+  /* ===== MOUSE PARALLAX ON HERO BG ===== */
+  var heroBgs = document.querySelectorAll('.hero-bg');
+  if (heroBgs.length && !reducedMotion) {
+    heroBgs.forEach(function (bg) {
+      var parent = bg.closest('.hero-section');
+      if (!parent) return;
+      parent.addEventListener('mousemove', function (e) {
+        var x = (e.clientX / window.innerWidth - 0.5) * -10;
+        var y = (e.clientY / window.innerHeight - 0.5) * -10;
+        bg.style.transform = 'translate(' + x.toFixed(2) + 'px, ' + y.toFixed(2) + 'px) scale(1.04)';
+      }, { passive: true });
+      parent.addEventListener('mouseleave', function () {
+        bg.style.transform = '';
+      });
+    });
+  }
+
+  /* ===== BACK TO TOP ===== */
+  var backToTop = document.createElement('button');
+  backToTop.className = 'back-to-top';
+  backToTop.setAttribute('aria-label', 'Back to top');
+  backToTop.innerHTML = '&#8593;';
+  document.body.appendChild(backToTop);
+
+  function toggleBackToTop() {
+    backToTop.classList.toggle('visible', getScrollY() > 600);
+  }
+  window.addEventListener('scroll', toggleBackToTop, { passive: true });
+  toggleBackToTop();
+
+  backToTop.addEventListener('click', function () {
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.2 });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
 })();

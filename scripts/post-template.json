@@ -1,0 +1,47 @@
+{
+  "_comment": "Copy this file, fill in the blanks, then run: node scripts/generate-post.js content/posts/YOUR-SLUG.json",
+  "slug": "FILL-IN-slug-2026",
+  "title": "FILL IN — headline",
+  "date": "2026-05-22",
+  "tag": "FILL IN — Persecution | Ecclesiology | Cultural Engagement | etc",
+  "secular_tag": "FILL IN — Religious Freedom | World Affairs | etc",
+  "excerpt": "FILL IN — one-sentence excerpt for OG / Twitter cards / index feed",
+  "scripture": "FILL IN — Book 1:1 · Book 2:2 · Book 3:3",
+  "geo": "FILL IN — country or region",
+
+  "hero_image": "FILL IN — full Wikimedia URL or assets/local-name.jpg",
+  "hero_image_alt": "FILL IN — Artist, Title (year)",
+  "hero_image_caption": "FILL IN — Artist, <em>Title</em> (year, museum). Explanatory sentence. Image: public domain.",
+
+  "dropcap": "FILL IN — lead paragraph ending with <sup class=\"cite\"><a href=\"#src-1\" id=\"cite-ref-1\">[1]</a></sup>",
+
+  "body_html": "FILL IN — all paragraphs and scripture pulls between the hero image and the key-statement. Scripture-pull template:\\n<blockquote class=\"scripture-pull fade-in\"><div class=\"scripture-pull-bg\" style=\"background-image: url('{{basePath}}assets/corot-sunset.jpg')\"></div><p>Verse text here</p><cite>Reference</cite></blockquote>",
+
+  "key_statement": "FILL IN — short punchy concluding summary.",
+
+  "related_links": [
+    {
+      "text": "FILL IN — description of related post",
+      "slug": "FILL-IN-related-slug.html"
+    }
+  ],
+
+  "sources": [
+    {
+      "id": "src-1",
+      "citation_html": "Publication. (2026, Month Day). <em>Article title</em>. Brief summary.",
+      "url": "FILL IN — https://...",
+      "domain": "FILL IN — domain.com"
+    },
+    {
+      "id": "src-2",
+      "citation_html": "Bible verses cited: <a href=\"FILL-IN-BIBLEGATEWAY-URL\" target=\"_blank\" rel=\"noopener\">ESV (BibleGateway)</a>",
+      "url": "FILL IN — BibleGateway URL",
+      "domain": "biblegateway.com"
+    }
+  ],
+
+  "image_credit": "FILL IN — Image: Artist, <em>Title</em> (year). Museum. Public domain via Wikimedia Commons.",
+  "share_quote": "FILL IN — short quote for copy button",
+  "share_tweet": "FILL IN — optional longer text for X share (defaults to share_quote)"
+}

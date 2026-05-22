@@ -1603,6 +1603,82 @@ footer {
 }
 
 /* ============================================
+   WATERCOLOR ORBS — ambient gradient wash
+   ============================================ */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.22;
+  pointer-events: none;
+  will-change: transform;
+  z-index: 0;
+}
+.hero-orb--ochre {
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, var(--ochre) 0%, transparent 70%);
+  top: -15%;
+  right: -10%;
+}
+.hero-orb--midnight {
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, oklch(30% 0.08 260) 0%, transparent 70%);
+  bottom: -20%;
+  left: -8%;
+}
+.hero-orb--sepia {
+  width: 35vw;
+  height: 35vw;
+  background: radial-gradient(circle, oklch(55% 0.1 75 / 0.6) 0%, transparent 70%);
+  top: 30%;
+  left: 35%;
+  opacity: 0.12;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-orb { display: none; }
+}
+
+/* ============================================
+   BACK TO TOP
+   ============================================ */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ochre);
+  color: var(--midnight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 90;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s var(--ease-editorial), transform 0.3s var(--ease-editorial), visibility 0.3s;
+  box-shadow: 0 4px 16px oklch(68% 0.12 80 / 0.25);
+  cursor: pointer;
+  border: none;
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 24px oklch(68% 0.12 80 / 0.35);
+}
+@media (max-width: 768px) {
+  .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 16px; }
+}
+
+/* ============================================
    ARCHIVE PAGE
    ============================================ */
 .archive-header {
