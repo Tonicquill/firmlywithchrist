@@ -101,20 +101,40 @@
     </div>
   </section>
 
-  <article class="post-article" data-pagefind-body>
+  <div class="post-layout">
+    <article class="post-article" data-pagefind-body>
 
-    <div class="post-nav">
-      <label class="post-nav-label" for="postNav">Jump to article</label>
-      <select class="post-nav-select" id="postNav" onchange="if(this.value) window.location.href=this.value">
-        <option value="">— All articles —</option>
-        {{#each allPosts}}
-        <option value="{{slug}}.html" data-slug="{{slug}}">{{title}} ({{date}})</option>
-        {{/each}}
-      </select>
-    </div>
+      <div class="post-nav">
+        <label class="post-nav-label" for="postNav">Jump to article</label>
+        <select class="post-nav-select" id="postNav" onchange="if(this.value) window.location.href=this.value">
+          <option value="">— All articles —</option>
+          {{#each allPosts}}
+          <option value="{{slug}}.html" data-slug="{{slug}}">{{title}} ({{date}})</option>
+          {{/each}}
+        </select>
+      </div>
 
-    {{content}}
-  </article>
+      {{content}}
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-latest">
+        <p class="sidebar-heading">Most Recent</p>
+        <div class="latest-list">
+          {{#each latestPosts}}
+          <a href="{{slug}}.html" class="latest-item">
+            <img src="{{hero_image}}" alt="" class="latest-thumb" loading="lazy">
+            <div class="latest-meta">
+              <span class="latest-tag">{{tag}}</span>
+              <h5 class="latest-title">{{title}}</h5>
+              <span class="latest-date">{{date}}</span>
+            </div>
+          </a>
+          {{/each}}
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <section class="continue-reading">
     <p class="continue-label">Continue reading</p>

@@ -226,6 +226,21 @@ function build() {
     }));
   }
 
+  // Compute latest posts (excluding self, max 5)
+  function getLatest(currentPost) {
+    return processedPosts
+      .filter(p => p.slug !== currentPost.slug)
+      .slice(0, 5)
+      .map(p => ({
+        title: p.title,
+        slug: p.slug,
+        tag: p.tag,
+        date: p.date_display,
+        hero_image: p.hero_image || '',
+        excerpt: p.excerpt || ''
+      }));
+  }
+
   // --- 2. Generate post pages ---
   const postTemplate = read('templates/post.html');
 
@@ -247,7 +262,8 @@ function build() {
       pageTitle: `${post.title} | Firmly With Christ`,
       ogType: 'article',
       allPosts: processedPosts.map(p => ({ title: p.title, url: p.url, date: p.date_display, slug: p.slug })),
-      relatedPosts: getRelated(post)
+      relatedPosts: getRelated(post),
+      latestPosts: getLatest(post)
     });
 
     write(post.url, html);

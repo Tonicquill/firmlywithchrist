@@ -623,6 +623,102 @@ nav {
   font-style: italic;
 }
 
+/* ============================================
+   POST LAYOUT — Article + Sidebar
+   ============================================ */
+.post-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: var(--space-6);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  align-items: start;
+}
+.post-layout .post-article {
+  width: 100%;
+  min-width: auto;
+  max-width: 780px;
+  margin: 0;
+}
+.post-sidebar {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+  padding-top: var(--space-12);
+}
+.sidebar-latest {
+  background: var(--ivory);
+  border: 1px solid oklch(90% 0.01 82);
+  border-radius: 8px;
+  padding: var(--space-3);
+}
+.sidebar-heading {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--slate);
+  margin-bottom: var(--space-3);
+  opacity: 0.7;
+}
+.latest-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.latest-item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  text-decoration: none;
+  padding: var(--space-1);
+  border-radius: 6px;
+  transition: background-color 0.2s var(--ease-editorial);
+}
+.latest-item:hover {
+  background-color: oklch(92% 0.01 85);
+}
+.latest-thumb {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+  background-color: oklch(85% 0.01 82);
+}
+.latest-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.latest-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ochre-deep);
+}
+.latest-title {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--midnight);
+  line-height: 1.3;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.latest-date {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--slate);
+  opacity: 0.6;
+}
+
 /* Drop cap */
 .post-article > p:first-of-type::first-letter {
   font-family: var(--font-display);
@@ -2473,6 +2569,32 @@ footer {
     padding: var(--space-8) var(--space-4);
     width: 100%;
     min-width: auto;
+  }
+
+  .post-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    padding: 0 var(--space-3);
+  }
+  .post-layout .post-article {
+    max-width: none;
+  }
+  .post-sidebar {
+    position: static;
+    padding-top: 0;
+    order: 1;
+  }
+  .sidebar-latest {
+    padding: var(--space-3);
+  }
+  .latest-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .latest-item {
+    flex: 1 1 240px;
+    min-width: 240px;
   }
 
   .post-article > p:first-of-type::first-letter {
